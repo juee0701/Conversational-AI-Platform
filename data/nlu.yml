@@ -1,0 +1,4300 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - Bye.
+    - Bye
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - ok
+    - okay
+    - fair enough
+    - very well
+    - It's ok
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: no_answer
+  examples: |
+    - i want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+    - I want to book a taxi 
+    - favorite color
+
+- intent: thank_you
+  examples: |
+    - thank you
+    - thanks
+    - that was very helpful
+    - thank you so much
+# - intent: try:
+#   examples: |
+#   - what are rates to [convert](transaction) [Australian Dollar]{"entity": "currency", "role": "change_from"} for [Russian Ruble]{"entity": "currency", "role": "change_to"} on [next week Thursday](date_time)
+#   - I want to [change](transaction) [US dollars]{"entity": "currency", "role": "change_from"} to [Canadian dollar]{"entity": "currency", "role": "change_to"} on [Friday](date_time)
+
+- intent: give_time
+  examples: |
+    - can you tell me what time it is
+    - tell me the time
+    - got the time
+    - what time is it
+    - please tell me the time
+
+- intent: out_of_scope
+  examples: |
+    - EMI Calculator
+    - Calculate EMI
+    - EMI calculate
+
+- intent: personalloan_emi
+  examples: |
+    - personal
+    - personal emi
+    - personal emi calculator
+
+- intent: carloan_emi
+  examples: |
+    - car
+    - car emi
+    - car emi calculator
+
+- intent: homeloan_emi
+  examples: |
+    - home
+    - home emi
+    - home emi calculator
+
+
+- intent: answer
+  examples: |
+    - [100000,5,12]
+    - [200000,6,13]
+    - [300000,4,10]
+
+- intent: loan
+  examples: |
+    - Am I eligible for loan?
+    - loan eligibility
+    - eligibility for loan
+    - What is the eligibility for loan? 
+    - loan eligibility for car
+    - personal loan eligibility
+
+- intent: personal_loan
+  examples: |
+    - eligibility for personal loan
+    - personal loan eligibility
+    - personal
+
+- intent: car_loan
+  examples: |
+    - eligibility for car loan
+    - car loan eligibility
+    - car
+
+- intent: home_loan
+  examples: |
+    - home loan eligibility
+    - eligibility for home loan
+    - home
+- intent: answerloan
+  examples: |
+    - 23,4,3,300000
+    - 17,4,5,200000
+    - 45,1,6,700000
+
+- intent: no_answer
+  examples: |
+    - i want to order food
+    - What is 2 + 2?
+    - Who's the US President?    
+
+- intent: hdfc00
+  examples: |
+    - Change password
+    - How do i change my password
+
+- intent: hdfc0
+  examples: | 
+   - When will I receive my changed ATM PIN?
+   - Whilst will I acquire my changed ATM PIN?
+   - Can i get my changed ATM PIN?
+   - change ATM Pin
+
+- intent: hdfc1
+  examples: | 
+   - Can I get my newly generated PIN online?
+   - How to get newly generated PIN online?
+
+- intent: hdfc2
+  examples: | 
+   - How can I register for Autopay?
+   - How am i able to sign in for Autopay?
+
+- intent: hdfc3
+  examples: | 
+   - Can Chip Credit cards be used anywhere?
+   - Can Chip credit cards be used everywhere?
+
+- intent: hdfc4
+  examples: | 
+   - What information is required to use the e-monies NEFT service?
+   - What records is needed to use the e-monies NEFT service?
+
+- intent: hdfc5
+  examples: | 
+   - If the money is not credited to the beneficiary’s account while using the e-monies NEFT service, will I get it back?
+   - If the cash isn't credited to the beneficiary’s account even as the use of the e-monies NEFT service, will i am getting it returned?
+
+- intent: hdfc6
+  examples: | 
+   - Can I use e-Monies NEFT for foreign remittances?
+   - Can i use e-Monies NEFT for overseas remittances?
+
+- intent: hdfc7
+  examples: | 
+   - What is IFSC? How is it different from the MICR code?
+   - What is IFSC? How is it exclusive from the MICR code?
+   - Difference between IFSC and MICR code
+
+- intent: hdfc8
+  examples: | 
+   - What are the charges for the e-monies National Electronic Funds Transfer service?
+   - What are the charges for the e-monies national electronic Funds Transfer service?
+
+- intent: hdfc9
+  examples: | 
+   - How does the e-monies NEFT service differ from RGTS and EFT?
+   - How does the e-monies NEFT service vary from RGTS and EFT?
+
+- intent: hdfc10
+  examples: | 
+   - Is the e-Monies NEFT system better than the existing RBI-EFT system?
+   - Is the e-Monies NEFT system higher than the existing RBI-EFT system?
+
+- intent: hdfc11
+  examples: | 
+   - Can I use the RuPay Platinum Debit Card to pay online?
+   - Am i able to use the RuPay Platinum Debit Card to pay on-line?
+
+- intent: hdfc12
+  examples: | 
+   - What if I want to use my Debit Card internationally?
+   - What if I need to apply my Debit Card across the world?
+
+- intent: hdfc13
+  examples: | 
+   - Where can the RuPay Platinum Debit Card be used?
+   - Where can the RuPay Platinum Debit Card be used?
+
+- intent: hdfc14
+  examples: | 
+   - Are there any annual charges with RuPay Platinum Debit Card?
+   - Are there any annual prices with RuPay Platinum Debit Card?
+
+- intent: hdfc15
+  examples: | 
+   - Can I use the RuPay ATM card at Merchant outlets or on Ecom website?
+   - Am i able to use the RuPay ATM card at merchant shops or on Ecom internet site?
+
+- intent: hdfc16
+  examples: | 
+   - What is Times Points?
+   - Times points
+
+- intent: hdfc17
+  examples: | 
+   - Where should I contact or write to know about the existing offers on my cards?
+   - Where should I touch or write to know about the present offers on my cards?
+
+- intent: hdfc18
+  examples: | 
+   - Where should I contact or write for my doubts or queries?
+   - In which have to I contact or write for my doubts or queries?
+
+- intent: hdfc19
+  examples: | 
+   - How Can I get my Times Points Debit Card?
+   - How Can i am getting my instances points Debit Card?
+
+- intent: hdfc20
+  examples: | 
+   - Except for digital media consumption, what is the other medium of earning Times Points?
+   - besides for digital media intake, what is the alternative medium of earning Times Points?
+
+- intent: hdfc21
+  examples: | 
+   - If I hotlist my card, will I get deregister from the Times points program?
+   - If I hotlist my card, will i get de-registered from the Times Points program?
+
+- intent: hdfc22
+  examples: | 
+   - How do I reset my password?
+   - reset password?
+
+- intent: hdfc23
+  examples: | 
+   - Why Should I take this card?
+   - Why should I take this card?
+
+- intent: hdfc24
+  examples: | 
+   - How much of Times points will I earn for each activity on TIL?
+   - How lots of Times Points will I earn for every activity on TIL?
+
+- intent: hdfc25
+  examples: | 
+   - Where can I burn my accumulated Times points?
+   - In which am i able to burn my gathered Times Points?
+
+- intent: hdfc26
+  examples: | 
+   - How long can I keep my earned Times points?
+   - How lengthy can i keep my earned Times Points?
+
+- intent: hdfc27
+  examples: | 
+   - What are the Terms and Conditions for the offers at my disposal?
+   - What are the T&C for the offers at my disposal?
+
+- intent: hdfc28
+  examples: | 
+   - What is the validity of the offers?
+   - What is the validity of the offers?
+
+- intent: hdfc29
+  examples: | 
+   - I am already member of Times points, do I need to register again?
+   - i am already member of Times Points, do I have to register once more?
+
+- intent: hdfc30
+  examples: | 
+   - Which all Times group digital properties offer times points?
+   - Which all times group digital homes provide Times Points?
+
+- intent: hdfc31
+  examples: | 
+   - Does customer need to log-in to every Times Internet Limited page for earning Times Points?
+   - Does customer need to log-in to each times net limited page for earning Times Points?
+
+- intent: hdfc32
+  examples: | 
+   - Where can I check the Times points earned for my transactions?
+   - Wherein am i able to take a look at the times points earned for my transactions?
+
+- intent: hdfc33
+  examples: | 
+   - How much am I going to be charged yearly for Times Points Debit Card?
+   - How a good deal am I going to be charged yearly for Times Points Debit Card?
+
+- intent: hdfc34
+  examples: | 
+   - How can I earn Times Points?
+   - Earn Times Points
+
+- intent: hdfc35
+  examples: | 
+   - If I get a new card (reissue), will my Times point carry forward?
+   - If i am getting a new card (reissue), will my Times Point deliver ahead?
+
+- intent: hdfc36
+  examples: | 
+   - What are the benefits of Times Points Debit Card?
+   - uses of Times Points Debit Card
+
+- intent: hdfc37
+  examples: | 
+   - Will I get notification about the expiry of my Times points?
+   - Notification regarding the expiry of my Times Points?
+
+- intent: hdfc38
+  examples: | 
+   - I am not registered for times points program; can I apply for Times Point Debit card?
+   - I'm no longer registered for Times Points program; can i register for Times Points Debit card?
+
+- intent: hdfc39
+  examples: | 
+   - How do I register for Times Points?
+   - registeration for Times Points?
+
+- intent: hdfc40
+  examples: | 
+   - Where do I redeem Times Points?
+   - I want to  redeem Times Points?
+
+- intent: hdfc41
+  examples: | 
+   - Is there any Times points Apps which I can download on my mobile?
+   - Times Points Apps which i can download on my phome?
+   - Times Points Apps
+
+- intent: hdfc42
+  examples: | 
+   - If I am having two member Id can I merge both the IDs and points?
+   - can i merge the IDs and points, if i have two member id?
+
+- intent: hdfc43
+  examples: | 
+   - Which are the offers I am eligible as a Times Debit Card holder?
+   - Offers for a Times Debit Card holder?
+
+- intent: hdfc44
+  examples: | 
+   - Do I need to mandatorily register?
+   - Do I have to mandatorily sign in?
+
+- intent: hdfc45
+  examples: | 
+   - Is there any Personal Accidental Death Cover for Times Point Debit Card holders?
+   - Accident dealth cover for Times Point Debit card holder
+
+- intent: hdfc46
+  examples: | 
+   - What should I share while calling TIL to identify myself?
+   - What should I share whilst calling TIL to recognise myself?
+
+- intent: hdfc47
+  examples: | 
+   - What do I do if I am not able to avail merchant offers?
+   - What do I do if i'm no longer capable of availing merchant offers?
+
+- intent: hdfc48
+  examples: | 
+   - I am already registered for Times Points program; what happens to my existing Times Points ID if I apply for Times point debit card?
+   - I'm already registered for Times Points program; what occurs to my existing Times Points id if I issue for times point debit card?
+
+- intent: hdfc49
+  examples: | 
+   - What do I do if I have an issue related to the product using Times points from portal/link?
+   - What do I do if i've an problem associated with the product using times points from portal/link?
+
+- intent: hdfc50
+  examples: | 
+   - Are there any exclusive benefits that come with the Times Points Debit Card?
+   - Are there any special advantages that come with the Times Points Debit Card?
+
+- intent: hdfc51
+  examples: | 
+   - Are there charges I should know about Imperia Platinum Chip Debit Card?
+   - Are there charges I must know approximately Imperia Platinum Chip Debit Card?
+
+- intent: hdfc52
+  examples: | 
+   - What should I do in the case of a void transaction Imperia Platinum Chip Debit Card?
+   - What must I do in the case of a void transaction Imperia Platinum Chip Debit Card?
+   - void transaction Imperia Platinum Chip Debit Card
+
+- intent: hdfc53
+  examples: | 
+   - Where can I use my EasyShop Platinum Debit Card?
+   - In which can i use my EasyShop Platinum Debit Card?
+
+- intent: hdfc54
+  examples: | 
+   - Are there any transaction limits for Imperia Platinum Chip Debit Card?
+   - Transaction limitation for Imperia Platinum Chip Debit Card?
+
+- intent: hdfc55
+  examples: | 
+   - What should I do in the case of a void transaction for NRO Debit Card?
+   - What need to I do in the case of a void transaction for NRO Debit Card?
+
+- intent: hdfc56
+  examples: | 
+   - Are there extra charges NRO Debit Card?
+   - Are there extra fees NRO Debit Card?
+
+- intent: hdfc57
+  examples: | 
+   - Where can I use my EasyShop NRO Debit Card?
+   - Where am i able to use my EasyShop NRO Debit Card?
+
+- intent: hdfc58
+  examples: | 
+   - Are there transaction limits for NRO Debit Card?
+   - Transaction limitations for NRO Debit Card?
+
+- intent: hdfc59
+  examples: | 
+   - What should I do in the case of a void transaction for Rewards Debit Card?
+   - What need to be done in the case of a void transaction for Rewards Debit Card?
+
+- intent: hdfc60
+  examples: | 
+   - What are the transaction limits for Rewards Debit Card?
+   - Transaction limitations for Rewards Debit Card?
+
+- intent: hdfc61
+  examples: | 
+   - Are there charges I should know about HDFC Bank Rewards Debit Card?
+   - Are there costs I should understand about HDFC Bank Rewards Debit Card?
+
+- intent: hdfc62
+  examples: | 
+   - Can a chip card be used for online transactions?
+   - chip card be used for online transactions?
+
+- intent: hdfc63
+  examples: | 
+   - What is Smartbuy?
+   - What's Smartbuy?
+
+- intent: hdfc64
+  examples: | 
+   - What should I do in the case of a void transaction for Womans Advantage Debit Card?
+   - What have to I do in the case of a void transaction for Womans gain Debit Card?
+
+- intent: hdfc65
+  examples: | 
+   - Where can I use my EasyShop Woman’s Advantage Debit Card?
+   - In which am i able to use my EasyShop women’s advantage Debit Card?
+
+- intent: hdfc66
+  examples: | 
+   - Are there extra charges for Womans Advantage Debit Card?
+   - Are there extra prices for Womans Advantage Debit Card?
+
+- intent: hdfc67
+  examples: | 
+   - What if Womans Advantage Debit Card is lost or stolen?
+   - What if Womans advantage Debit Card is stolen?
+
+- intent: hdfc68
+  examples: | 
+   - Are there transaction limits for Womans Advantage Debit Card?
+   - Are there transaction limits for Womans Advatange Debit Card?
+
+- intent: hdfc69
+  examples: | 
+   - How does this card work?
+
+- intent: hdfc70
+  examples: | 
+   - What should I do in the case of a void transaction?
+   - What need to I do in the case of a void transaction?
+
+- intent: hdfc71
+  examples: | 
+   - What should I do in the case of a void transaction for International Debit Card?
+   - What have to I do in the case of a void transaction for international Debit Card?
+
+- intent: hdfc72
+  examples: | 
+   - Are there charges I should know about International Debit Card?
+   - Are there fees I ought to understand approximately global Debit Card?
+
+- intent: hdfc73
+  examples: | 
+   - Where can I use my EasyShop International Debit Card?
+   - Wherein can i use my EasyShop international Debit Card?
+
+- intent: hdfc74
+  examples: | 
+   - Are there transaction limits for Debit Card?
+   - Are there transaction limits for Debit Card?
+
+- intent: hdfc75
+  examples: | 
+   - What should I do in the case of a void transaction for Titanium Royale Debit Card?
+   - What must I do in the case of a void transaction for Titanium Royale Debit Card?
+
+- intent: hdfc76
+  examples: | 
+   - Where can I use my EasyShop Titanium Royale Debit Card?
+   - Wherein can i use my EasyShop Titanium Royale Debit Card?
+
+- intent: hdfc77
+  examples: | 
+   - Are there charges I should know about Titanium Royale Debit Card?
+   - Are there charges I ought to recognise approximately Titanium Royale Debit Card?
+
+- intent: hdfc78
+  examples: | 
+   - Are there transaction limits for Titanium Royale Debit Card?
+   - Are there transaction limits for Titanium Royale Debit Card?
+
+- intent: hdfc79
+  examples: | 
+   - Are there extra charges for International Business Debit Card?
+   - Are there extra costs for International Business Debit Card?
+
+- intent: hdfc80
+  examples: | 
+   - What should I do in the case of a void transaction for International Business Debit Card?
+   - What have to I do in the case of a void transaction for International business Debit Card?
+
+- intent: hdfc81
+  examples: | 
+   - Where can I use my EasyShop Business Debit Card?
+   - Where am i able to use my EasyShop business Debit Card?
+
+- intent: hdfc82
+  examples: | 
+   - Are there transaction limits for Business Debit Card?
+   - Are there transaction limits for Business Debit Card?
+
+- intent: hdfc83
+  examples: | 
+   - Can the JetPrivilege HDFC Bank World Debit Card be taken by public / private / partnership firm?
+   - Can the JetPrivilege HDFC Bank world Debit Card be taken through public / private / partnership company?
+
+- intent: hdfc84
+  examples: | 
+   - How will I earn the JPMiles on my JetPrivilege HDFC Bank World Card?
+   - How will I earn the JPMiles on my JetPrivilege HDFC Bank world Card?
+
+- intent: hdfc85
+  examples: | 
+   - When will I get my Enrollment Benefits on the JetPrivilege – HDFC Bank World Debit Card?
+   - When will i be getting my Enrollment Benefits on the JetPrivilege – HDFC Bank international Debit Card?
+
+- intent: hdfc86
+  examples: | 
+   - I already have a HDFC Bank card but want to apply for a JetPrivilege – HDFC Bank World card?
+   - I have already got a HDFC Bank card however want to apply for a JetPrivilege – HDFC Bank global card?
+
+- intent: hdfc87
+  examples: | 
+   - Can a chip card be used for online transactions?
+   - Can a chip card be used for on-line transactions?
+
+- intent: hdfc88
+  examples: | 
+   - Will the Rs.750 discount voucher be applicable only on booking done on jetairways.com?
+   - Will the Rs.750 discount voucher be relevant on booking done on jetairways.Com?
+
+- intent: hdfc89
+  examples: | 
+   - Where can I use my EasyShop Titanium Debit Card?
+   - Where am i able to use my EasyShop Titanium Debit Card?
+
+- intent: hdfc90
+  examples: | 
+   - Are there any charges to be aware of for Titanium Debit Card?
+   - Are there any expenses to be privy to for Titanium Debit Card?
+
+- intent: hdfc91
+  examples: | 
+   - What are the transaction limits for Titanium Debit Card?
+   - What are the transaction limits for Titanium Debit Card?
+
+- intent: hdfc92
+  examples: | 
+   - What should I do in the case of a void transaction for Titanium Debit Card?
+   - What must I do in the case of a void transaction for Titanium Debit Card?
+
+- intent: hdfc93
+  examples: | 
+   - What should I do in the case of a void transaction for Platinum Debit Card?
+   - What have to I do in the case of a void transaction for Platinum Debit Card?
+
+- intent: hdfc94
+  examples: | 
+   - Where can I use my EasyShop Platinum Debit Card?
+   - In which can i use my EasyShop Platinum Debit Card?
+
+- intent: hdfc95
+  examples: | 
+   - Are there transaction limits for Platinum Debit Card?
+   - Are there transaction limits for Platinum Debit Card?
+
+- intent: hdfc96
+  examples: | 
+   - Are there charges I should know about Platinum Debit Card?
+   - Are there fees for Platinum Debit Card?
+
+- intent: hdfc97
+  examples: | 
+   - What should I do in the case of a void transaction for Gold Debit Card?
+   - What I have to do in the case of a void transaction for Gold Debit Card?
+
+- intent: hdfc98
+  examples: | 
+   - Where can I use my EasyShop Gold Debit Card?
+   - Where to use my EasyShop Gold Debit Card?
+
+- intent: hdfc99
+  examples: | 
+   - Are there extra charges for Gold Debit Card?
+   - Are there more prices for Gold Debit Card?
+
+- intent: hdfc100
+  examples: | 
+   - How do I claim Personal Accident Death Cover for Gold Debit Card?
+   - How can I make a claim for the Gold Debit Card's Personal Accident Death Coverage?
+
+- intent: hdfc101
+  examples: | 
+   - Are there transaction limits for Gold Debit Card?
+   - Are there transaction limits for Gold Debit Card?
+
+- intent: hdfc102
+  examples: | 
+   - Why is E-commerce and Contactless service feature disabled on my Prepaid Card?
+   - Why are my Prepaid Card's E-commerce and Contactless service features disabled?
+   - Why are my Prepaid Card's E-commerce and Contactless services disabled?
+
+- intent: hdfc103
+  examples: | 
+   - Will I be able to Transfer money to Food plus card from my account or from any other account?
+   - Will I be capable of transfer money to meals plus card from my account or from every other account?
+
+- intent: hdfc104
+  examples: | 
+   - What happens if the PIN is forgotten?
+   - What takes place if the PIN is forgotten?
+
+- intent: hdfc105
+  examples: | 
+   - What is HDFC Bank's FoodPlus card?
+   - What is HDFC Banks FoodPlus card?
+
+- intent: hdfc106
+  examples: | 
+   - What do I need to know about the HDFC Bank FoodPlus Card?
+   - What do I need to know approximately the HDFC Bank FoodPlus Card?
+
+- intent: hdfc107
+  examples: | 
+   - Can I use the card to withdraw cash?
+   - Can i use the card to withdraw coins?
+
+- intent: hdfc108
+  examples: | 
+   - How can I load/reload my FoodPlus card?
+   - How am i able to load my FoodPlus card?
+   - How can I reload my FoodPlus card?
+
+- intent: hdfc109
+  examples: | 
+   - Is there a load amount limit?
+   - what is the load amount limit?
+
+- intent: hdfc110
+  examples: | 
+   - What is the HDFC Bank Apollo Medical Benefits Card?
+   - What is the HDFC Bank Apollo medical Benefits Card?
+
+- intent: hdfc111
+  examples: | 
+   - Where can I contact for offers/service related issues?
+
+- intent: hdfc112
+  examples: | 
+   - Where can I contact for any card or transaction related issue?
+   - Where can i contact for any card or transaction related problem?
+
+- intent: hdfc113
+  examples: | 
+   - How soon can I get the HDFC Bank Apollo Medical Benefits Card?
+   - How soon can i get the HDFC bank Apollo scientific benefits Card?
+
+- intent: hdfc114
+  examples: | 
+   - Is there a usage limit?
+   - Is there a usage restriction?
+
+- intent: hdfc115
+  examples: | 
+   - Is there a load amount limit?
+   - Is there a load amount restrict?
+
+- intent: hdfc116
+  examples: | 
+   - How do I top up the value of the card?
+   - How do I top up the fee of the card?
+
+- intent: hdfc117
+  examples: | 
+   - In case the card is lost or stolen or misused where I can hotlist my card?
+   - In case the card is stolen where I can hotlist my card?
+
+- intent: hdfc118
+  examples: | 
+   - Can I use my Medical benefit card outside India?
+
+- intent: hdfc119
+  examples: | 
+   - Where I can use the card?
+   - Where i can use the card?
+
+- intent: hdfc120
+  examples: | 
+   - Where I can view my card balance and card history?
+   - view card balance
+   - view card history
+
+- intent: hdfc121
+  examples: | 
+   - How is the value topped up?
+
+- intent: hdfc122
+  examples: | 
+   - How do I purchase HDFC Bank GiftPlus card?
+   - How do I purchase HDFC Bank GiftPlus card?
+
+- intent: hdfc123
+  examples: | 
+   - Can I load GiftPlus card by making payment in Cash?
+   - Am i able to load GiftPlus card via making fee in cash?
+
+- intent: hdfc124
+  examples: | 
+   - Can the value of the card be topped up?
+
+- intent: hdfc125
+  examples: | 
+   - How soon can I get a GitfPlus card?
+   - How quickly will i be getting a GitfPlus card?
+
+- intent: hdfc126
+  examples: | 
+   - Can Gift plus card used outside India?
+   - Can gift plus card used out of India?
+
+- intent: hdfc127
+  examples: | 
+   - Is there a fee levied for the use of the card?
+   - Is there a fee levied for the usage of the card?
+
+- intent: hdfc128
+  examples: | 
+   - How soon can I use the card after I have purchased it?
+   - How quickly can i use the card after i've bought it?
+
+- intent: hdfc129
+  examples: | 
+   - What documents should I submit when I purchase an HDFC Bank Giftplus card?
+   - What files need to I put up when I buy an HDFC Bank Giftplus card?
+
+- intent: hdfc130
+  examples: | 
+   - Is there a load amount limit?
+   - load amount limit
+
+- intent: hdfc131
+  examples: | 
+   - What are the charges on the card?
+   - What are the prices on the card?
+
+- intent: hdfc132
+  examples: | 
+   - What if I forget my ATM PIN?
+   - I forget my ATM PIN
+
+- intent: hdfc133
+  examples: | 
+   - Who should I contact if my card is lost or stolen?
+   - Who have to I contact if my card is misplaced or stolen?
+   - Who have to I contact if my card is stolen?
+
+- intent: hdfc134
+  examples: | 
+   - Can the ATM PIN be changed?
+   - Can the ATM PIN be modified?
+   - Can the ATM PIN be updated?
+
+- intent: hdfc135
+  examples: | 
+   - Do I need to have an HDFC Bank account to purchase an HDFC Bank Giftplus card?
+   - Do I need to have an HDFC Bank account to buy an HDFC bank Giftplus card?
+
+- intent: hdfc136
+  examples: | 
+   - Are there any transactions for which I cannot use the Card?
+   - Are there any transactions for which I can't use the card?
+
+- intent: hdfc137
+  examples: | 
+   - What is the HDFC Bank Giftplus card?
+   - What's the HDFC Bank Giftplus card?
+
+- intent: hdfc138
+  examples: | 
+   - Why is E-commerce and Contactless service feature disabled on my Prepaid Card?
+
+
+- intent: hdfc139
+  examples: | 
+   - How soon can I get a MoneyPlus card?
+   - How quickly can i get a MoneyPlus card?
+
+- intent: hdfc140
+  examples: | 
+   - Is there a load amount limit?
+   - Is there a load amount limit?
+
+- intent: hdfc141
+  examples: | 
+   - What is the HDFC Bank MoneyPlus Card?
+   - What's the HDFC bank MoneyPlus Card?
+
+- intent: hdfc142
+  examples: | 
+   - How do I top up the value a card?
+   - top up the value a card?
+
+- intent: hdfc143
+  examples: | 
+   - What is the time taken to realize outstation cheques?
+   - What is the time taken to understand outstation cheques?
+
+- intent: hdfc144
+  examples: | 
+   - Can I get a Debit Card linked to my Institutional Savings Account?
+   - Can i get a Debit Card connected to my Institutional savings Account?
+
+- intent: hdfc145
+  examples: | 
+   - What is the general documentation requirement to open an Institutional Savings Account?
+   - What's the overall documentation requirement to open an Institutional savings Account?
+
+- intent: hdfc146
+  examples: | 
+   - Can unregistered institutions open an Institutional Savings Account?
+   - Can unregistered institutions open an Institutional savings Account?
+
+- intent: hdfc147
+  examples: | 
+   - Can transactions be done at any HDFC Bank branches?
+   - Can transactions be completed at any HDFC Bank branches?
+
+- intent: hdfc148
+  examples: | 
+   - My institution will start receiving foreign contribution. Can I receive the same in the Institutional Savings Account ?
+   - My company will begin receiving foreign contribution. Am i able to get hold of the same within the Institutional savings Account ?
+
+- intent: hdfc149
+  examples: | 
+   - Can funds be credited to an FCRA account simply after the account is opened?
+
+- intent: hdfc150
+  examples: | 
+   - Is there an AMB (Average Monthly Balance) declaration required to be submitted along with the documents for an Institutional Savings Account?
+   - Is there an AMB (average monthly balance) statements required to be submitted along with the documents for an Institutional savings Account?
+
+- intent: hdfc151
+  examples: | 
+   - Can NetBanking facility (rights) be enjoyed by authorized signatories in the Institutional Savings Account?
+   - Can NetBanking facility (rights) be loved by way of legal signatories in the Institutional savings Account?
+
+- intent: hdfc152
+  examples: | 
+   - What is the AMB (Average Monthly Balance) requirement of the Institutional Savings Account?
+   - What's the AMB (average monthly stability) requirement of the Institutional savings Account?
+
+- intent: hdfc153
+  examples: | 
+   - Do I need to close my account when my kid attains majority?
+   - Do I want to close my account when my child attains majority?
+
+- intent: hdfc154
+  examples: | 
+   - How long the Standing Instruction given will be valid?
+   - How lengthy the standing instruction given might be valid?
+
+- intent: hdfc155
+  examples: | 
+   - Is the primary Customer ID of the Kids Advantage account will be same as my Customer ID?
+   - Is the primary Customer ID of the Kids benefit account could be identical as my consumer identity?
+
+- intent: hdfc156
+  examples: | 
+   - What are the documents required for opening a Current Account of a sole proprietorship firm?
+
+- intent: hdfc157
+  examples: | 
+   - Can I transfer my Current Account from one branch to another?
+   - Can i switch my Current Account from one branch to some other?
+
+- intent: hdfc158
+  examples: | 
+   - My present status is NRI. What extra documents are required for opening a Sole Proprietorship Current Account?
+   - My present fame is NRI. What greater files are required for establishing a Sole Proprietorship present day Account?
+
+- intent: hdfc159
+  examples: | 
+   - What are the documents required for opening a Current Account of Limited Liability Partnership?
+   - What are the files required for opening a current Account of limited legal responsibility Partnership?
+
+- intent: hdfc160
+  examples: | 
+   - What documents are required to change the address of an entity?
+   - What files are required to alternate the deal with of an entity?
+
+- intent: hdfc161
+  examples: | 
+   - What are the documents required for opening Current Account of a company?
+   - What are the files required for commencing modern Account of a organization?
+
+- intent: hdfc162
+  examples: | 
+   - Who can be a partner in a partnership firm?
+   - Who may be a associate in a partnership firm?
+
+- intent: hdfc163
+  examples: | 
+   - What is the time taken to realize outstation cheques?
+   - What is the time taken to realise outstation cheques?
+
+- intent: hdfc164
+  examples: | 
+   - Can an individual open a Current Account?
+   - Can an character open a modern-day Account?
+
+- intent: hdfc165
+  examples: | 
+   - Can EEFC Account be opened by Special Economic Zone (SEZ) Units?
+   - Can EEFC Account be opened through special monetary area (SEZ) units?
+
+- intent: hdfc166
+  examples: | 
+   - What are the permissible Debits from an RFC Domestic Account?
+   - What are the permissible Debits from an RFC domestic Account?
+
+- intent: hdfc167
+  examples: | 
+   - Can I access my account by telephone to conduct routine daily transactions?
+   - Can i get right of entry to my account by telephone to conduct recurring every day transactions?
+
+- intent: hdfc168
+  examples: | 
+   - Who can open an RFC Domestic Account?
+   - Who can open an RFC domestic Account?
+
+- intent: hdfc169
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the documents required for opening a contemporary Account of a partnership company?
+
+- intent: hdfc170
+  examples: | 
+   - What are the permissible credits from an RFC Domestic Account?
+   - What are the permissible credit from an RFC domestic Account?
+
+- intent: hdfc171
+  examples: | 
+   - In what currencies can I open an RFC Domestic account?
+   - In what currencies am i able to open an RFC domestic account?
+
+- intent: hdfc172
+  examples: | 
+   - Whether the EEFC balances can be covered against exchange risk?
+   - Whether the EEFC balances may be covered in opposition to change threat?
+
+- intent: hdfc173
+  examples: | 
+   - Is there any restriction on withdrawal in rupees of funds held in an EEFC account?
+   - Is there any restrict on withdrawal in rupees of funds held in an EEFC account?
+
+- intent: hdfc174
+  examples: | 
+   - How much of foreign exchange earnings can be credited into an EEFC account?
+   - How a great deal of forex earnings can be credited into an EEFC account?
+
+- intent: hdfc175
+  examples: | 
+   - What are the different types of EEFC accounts?
+   - What are the distinctive styles of EEFC money owed?
+
+- intent: hdfc176
+  examples: | 
+   - What are the permissible credits into EEFC account?
+   - What are the permissible credits into EEFC account?
+
+- intent: hdfc177
+  examples: | 
+   - What are the permissible debits into this account?
+   - What are the permissible debits into this account?
+
+- intent: hdfc178
+  examples: | 
+   - What are benefits of Smartup Solutions?
+   - What are advantages of Smartup solutions?
+
+- intent: hdfc179
+  examples: | 
+   - What is the offer for Salary Account under Smartup programme?
+   - What is the offer for profits Account beneath Smartup programme?
+
+- intent: hdfc180
+  examples: | 
+   - If I have a query, do I need to visit the branch?
+   - If i have a query, do I need to visit the branch?
+
+- intent: hdfc181
+  examples: | 
+   - What are the key features of CMS and eCMS of HDFC bank?
+   - What are the important thing features of CMS and eCMS of HDFC bank?
+
+- intent: hdfc182
+  examples: | 
+   - What are Collection Solutions available?
+   - What are collection solutions available?
+
+- intent: hdfc183
+  examples: | 
+   -  What are the key features of current account?
+   -  What are the key features of current account?
+
+- intent: hdfc184
+  examples: | 
+   -  What are the key features of Payment gateway of HDFC bank?
+   -  What are the key capabilities of charge gateway of HDFC bank?
+
+- intent: hdfc185
+  examples: | 
+   - What are benefits of Payzapp for business?
+   - What are benefits of Payzapp for business?
+
+- intent: hdfc186
+  examples: | 
+   - Who all can open SmartUp Current Account?
+   - Who all can open SmartUp present day Account?
+
+- intent: hdfc187
+  examples: | 
+   - What is Smartup Solutions?
+   - What is Smartup answers?
+
+- intent: hdfc188
+  examples: | 
+   - What are Payment Solutions available?
+   - What are payment answers available?
+
+- intent: hdfc189
+  examples: | 
+   - I have an existing bank account with other Bank. Can I still open SmartUp Current Account?
+   - I've an existing bank account with other Bank. Am i able to still open SmartUp present day Account?
+
+- intent: hdfc190
+  examples: | 
+   - I am not a technology Start-up. Can I still open SmartUp Current Account?
+   - I am now not a generation begin-up. Am i able to nonetheless open SmartUp cutting-edge Account?
+
+- intent: hdfc191
+  examples: | 
+   - Do I get access to all the services offered under Smartup programme once I start banking with HDFC BANK?
+   - Do i get get right of entry to to all the offerings provided underneath Smartup programme as soon as I start banking with HDFC bank?
+
+- intent: hdfc192
+  examples: | 
+   - Can I access my Merchant Advantage Plus Current Account from any HDFC Bank branch?
+   - Am i able to get admission to my merchant gain Plus current Account from any HDFC bank department?
+
+- intent: hdfc193
+  examples: | 
+   - With Merchant Plus Current Account can I make payments to my suppliers at HDFC Bank Branches through Single Cheque Book?
+   - With merchant Plus modern-day Account am i able to make payments to my suppliers at HDFC bank Branches through single Cheque ebook?
+
+- intent: hdfc194
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the documents required for starting a contemporary Account of a partnership company?
+
+- intent: hdfc195
+  examples: | 
+   - Can I access my account by telephone to conduct routine daily transactions?
+   - Can i get right of entry to my account by using telephone to behavior ordinary each day transactions?
+
+- intent: hdfc196
+  examples: | 
+   - How is a Merchant Advantage Plus Current Account different from a Regular Current Account offered by most banks?
+   - How is a service provider advantage Plus cutting-edge Account different from a normal contemporary Account presented via maximum banks?
+
+- intent: hdfc197
+  examples: | 
+   - How is a Merchant Advantage Plus Current Account different from a Regular Current Account offered by most banks?
+   - How is a service provider benefit Plus current Account exclusive from a regular contemporary Account supplied by means of most banks?
+
+- intent: hdfc198
+  examples: | 
+   - What is the minimum Average Monthly Balance I have to maintain with a Merchant Advantage Plus Current Account?
+   - What's the minimum common month-to-month balance I have to maintain with a service provider gain Plus modern-day Account?
+
+- intent: hdfc199
+  examples: | 
+   - Must I open an account in each location where I have my company office?
+   - Must I open an account in each location in which i've my business enterprise office?
+
+- intent: hdfc200
+  examples: | 
+   - What is the minimum Average Monthly Balance required if I have a Merchant Advantage Current Account?
+   - What is the minimum average month-to-month balance required if i have a merchant benefit contemporary Account?
+
+- intent: hdfc201
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the files required for opening a modern Account of a partnership firm?
+
+- intent: hdfc202
+  examples: | 
+   - Must I open an Merchant Advantage Current Account in each location where I have my company office?
+   - Should I open an service provider benefit contemporary Account in every area wherein i have my enterprise office?
+
+- intent: hdfc203
+  examples: | 
+   -  Can I access my account by telephone to conduct routine daily transactions?
+   -  Can i get entry to my account by telephone to behavior ordinary day by day transactions?
+
+- intent: hdfc204
+  examples: | 
+   - What is the initial deposit amount required to open the Flexi Account?
+   - What is the preliminary deposit amount required to open the Flexi Account?
+
+- intent: hdfc205
+  examples: | 
+   - What should I do in case I am unable to access my Company's Current Account using NetBanking?
+   - What have to I do in case i am not able to get right of entry to my employer's cutting-edge Account the use of NetBanking?
+
+- intent: hdfc206
+  examples: | 
+   - Can I access my account by telephone to conduct routine daily transactions?
+   - Can i get entry to my account with the aid of cellphone to behavior habitual each day transactions?
+
+- intent: hdfc207
+  examples: | 
+   -  How is a Flexi Current account different from a regular current account?
+   -  How is a Flexi contemporary account unique from a ordinary contemporary account?
+
+- intent: hdfc208
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the documents required for establishing a modern Account of a partnership firm?
+
+- intent: hdfc209
+  examples: | 
+   - What transactions are included as a part of the Free Anywhere Transactions limit for a month?
+   - What transactions are blanketed as part of the free anywhere Transactions restrict for a month?
+
+- intent: hdfc210
+  examples: | 
+   - How much cash can I deposit per month in my home branch, without being charged?
+   - How a whole lot cash can i deposit in keeping with month in my home department, without being charged?
+
+- intent: hdfc211
+  examples: | 
+   - Can I access my account from any HDFC Bank branch?
+   - Am i able to get entry to my account from any HDFC bank department?
+
+- intent: hdfc212
+  examples: | 
+   - What is the minimum balance that I need to maintain in a Flexi Current Account?
+   - What's the minimal balance that I want to hold in a Flexi modern-day Account?
+
+- intent: hdfc213
+  examples: | 
+   - Can I access my account by telephone to conduct routine daily transactions?
+   - Can i get right of entry to my account through telephone to conduct routine daily transactions?
+
+- intent: hdfc214
+  examples: | 
+   - How do I become eligible for an HDFC Bank Regular Current Account?
+   - How do I turn out to be eligible for an HDFC bank normal modern-day Account?
+
+- intent: hdfc215
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the files required for beginning a modern-day Account of a partnership company?
+
+- intent: hdfc216
+  examples: | 
+   - Must I open Regular Current account in each location where I have my company office?
+   - Should I open normal present day account in every place where i have my company office?
+
+- intent: hdfc217
+  examples: | 
+   - What should I do in case I am unable to access my Company's Current Account?
+   - What should I do in case i am unable to access my organization's contemporary Account?
+
+- intent: hdfc218
+  examples: | 
+   - What transactions are included as a part of the free inter-city clearing limit?
+   - What transactions are protected as a part of the loose inter-city clearing restrict?
+
+- intent: hdfc219
+  examples: | 
+   - How is HDFC Bank Premium CA different from a regular CA offered by most banks?
+   - How is HDFC bank top rate CA one of a kind from a everyday CA supplied by using most banks?
+
+- intent: hdfc220
+  examples: | 
+   - Must I open Premium Current account in each location where I have my company office?
+   - Need to I open top rate current account in every region where i've my corporation office?
+
+- intent: hdfc221
+  examples: | 
+   - Can I access my Premium Current Account from any HDFC Bank branch?
+   - Am i able to get right of entry to my premium contemporary Account from any HDFC Bank department?
+
+- intent: hdfc222
+  examples: | 
+   - With Premium Current Account can I make payments to my suppliers at HDFC Bank Branches through Single Cheque Book?
+   - With premium present day Account can i make payments to my providers at HDFC bank Branches through single Cheque e-book?
+
+- intent: hdfc223
+  examples: | 
+   - Can I access my account by telephone to conduct routine daily transactions?
+   - Can i get entry to my account by means of phone to conduct routine each day transactions?
+
+- intent: hdfc224
+  examples: | 
+   - What are included in Bulk Transactions?
+   - Things included in bulk transactions
+   - what is bulk transaction?
+
+- intent: hdfc225
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the documents required for beginning a modern-day Account of a partnership company?
+
+- intent: hdfc226
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the files required for beginning a present day Account of a partnership firm?
+
+- intent: hdfc227
+  examples: | 
+   - Can I access my account from any HDFC Bank branch?
+   - Am i able to access my account from any HDFC bank department?
+
+- intent: hdfc228
+  examples: | 
+   - Can I make payments to my suppliers at HDFC Bank branches through a single cheque book?
+   - Can i make payments to my suppliers at HDFC bank branches thru a unmarried cheque book?
+
+- intent: hdfc229
+  examples: | 
+   - Is it necessary to open Ultima Current Account in each location where my company has an office?
+   - Is it necessary to open Ultima modern-day Account in each area wherein my corporation has an office?
+
+- intent: hdfc230
+  examples: | 
+   - Can I access my account by telephone to conduct routine daily transactions?
+   - Am i able to access my account by smartphone to behavior ordinary daily transactions?
+
+- intent: hdfc231
+  examples: | 
+   - How is an Ultima Current account different from a Regular Current Account?
+   - How is an Ultima present day account distinct from a normal contemporary Account?
+
+- intent: hdfc232
+  examples: | 
+   - What is the minimum balance required for an Ultima Current account?
+   - What's the minimal stability required for an Ultima modern account?
+
+- intent: hdfc233
+  examples: | 
+   - What transactions are included as a part of the Free Anywhere Transactions limit for a month?
+   - What transactions are blanketed as part of the unfastened everywhere Transactions limit for a month?
+
+- intent: hdfc234
+  examples: | 
+   - What should I do in case I am unable to access my Company's Current Account through Net Banking?
+   - What should I do in case i'm not able to access my business enterprise's present day Account via net Banking?
+
+- intent: hdfc235
+  examples: | 
+   - What transactions are included as a part of the Free Anywhere Transactions limit for a month?
+   - What transactions are covered as part of the loose everywhere Transactions restriction for a month?
+
+- intent: hdfc236
+  examples: | 
+   -  Can I make payments to my suppliers at HDFC Bank branches through a single cheque book?
+   -  Can i make bills to my providers at HDFC bank branches through a unmarried cheque book?
+
+- intent: hdfc237
+  examples: | 
+   - What should I do in case I am unable to access my Company's Current Account through Net Banking?
+   - What must I do in case i'm unable to get right of entry to my organization's contemporary Account thru internet Banking?
+
+- intent: hdfc238
+  examples: | 
+   - Is it necessary to open Max Current Account in each location where my company has an office?
+   - Is it necessary to open Max current Account in every area where my enterprise has an office?
+
+- intent: hdfc239
+  examples: | 
+   - Can I access my account by telephone to conduct routine daily transactions?
+   - Am i able to get entry to my account by way of smartphone to behavior routine daily transactions?
+
+- intent: hdfc240
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the files required for starting a contemporary Account of a partnership firm?
+
+- intent: hdfc241
+  examples: | 
+   - What is the initial deposit amount required to open a Max Current account?
+   - What is the initial deposit quantity required to open a Max modern account?
+
+- intent: hdfc242
+  examples: | 
+   - What is the minimum balance that I need to maintain in a Max Current Account?
+   - What is the minimum stability that I want to preserve in a Max contemporary Account?
+
+- intent: hdfc243
+  examples: | 
+   - Can I access my account from any HDFC Bank branch?
+   - Am i able to get right of entry to my account from any HDFC Bank department?
+
+- intent: hdfc244
+  examples: | 
+   - How is HDFC Bank's Max Current account different from a regular Current Account?
+   - How is HDFC bank's Max modern account different from a everyday modern Account?
+
+- intent: hdfc245
+  examples: | 
+   - What are the charges for collection of outstation cheques?
+   - What are the expenses for series of outstation cheques?
+
+- intent: hdfc246
+  examples: | 
+   - What is the time taken to realize outstation cheques?
+   - What's the time taken to understand outstation cheques?
+
+- intent: hdfc247
+  examples: | 
+   - How do I know my beneficiary's details for a cheque issued in my name (Basic Savings Bank Deposit Account - Farmers)?
+   - How do I understand my beneficiary's details for a cheque issued in my name (simple savings bank Deposit Account - Farmers)?
+
+- intent: hdfc248
+  examples: | 
+   - How can I get an International Debit Card with my Basic Savings Bank Deposit Account - Farmers?
+   - How can i get an worldwide Debit Card with my basic savings Bank Deposit Account - Farmers?
+
+- intent: hdfc249
+  examples: | 
+   - What can I do with the NEFT facility?
+   - NEFT facility
+
+- intent: hdfc250
+  examples: | 
+   - Are all IVR based calls free?
+   - Are all IVR based totally calls unfastened?
+
+- intent: hdfc251
+  examples: | 
+   - How do I apply for a Basic Savings Bank Deposit Account - Farmers with HDFC Bank?
+   - How do I practice for a Basic savings bank Deposit Account - Farmers with HDFC Bank?
+
+- intent: hdfc252
+  examples: | 
+   - How do I know my beneficiary's details for a cheque issued in my name (Kisan Club Savings account)?
+   - How do I recognize my beneficiary's info for a cheque issued in my name (Kisan club savings account)?
+
+- intent: hdfc253
+  examples: | 
+   - Do I need to pay any penalty on premature closure of Fixed Deposits?
+   - Do I want to pay any penalty on premature closure of fixed Deposits?
+   - What is the penalty for fixed deposits?
+
+- intent: hdfc254
+  examples: | 
+   - Where can I get Fixed Deposit advice from?
+   - Wherein can i am getting constant Deposit advice from?
+
+- intent: hdfc255
+  examples: | 
+   - Why is the principal amount and the fixed deposit maturity amount of my Fixed Deposit the same?
+   - Why is the principal quantity and the fixed deposit adulthood quantity of my fixed Deposit the same?
+
+- intent: hdfc256
+  examples: | 
+   - Does HDFC Bank offer preferential rate of interest on Fixed Deposits for Senior Citizens?
+   - Does HDFC Bank provide preferential charge of hobby on fixed Deposits for Senior citizens?
+
+- intent: hdfc257
+  examples: | 
+   - Where can I register for HDFC Bank’s NetBanking facility?
+   - Wherein am i able to sign up for HDFC Bank’s NetBanking facility?
+
+- intent: hdfc258
+  examples: | 
+   - How can I book a Fixed Deposit through NetBanking?
+   - How am i able to ebook a hard and fast Deposit via NetBanking?
+
+- intent: hdfc259
+  examples: | 
+   - I have made a Fixed Deposit with HDFC Bank. I want to update my PAN details in the account, how should I update my new PAN details?
+   - i've made a hard and fast Deposit with HDFC Bank. I need to update my PAN details in the account, how need to I replace my new PAN details?
+
+- intent: hdfc260
+  examples: | 
+   - What is the time taken to realize outstation cheques?
+   - What's the time taken to realize outstation cheques?
+   - When will the outstation cheques realise
+
+- intent: hdfc261
+  examples: | 
+   - Whom should I approach for any other service related to HDFC Bank Fixed Deposits?
+   - Whom must I technique for some other provider related to HDFC bank fixed Deposits?
+
+- intent: hdfc262
+  examples: | 
+   - How can I avail exemption from TDS on interest earned on Fixed Deposits?
+   - How can i avail exemption from TDS on hobby earned on constant Deposits?
+
+- intent: hdfc263
+  examples: | 
+   - How can I prematurely liquidate my Fixed Deposits?
+   - How can i prematurely liquidate my constant Deposits?
+
+- intent: hdfc264
+  examples: | 
+   - How to Download TDS Certificate through Online?
+   - The way to down load TDS certificate via on-line?
+
+- intent: hdfc265
+  examples: | 
+   - How to change existing fixed deposit account tenure?
+   - A way to alternate present fixed deposit account tenure?
+
+- intent: hdfc266
+  examples: | 
+   - How is TDS deducted?
+   - TDS deduction process
+
+- intent: hdfc267
+  examples: | 
+   - Can TDS be recovered from my principle of the FD?
+   - Is it possible to reclaim TDS from my FD principle?
+
+- intent: hdfc268
+  examples: | 
+   - When does the Bank issue a TDS Certificate?
+   - When does the Bank problem a TDS certificates?
+
+- intent: hdfc269
+  examples: | 
+   - Can TDS influence the maturity of my deposit?
+   - Is it possible for TDS to alter the maturity of my deposit?
+
+- intent: hdfc270
+  examples: | 
+   - What are the implications of booking an FD without PAN?
+   - What are the implications of reserving an FD without PAN?
+
+- intent: hdfc271
+  examples: | 
+   - Will changes to my deposit portfolio affect my TDS liability?
+   - Will changes to my deposit portfolio have an effect on my TDS liability?
+
+- intent: hdfc272
+  examples: | 
+   - When is TDS deducted for Regular Fixed Deposit?
+   - When is TDS deducted for everyday fixed Deposit?
+
+- intent: hdfc273
+  examples: | 
+   - What documents are required to open a senior citizen Regular Fixed Deposit?
+   - What files are required to open a senior citizen normal fixed Deposit?
+
+- intent: hdfc274
+  examples: | 
+   - Can I open a joint account with a non-senior citizen for Regular Fixed Deposit?
+   - Am i able to open a joint account with a non-senior citizen for ordinary constant Deposit?
+
+- intent: hdfc275
+  examples: | 
+   - As a Regular Fixed Deposit holder, How do I apply for an exemption on TDS?
+   - As a normal fixed Deposit holder, How do I observe for an exemption on TDS?
+
+- intent: hdfc276
+  examples: | 
+   - How to prematurely liquidate the Fixed Deposit Online?
+   - The way to in advance liquidate the constant Deposit online?
+
+- intent: hdfc277
+  examples: | 
+   - What is the new policy with regards to PAN to book fixed deposit with our bank?
+   - What is the brand new coverage on the subject of PAN to e-book constant deposit with our Bank?
+
+- intent: hdfc278
+  examples: | 
+   - When do I become liable for TDS?
+   - Whilst do I turn out to be answerable for TDS?
+
+- intent: hdfc279
+  examples: | 
+   - Is there a nomination facility?
+   - Nomination facility
+
+- intent: hdfc280
+  examples: | 
+   - Is there a monthly or quarterly interest pay-out option?
+   - Is there a month-to-month or quarterly hobby pay-out option?
+
+- intent: hdfc281
+  examples: | 
+   - Can I change the tenure and installment due date, (auto debit date) of my Recurring Deposit?
+   - can i change the tenure and installment due date, (vehicle debit date) of my ordinary Deposit?
+
+- intent: hdfc282
+  examples: | 
+   - For what period can I open a Recurring Deposit?
+   - Is it possible to create a recurring Deposit for a specific time period?
+
+- intent: hdfc283
+  examples: | 
+   - Can I choose my instalment date?
+   - Am i able to choose my instalment date?
+
+- intent: hdfc284
+  examples: | 
+   - Can partial Payments be made on Recurring Deposits?
+   - Can partial payments be made on routine Deposits?
+
+- intent: hdfc285
+  examples: | 
+   - What is the maximum deposit amount a Recurring Deposit account can be opened with?
+   - What's the most deposit quantity a recurring Deposit account may be opened with?
+
+- intent: hdfc286
+  examples: | 
+   - What if certain RD installments are not paid?
+   - What if sure RD installments aren't paid?
+
+- intent: hdfc287
+  examples: | 
+   - How do Recurring Deposits work?
+   - How do habitual Deposits work?
+
+- intent: hdfc288
+  examples: | 
+   - Can I pay more than one instalment at a time?
+   - Am i able to pay more than one instalment at a time?
+
+- intent: hdfc289
+  examples: | 
+   - How Interest Rate is calculated for premature withdrawal of Recurring Deposit?
+   - How hobby rate is calculated for untimely withdrawal of recurring Deposit?
+
+- intent: hdfc290
+  examples: | 
+   - Is an overdraft facility allowed?
+   - Is it possible to have an overdraft?
+
+- intent: hdfc291
+  examples: | 
+   - How can I prematurely liquidate my recurring deposit?
+   - How can i prematurely liquidate my ordinary deposit?
+
+- intent: hdfc292
+  examples: | 
+   - What happens if I don’t pay an instalment?
+   - What happens if I don't make a payment on time?
+
+- intent: hdfc293
+  examples: | 
+   - Can my Recurring Deposit be opened in joint names?
+   - Can my habitual Deposit be opened in joint names?
+
+- intent: hdfc294
+  examples: | 
+   - Can the first applicant for a Recurring Deposit be a minor?
+   - Can the primary applicant for a routine Deposit be a minor?
+
+- intent: hdfc295
+  examples: | 
+   - Can I withdraw prematurely from my Recurring Deposit?
+   - Am i able to withdraw in advance from my recurring Deposit?
+
+- intent: hdfc296
+  examples: | 
+   - I'm a senior citizen – are there any extra benefits?
+   - I am a senior citizen – are there any extra advantages?
+
+- intent: hdfc297
+  examples: | 
+   - How to open a Recurring Deposit?
+   - The way to open a ordinary Deposit?
+
+- intent: hdfc298
+  examples: | 
+   - Is a nomination facility available for lockers?
+   - Is a nomination facility to be had for lockers?
+
+- intent: hdfc299
+  examples: | 
+   - What are the timings for locker operations?
+   - What are the operating hours for lockers?
+
+- intent: hdfc300
+  examples: | 
+   - How many nominees can be added to a single locker?
+   - What number of nominees may be delivered to a unmarried locker?
+
+- intent: hdfc301
+  examples: | 
+   - Can I pay for the rent of a locker through my account?
+   - Am i able to pay for the rent of a locker through my account?
+
+- intent: hdfc302
+  examples: | 
+   - What is the procedure to add / cancel / modify a nominee in my locker?
+   - What's the system to add / cancel / adjust a nominee in my locker?
+
+- intent: hdfc303
+  examples: | 
+   - If I have holdings in dematerialised form, will the bonus/ rights issued against this be in the same form?
+   - Will the bonus/rights provided towards this be in the same form if I have dematerialized holdings?
+
+- intent: hdfc304
+  examples: | 
+   - What is a clearing member account and how is it different from a beneficiary account?
+   - What is a clearing member account and the way is it different from a beneficiary account?
+
+- intent: hdfc305
+  examples: | 
+   - What is 'Standing Instruction' given in the account opening form?
+   - What's 'status training' given in the account beginning form?
+
+- intent: hdfc306
+  examples: | 
+   - Can a depository account be opened with four holder's names?
+   - Is it possible to register a depository account with four names on it?
+
+- intent: hdfc307
+  examples: | 
+   - Can funds be transferred from one FCRA account belonging to one trust to another FCRA account belonging to another trust?
+   - Can finances be transferred from one FCRA account belonging to at least one accept as true with to another FCRA account belonging to another agree with?
+
+- intent: hdfc308
+  examples: | 
+   - Do I have to affix my photograph when opening a new Demat Account, if I already have an existing demat account?
+   - Do I need to affix my photograph whilst commencing a brand new Demat Account, if I have already got an existing demat account?
+
+- intent: hdfc309
+  examples: | 
+   - Can I open more than one demat account with only one DP in identical names?
+   - Am i able to open multiple demat account with most effective one DP in same names?
+
+- intent: hdfc310
+  examples: | 
+   - How does the Insta IPIN facility work?
+   - What is the Insta IPIN facility and how does it work?
+
+- intent: hdfc311
+  examples: | 
+   - Can someone else operate my demat account on my behalf on the basis of Power of Attorney?
+   - Can someone else function my demat account on my behalf on the idea of strength of lawyer?
+
+- intent: hdfc312
+  examples: | 
+   - Can the existing corporate demat account be continued in case of a name change?
+   - Can the existing corporate demat account be persisted in case of a name alternate?
+
+- intent: hdfc313
+  examples: | 
+   - What are the documents required to submit for RGESS?
+   - What are the files required to publish for RGESS?
+
+- intent: hdfc314
+  examples: | 
+   - What is a KYC Application Form?
+   - What is the purpose of a KYC application form?
+
+- intent: hdfc315
+  examples: | 
+   - What are the requirements for opening a demat account in the name of a minor?
+   - What are the necessities for opening a demat account in the name of a minor?
+
+- intent: hdfc316
+  examples: | 
+   - What are the requirements to open a Clearing Member Demat Account with HDFC bank?
+   - What are the prerequisites for opening an HDFC Bank Clearing Member Demat Account?
+
+- intent: hdfc317
+  examples: | 
+   - We already have an Equity Linked Savings Scheme (ELSS)?
+   - We have already got an equity related savings Scheme (ELSS)?
+
+- intent: hdfc318
+  examples: | 
+   - What do I need to do if I do not want a certain set of securities to be locked in for RGESS?
+   - What do I need to do if I do no longer need a positive set of securities to be locked in for RGESS?
+
+- intent: hdfc319
+  examples: | 
+   - Where can the client open the Demat Account?
+   - Where can the consumer open the Demat Account?
+
+- intent: hdfc320
+  examples: | 
+   - How will I be intimated about my portfolio value under RGESS?
+   - How will I be informed about the cost of my portfolio under RGESS?
+
+- intent: hdfc321
+  examples: | 
+   - How do I invest through RGESS?
+   - How do I make investments through RGESS?
+
+- intent: hdfc322
+  examples: | 
+   - Can i lose my Tax benefit under RGESS Scheme?
+   - Am i able to lose my Tax benefit beneath RGESS Scheme?
+
+- intent: hdfc323
+  examples: | 
+   - What is the maximum investment limit under RGESS?
+   - What's the maximum investment restrict beneath RGESS?
+
+- intent: hdfc324
+  examples: | 
+   - What is the minimum investment limit under RGESS?
+   - What is the minimum funding restriction underneath RGESS?
+
+- intent: hdfc325
+  examples: | 
+   - Which date is considered for the closing price for RGESS scheme?
+   - Which date is considered for the last price for RGESS scheme?
+
+- intent: hdfc326
+  examples: | 
+   - What are the benefits under RGESS for new retail investor?
+   - What are the advantages under RGESS for new retail investor?
+
+- intent: hdfc327
+  examples: | 
+   - Which securities are eligible for the RGESS scheme?
+   - Which securities qualify for the RGESS programme?
+
+- intent: hdfc328
+  examples: | 
+   - Is there any lock-in period for investments done under RGESS scheme?
+   - Is there any lock-in length for investments accomplished under RGESS scheme?
+
+- intent: hdfc329
+  examples: | 
+   - Does the customer need to open a new type of Demat Account for RGESS?
+   - Does the purchaser need to open a brand new sort of Demat Account for RGESS?
+
+- intent: hdfc330
+  examples: | 
+   - Who can apply for Rajiv Gandhi Equity Savings Scheme (RGESS)?
+   - Who can observe for Rajiv Gandhi fairness savings Scheme (RGESS)?
+
+- intent: hdfc331
+  examples: | 
+   - What is RGESS?
+   - What exactly is RGESS?
+
+- intent: hdfc332
+  examples: | 
+   - How can one track the status of closure of Demat a/c?
+   - How can one song the reputation of closure of Demat a/c?
+
+- intent: hdfc333
+  examples: | 
+   - How to dematerialize securities in different name combination?
+   - How to dematerialize securities in extraordinary name combination?
+
+- intent: hdfc334
+  examples: | 
+   - How can one request for duplicate Demat account statement?
+   - How can one request for replica Demat account declaration?
+
+- intent: hdfc335
+  examples: | 
+   - How can one request for a DIB / DIS ?
+   - What is the procedure for requesting a DIB / DIS?
+
+- intent: hdfc336
+  examples: | 
+   - How do I change Signature?
+   - What is the procedure for changing my signature?
+
+- intent: hdfc337
+  examples: | 
+   - How do I add Nomination?
+   - What is the procedure for adding Nomination?
+
+- intent: hdfc338
+  examples: | 
+   - How do I change Bank Details?
+   - How do I alternate bank info?
+
+- intent: hdfc339
+  examples: | 
+   - How do I change Email ID?
+   - How do I exchange e mail identity?
+
+- intent: hdfc340
+  examples: | 
+   - What is the procedure to change the address in an Individual Demat Account?
+   - What's the manner to exchange the address in an man or woman Demat Account?
+
+- intent: hdfc341
+  examples: | 
+   - How to update the PAN details?
+   - How do I change my PAN information?
+
+- intent: hdfc342
+  examples: | 
+   - How can one apply for Loan against securities through NetBanking?
+   - How can one follow for loan in opposition to securities via NetBanking?
+
+- intent: hdfc343
+  examples: | 
+   - What are the requirements for opening a NRI demat account with HDFC bank?
+   - What are the necessities for commencing a NRI demat account with HDFC Bank?
+
+- intent: hdfc344
+  examples: | 
+   - Why should I give my bank account details at the time of opening an account?
+   - Why should I give my bank account info on the time of opening an account?
+
+- intent: hdfc345
+  examples: | 
+   - As a holder, how can I change the existing mandate/bank details in my Demat Account?
+   - As a holder, how can i change the existing mandate/bank info in my Demat Account?
+
+- intent: hdfc346
+  examples: | 
+   - What does MICR stand for?
+   - What is the meaning of MICR?
+
+- intent: hdfc347
+  examples: | 
+   - After closure of the Demat Account, in how many days will the balance in the Advance Fee Account be refunded?
+   - After closure of the Demat Account, in how many days will the balance in the enhance price Account be refunded?
+
+- intent: hdfc348
+  examples: | 
+   - Are all securities pledgeable?
+   - Is it possible to pledge all securities?
+
+- intent: hdfc349
+  examples: | 
+   - As a holder, how can I change the existing debit authorization in my Demat Account?
+   - How can I trade the current debit authorization in my Demat Account as a holder?
+
+- intent: hdfc350
+  examples: | 
+   - Are there any special offers for a senior citizen on Demat Accounts ?
+   - Are there any special gives for a senior citizen on Demat money owed ?
+
+- intent: hdfc351
+  examples: | 
+   - Before completion of the current billing cycle, by which month I should submit Demat closure to avoid FMC for next year?
+   - earlier than finishing touch of the modern billing cycle, by which month I ought to put up Demat closure to avoid FMC for subsequent year?
+
+- intent: hdfc352
+  examples: | 
+   - Can MF Units held in the demat form be redeemed through a DP?
+   - Can MF devices held in the demat form be redeemed through a DP?
+
+- intent: hdfc353
+  examples: | 
+   - Can a minor be nominated?
+   - Is it possible to nominate a minor?
+
+- intent: hdfc354
+  examples: | 
+   - Can all DP's access all investor account details?
+   - Can all DP's get admission to all investor account info?
+
+- intent: hdfc355
+  examples: | 
+   - Can an NRI be appointed as nominee?
+   - Is it possible to appoint an NRI as a nominee?
+
+- intent: hdfc356
+  examples: | 
+   - Can debt instruments and Government Securities be dematerialised in the same Demat Account?
+   - Is it possible to dematerialize debt instruments and government securities in the same Demat Account?
+
+- intent: hdfc357
+  examples: | 
+   - Can DRFs be rejected?
+   - Is it possible to reject DRFs?
+
+- intent: hdfc358
+  examples: | 
+   - Can electronic holdings be converted back to certificate form?
+   - Can digital holdings be transformed lower back to certificate form?
+
+- intent: hdfc359
+  examples: | 
+   - Can I, as a sole holder of the share certificates, add one more name as joint holders at the time of dematerialising my share certificates?
+   - can i, as a sole holder of the percentage certificates, add one extra name as joint holders at the time of dematerialising my proportion certificate?
+
+- intent: hdfc360
+  examples: | 
+   - Can I buy and sell shares through Depository services of HDFC Bank?
+   - Am i able to purchase and promote stocks via Depository services of HDFC Bank?
+
+- intent: hdfc361
+  examples: | 
+   - Can I deliver dematerialised securities against obligation in the physical segment in all stock exchanges?
+   - Am i able to deliver dematerialised securities towards duty within the bodily section in all inventory exchanges?
+
+- intent: hdfc362
+  examples: | 
+   - Can I dematerialise any share certificate / bond / MF SOA?
+   - Is it possible to dematerialize any share certificates, bonds, or MF SOA?
+
+- intent: hdfc363
+  examples: | 
+   - Can I dematerialise shares that are pledged with a bank?
+   - Am i able to dematerialise stocks which can be pledged with a bank?
+
+- intent: hdfc364
+  examples: | 
+   - Can I dematerialise shares that are pledged with a bank, which is a DP as well?
+   - can i dematerialise stocks that are pledged with a Bank, that's a DP as properly?
+
+- intent: hdfc365
+  examples: | 
+   - Can I freeze my account?
+   - Is it possible to put a hold on my account?
+
+- intent: hdfc366
+  examples: | 
+   - Can I open an account in a single name for shares held in a joint combination of names?
+   - Am i able to open an account in a single call for shares held in a joint mixture of names?
+
+- intent: hdfc367
+  examples: | 
+   - Can I pledge dematerialised securities?
+   - Am i able to pledge dematerialised securities?
+
+- intent: hdfc368
+  examples: | 
+   - Can lock in shares be dematerialised?
+   - Is it possible to dematerialize lock-in stocks?
+
+- intent: hdfc369
+  examples: | 
+   - Can locked-in securities be pledged?
+   - Is it possible to pledge locked-in securities?
+
+- intent: hdfc370
+  examples: | 
+   - Can odd lot shares be dematerialised?
+   - Can atypical lot shares be dematerialised?
+
+- intent: hdfc371
+  examples: | 
+   - Can partly paid up shares be dematerialised?
+   - Can in part paid up shares be dematerialised?
+
+- intent: hdfc372
+  examples: | 
+   - Can the nominee be changed?
+   - Is it possible to change the nominee?
+
+- intent: hdfc373
+  examples: | 
+   - Can there be a mix up of securities of different companies held in one Demat Account?
+   - Can there be a mix up of securities of various agencies held in one Demat Account?
+
+- intent: hdfc374
+  examples: | 
+   - Do I have to keep any minimum balance of securities in my account?
+   - Do I must maintain any minimal stability of securities in my account?
+
+- intent: hdfc375
+  examples: | 
+   - Do my dematerialised securities have distinctive/ certificate numbers?
+   - Do my dematerialised securities have extraordinary/ certificate numbers?
+
+- intent: hdfc376
+  examples: | 
+   - Does the customer have to necessarily operate his demat account from the same branch where the account is opened?
+   - Does the consumer should necessarily operate his demat account from the equal department in which the account is opened?
+
+- intent: hdfc377
+  examples: | 
+   - Does the Depository Participant have the right to suspend a Demat Account?
+   - Does the Depository player have the right to suspend a Demat Account?
+
+- intent: hdfc378
+  examples: | 
+   - How can a Demat Account holder/s apply for a new delivery instruction booklet?
+   - How can a Demat Account holder/s practice for a brand new transport education publication?
+
+- intent: hdfc379
+  examples: | 
+   - How can I, as an NRI Demat Account holder with no representative in India get the address changed in my Demat Account without visiting branch personally?
+   - How can i, as an NRI Demat Account holder and not using a consultant in India get the cope with modified in my Demat Account with out journeying department in my opinion?
+
+- intent: hdfc380
+  examples: | 
+   - How can I close the pledge after repayment of my loan?
+   - How can i close the pledge after repayment of my mortgage?
+
+- intent: hdfc381
+  examples: | 
+   - How do brokers deliver securities bought by clients?
+   - How do agents supply securities bought by means of clients?
+
+- intent: hdfc382
+  examples: | 
+   - How do I close a Demat Account held with Pending Demat, when the company is a defaulter?
+   - How do I close a Demat Account held with Pending Demat, when the organization is a defaulter?
+
+- intent: hdfc383
+  examples: | 
+   - How do I demat shares with Pre-Marital / Maiden names?
+   - How can I demat stocks using my maiden name or pre-marital name?
+
+- intent: hdfc384
+  examples: | 
+   - How do I transfer Bonds with locked in status from my Demat account?
+   - How do I switch Bonds with locked in status from my Demat account?
+
+- intent: hdfc385
+  examples: | 
+   - How do I transfer securities / bonds with "Inactive ISIN" or under locked in status?
+   - How do I switch securities / bonds with "Inactive ISIN" or under locked in status?
+
+- intent: hdfc386
+  examples: | 
+   - How do you calculate pro-rata FMC on closure?
+   - How do you figure out the pro-rata FMC at the end of the year?
+
+- intent: hdfc387
+  examples: | 
+   - How does the broker deliver securities to the Clearing Corporation (CC) in case of a delivery obligation?
+   - How does the broking deliver securities to the Clearing organisation (CC) in case of a transport obligation?
+
+- intent: hdfc388
+  examples: | 
+   - How does the broker receive securities from the Clearing Corporation?
+   - How does the Clearing organisation provide securities to the broker?
+
+- intent: hdfc389
+  examples: | 
+   - How long will the dematerialisation process take?
+   - How lengthy will the dematerialisation process take?
+
+- intent: hdfc390
+  examples: | 
+   - How many Depositories are there in India?
+   - What number of Depositories are there in India?
+
+- intent: hdfc391
+  examples: | 
+   - How many nominees can be appointed?
+   - What number of nominees may be appointed?
+
+- intent: hdfc392
+  examples: | 
+   - How to dematerialize Mutual Funds?
+   - A way to dematerialize Mutual finances?
+
+- intent: hdfc393
+  examples: | 
+   - How will I come to know that my application for public issue in electronic form has been accepted?
+   - How will I come to recognise that my software for public issue in digital shape has been regular?
+
+- intent: hdfc394
+  examples: | 
+   - How will I confirm that bonus/rights entitlement is credited into my account?
+   - How can I make sure my bonus/rights entitlement has been deposited to my account?
+
+- intent: hdfc395
+  examples: | 
+   - How will I receive dividend/interest, if any, on the securities I am holding?
+   - How will I acquire dividend/hobby, if any, at the securities i'm conserving?
+
+- intent: hdfc396
+  examples: | 
+   - I am an investor and I rarely transact in my depository account. Will I still receive statements?
+   - I'm an investor and i rarely transact in my depository account. Will I nonetheless get hold of statements?
+
+- intent: hdfc397
+  examples: | 
+   - I have a Resident Demat Account and currently I have been posted overseas for work. Do I need to open a new NRI Demat Account or I can continue with my existing Resident Account?
+   - I've a Resident Demat Account and currently i've been posted remote places for work. Do I need to open a new NRI Demat Account or i'm able to maintain with my current Resident Account?
+
+- intent: hdfc398
+  examples: | 
+   - What if I have lost/misplaced my slip/instruction booklet?
+   - What if i have lost/out of place my slip/guidance booklet?
+
+- intent: hdfc399
+  examples: | 
+   - What is the procedure to be followed if I want to change my existing signature recorded with the DP?
+   - What is the method to be followed if I need to trade my current signature recorded with the DP?
+
+- intent: hdfc400
+  examples: | 
+   - Why should I dematerialise my securities?
+   - Why must I dematerialise my securities?
+
+- intent: hdfc401
+  examples: | 
+   - What is the procedure to change my address in a Corporate Demat Account?
+   - What's the method to change my cope with in a company Demat Account?
+
+- intent: hdfc402
+  examples: | 
+   - What documentation is required for Demat request submission?
+   - What paperwork is needed to submit a Demat request?
+
+- intent: hdfc403
+  examples: | 
+   - Should a separate Dematerialisation / Conversion Request Form be filled for each ISIN?
+   - Must a separate Dematerialisation / Conversion Request shape be crammed for every ISIN?
+
+- intent: hdfc404
+  examples: | 
+   - Should a separate DRF / CRF be filled for locked-in and free securities?
+   - Should a separate DRF / CRF be crammed for locked-in and loose securities?
+
+- intent: hdfc405
+  examples: | 
+   - I want to register for the SPEED-e facility to trade in shares online?
+   - I want to check in for the velocity-e facility to trade in shares on-line?
+
+- intent: hdfc406
+  examples: | 
+   - If I am allotted securities in dematerialised form, but the details regarding my beneficiary account are incomplete/ wrong, will I get physical delivery of allotted securities?
+   - If i'm allotted securities in dematerialised shape, but the details regarding my beneficiary account are incomplete/ wrong, will i am getting physical shipping of allocated securities?
+
+- intent: hdfc407
+  examples: | 
+   - If I am allotted securities in dematerialised form, when will I get the electronic credit in my account?
+   - If i'm allotted securities in dematerialised shape, while will i am getting the digital credit score in my account?
+
+- intent: hdfc408
+  examples: | 
+   - If I have sold through the clearing member, how do I deliver securities?
+   - If i've offered via the clearing member, how do I supply securities?
+
+- intent: hdfc409
+  examples: | 
+   - If the Standing Instruction is “N” in an NRI Demat Account, then how can I get credit of shares allotted through Auto Corporate action without opting for a PIS Account?
+   - How can I gain credit for shares granted by car company action without choosing a PIS Account if the standard practise is "N" in an NRI Demat Account?
+
+- intent: hdfc410
+  examples: | 
+   - In how many days will the FMC be credited on pro-rata basis in my Bank account after closure?
+   - In what number of days will the FMC be credited on pro-rata basis in my bank account after closure?
+
+- intent: hdfc411
+  examples: | 
+   - Is the 'DP@Net' facility accessible only by the first holder of the Demat Account?
+   - Is the 'DP@internet' facility available best by using the first holder of the Demat Account?
+
+- intent: hdfc412
+  examples: | 
+   - Is the 'DP@Net' facility free?
+   - Is the 'DP@net' facility unfastened?
+
+- intent: hdfc413
+  examples: | 
+   - Is there a separate login/password for the 'DP@Net' facility?
+   - Is the 'DP@net' feature accessible through a different login/password?
+
+- intent: hdfc414
+  examples: | 
+   - Is 'DP@Net' facility accessible to all the customers?
+   - Is 'DP@internet' facility available to all the clients?
+
+- intent: hdfc415
+  examples: | 
+   - Is the facility of delivering dematerialised securities in the physical segments of the stock exchanges available only for those securities that are to be compulsorily sold in the demat segment of stock exchanges by institutions?
+   - Is the ability of handing over dematerialised securities within the physical segments of the stock exchanges to be had best for those securities which can be to be compulsorily bought in the demat section of stock exchanges via institutions?
+
+- intent: hdfc416
+  examples: | 
+   - Is transmission cum transposition possible under the same demat request?
+   - Is it feasible to do a transmission cum transposition inside the same demat request?
+
+- intent: hdfc417
+  examples: | 
+   - To whom is KYC applicable?
+   - To whom is KYC relevant?
+
+- intent: hdfc418
+  examples: | 
+   - What are Market transactions?
+   - What are marketplace transactions?
+
+- intent: hdfc419
+  examples: | 
+   - What are the KYC requirements for a Demat Account?
+   - What are the KYC necessities for a Demat Account?
+
+- intent: hdfc420
+  examples: | 
+   - What happens if the execution day given in the instruction is an NSDL business holiday?
+   - What occurs if the execution day given in the instructions is an NSDL business excursion?
+
+- intent: hdfc421
+  examples: | 
+   - What happens when brokers find that their clients have not delivered the shares they have sold before the deadline of respective settlement?
+   - What occurs when brokers find that their customers have now not introduced the stocks they have sold before the deadline of respective agreement?
+
+- intent: hdfc422
+  examples: | 
+   - What happens when there is a corporate action announced?
+   - What happens while there is a corporate movement introduced?
+
+- intent: hdfc423
+  examples: | 
+   - What is Dematerialisation (demat)?
+   - What is demat?
+
+- intent: hdfc424
+  examples: | 
+   - What is Easi and Easiest facility?
+   - Easi facility
+
+- intent: hdfc425
+  examples: | 
+   - What is meant by Pledge of securities?
+   - What is meant by using Pledge of securities?
+
+- intent: hdfc426
+  examples: | 
+   - What is Rematerialisation (remat)?
+   - What's remat?
+
+- intent: hdfc427
+  examples: | 
+   - What is the advantage of getting allotment in demat form?
+   - What is the advantage of having allotment in demat shape?
+
+- intent: hdfc428
+  examples: | 
+   - What is the basic difference between registering for Ebrok and DP@Net?
+   - What's the simple distinction among registering for Ebrok and DP@net?
+
+- intent: hdfc429
+  examples: | 
+   - What is the difference between an NRE Demat Account and an NRO Demat Account?
+   - What is the distinction between an NRE and an NRO Demat Account?
+
+- intent: hdfc430
+  examples: | 
+   - What is the 'execution date' given in the delivery instruction form?
+   - What is the 'execution date' given within the shipping practise shape?
+
+- intent: hdfc431
+  examples: | 
+   - What is the mode of refund of the Advance Fee Payment Account?
+   - What is the mode of refund of the development fee fee Account?
+
+- intent: hdfc432
+  examples: | 
+   - What is the procedure for nomination?
+   - What is the nomination procedure?
+
+- intent: hdfc433
+  examples: | 
+   - What is the procedure for receipt of securities in demat form in case of purchase of securities?
+   - What's the method for receipt of securities in demat form in case of buy of securities?
+
+- intent: hdfc434
+  examples: | 
+   - What is the procedure for transmission to surviving holder(s) / nominee(s) in case of the death of the account holder?
+   - In the event of the account holder's death, what is the procedure for transmission to remaining holder(s) / nominee(s)?
+
+- intent: hdfc435
+  examples: | 
+   - What is the procedure for Ebrok registration?
+   - What's the manner for Ebrok registration?
+
+- intent: hdfc436
+  examples: | 
+   - What is the procedure to be followed if I want to change my existing signature but am unable to sign due to old age/paralytic stroke?
+   - What is the manner to be accompanied if I want to alternate my current signature but am unable to signal because of antique age/paralytic stroke?
+
+- intent: hdfc437
+  examples: | 
+   - What is the procedure to change a name in NSDL and CDSL (Corporate Demat Account)?
+   - What's the procedure to alternate a name in NSDL and CDSL (company Demat Account)?
+
+- intent: hdfc438
+  examples: | 
+   - What is the procedure to close a Demat Account and delink a Savings Account where the Demat account has only one security with an Inactive ISIN?
+   - What's the technique to close a Demat Account and delink a savings Account in which the Demat account has only one protection with an Inactive ISIN?
+
+- intent: hdfc439
+  examples: | 
+   - What is the procedure to open an NRI Demat Account from overseas without visiting a Demat Service Branch in India?
+   - What is the process to open an NRI Demat Account from foreign places without touring a Demat service branch in India?
+
+- intent: hdfc440
+  examples: | 
+   - What is the procedure to open an Advance Fee Account?
+   - What is the system to open an enhance fee Account?
+
+- intent: hdfc441
+  examples: | 
+   - What is the process for transfer of shares?
+   - What is the procedure for transfer of shares?
+
+- intent: hdfc442
+  examples: | 
+   - What is transmission?
+   - What is the definition of transmission?
+
+- intent: hdfc443
+  examples: | 
+   - What is Transmission Cum Demat?
+   - What is Transmission Cum Demat, and what is it used for?
+
+- intent: hdfc444
+  examples: | 
+   - What is Transposition Cum Demat?
+   - What is the difference between Transposition Cum Demat and Transposition Cum Demat?
+
+- intent: hdfc445
+  examples: | 
+   - What should I do when I have received a letter (option letter) from the company asking for my option as to whether I want physical shares or dematerialised shares after transfer?
+   - What ought to I do when i have obtained a letter (option letter) from the agency requesting my option as to whether I need bodily shares or dematerialised shares after switch?
+
+- intent: hdfc446
+  examples: | 
+   - When will I receive Depository transaction statements?
+   - Whilst will I receive Depository transaction statements?
+
+- intent: hdfc447
+  examples: | 
+   - When will the transaction statement reflect my purchase/sale of shares?
+   - While will the transaction declaration mirror my buy/sale of shares?
+
+- intent: hdfc448
+  examples: | 
+   - Where I can view my transactions/holdings online?
+   - In which i will view my transactions/holdings online?
+
+- intent: hdfc449
+  examples: | 
+   - Who do I contact in case I want to change my password or inquire about other related queries pertaining to Ebrok account?
+   - Who do I touch in case I need to alternate my password or inquire approximately different associated queries relating Ebrok account?
+
+- intent: hdfc450
+  examples: | 
+   - Who is an Issuer (Company/ Registrar & Transfer Agent)?
+   - What is the definition of an issuer (companies, Registrars, and Transfer Agents)?
+
+- intent: hdfc451
+  examples: | 
+   - Who will receive corporate action benefits on the pledged securities?
+   - Who will obtain corporate motion benefits at the pledged securities?
+
+- intent: hdfc452
+  examples: | 
+   - Will I get back the same certificates after rematerialisation?
+   - Will i get back the identical certificates after rematerialisation?
+
+- intent: hdfc453
+  examples: | 
+   - How to close Demat Account?
+   - The way to near Demat Account?
+
+- intent: hdfc454
+  examples: | 
+   - Where can I view my Transactions cum Billing statement on-line ?
+   - Where can i view my Transactions cum Billing announcement on line ?
+
+- intent: hdfc455
+  examples: | 
+   - How can i view my transaction cum Billing statement on-line?
+   - How am i able to view my transaction cum Billing assertion on-line?
+
+- intent: hdfc456
+  examples: | 
+   - How do I invest through RGESS?
+   - How do I use RGESS to invest?
+
+- intent: hdfc457
+  examples: | 
+   - How many bank and depository accounts can I link to a trading account?
+   - What number of bank and depository money owed am i able to hyperlink to a trading account?
+
+- intent: hdfc458
+  examples: | 
+   - In how many days will the shares be credited in a Demat Account from the date of Purchase?
+   - In what number of days will the shares be credited in a Demat Account from the date of buy?
+
+- intent: hdfc459
+  examples: | 
+   - Who can open a Securities Trading account with HDFC securities?
+   - Who can open a Securities buying and selling account with HDFC securities?
+
+- intent: hdfc460
+  examples: | 
+   - What products can I trade in using my trading account?
+   - What merchandise can i change in the usage of my buying and selling account?
+
+- intent: hdfc461
+  examples: | 
+   - Who can trade in derivatives with an HDFC Securities Trading Account?
+   - Who may use an HDFC Securities trading account to trade derivatives?
+
+- intent: hdfc462
+  examples: | 
+   - Which Mutual Funds are ISA enabled?
+   - Which Mutual finances are ISA enabled?
+
+- intent: hdfc463
+  examples: | 
+   - How can I close my Online Mutual Fund Account as well as the Bank account linked with it?
+   - How am i able to close my on-line Mutual Fund Account as well as the Bank account linked with it?
+
+- intent: hdfc464
+  examples: | 
+   - Why do I need to give my income details?
+   - Why do I want to offer my earnings info?
+
+- intent: hdfc465
+  examples: | 
+   - I am an NRI residing outside India. How do I get myself KYC Compliant?
+   - I'm an NRI residing outside India. How do i get myself KYC Compliant?
+
+- intent: hdfc466
+  examples: | 
+   - If I change my address/Bank account /Nomination, what do I need to do?
+   - If I change my deal with/Bank account /Nomination, what do I want to do?
+
+- intent: hdfc467
+  examples: | 
+   - In case of existing investors, when and how will the KYC norms be introduced?
+   - In case of present traders, when and the way will the KYC norms be added?
+
+- intent: hdfc468
+  examples: | 
+   - How do I buy Mutual Funds over the Net?
+   - How do I buy Mutual price range over the net?
+
+- intent: hdfc469
+  examples: | 
+   - How can I use Mobile Banking to manage my Mutual Funds account?
+   - How can i use cellular Banking to control my Mutual finances account?
+
+- intent: hdfc470
+  examples: | 
+   - What is the process of application for Rights Issue under ASBA?
+   - What's the process of utility for Rights trouble beneath ASBA?
+
+- intent: hdfc471
+  examples: | 
+   - What about a Minor becoming a Major?
+   - What about a Minor turning into a chief?
+
+- intent: hdfc472
+  examples: | 
+   - How can I "Buy"/"Sell" Mutual Funds?
+   - How can i "purchase" Mutual funds?
+
+- intent: hdfc473
+  examples: | 
+   - How can I change the default Bank Account that is linked to my HDFC Bank Online Mutual Funds Account?
+   - How am i able to alternate the default bank Account this is related to my HDFC bank online Mutual finances Account?
+
+- intent: hdfc474
+  examples: | 
+   - What is the procedure to close my Investment Service account?
+   - What's the method to close my investment carrier account?
+
+- intent: hdfc475
+  examples: | 
+   -  How much am I charged for this service?
+   -  How lots am I charged for this carrier?
+
+- intent: hdfc476
+  examples: | 
+   - Can I cancel a transaction?
+   - Is it possible to cancel a transaction?
+
+- intent: hdfc477
+  examples: | 
+   - Is the KYC acknowledgement a separate form or is it a part of the Mutual Fund application. Which of the forms require being time-stamped?
+   - Is the KYC acknowledgment a separate form or does it come along with the Mutual Fund software? Which of the documents has to be time-stamped?
+
+- intent: hdfc478
+  examples: | 
+   - How do I transact in Mutuals Fund after completing the KYC process?
+   - How can I make a transaction in a mutual fund after completing the KYC process?
+
+- intent: hdfc479
+  examples: | 
+   - Can I sell/redeem schemes bought offline through online?
+   - Am i able to sell/redeem schemes bought offline through on-line?
+
+- intent: hdfc480
+  examples: | 
+   - How do I buy Mutual Fund over the Net?
+   - How do I go about purchasing a mutual fund over the internet?
+
+- intent: hdfc481
+  examples: | 
+   - How can I register for this service?
+   - How am i able to sign up for this provider?
+
+- intent: hdfc482
+  examples: | 
+   - As an NRI, can I buy Mutual Fund Units in the Portfolio Investment Schemes (PIS) account?
+   - As an NRI, can i buy Mutual Fund devices in the Portfolio funding Schemes (PIS) account?
+
+- intent: hdfc483
+  examples: | 
+   - When will I be able to view the unit holdings in my account from the time of purchase?
+   - Whilst will I be able to view the unit holdings in my account from the time of purchase?
+
+- intent: hdfc484
+  examples: | 
+   - Where and how do I get to be KYC Compliant?
+   - In which and how do i get to be KYC Compliant?
+
+- intent: hdfc485
+  examples: | 
+   - Are there any special requirements for an NRI to invest in Mutual Funds?
+   - Are there any special necessities for an NRI to invest in Mutual budget?
+
+- intent: hdfc486
+  examples: | 
+   - Will I get an online confirmation of my transactions?
+   - Will i get an internet confirmation of my transactions?
+
+- intent: hdfc487
+  examples: | 
+   - Who can be the first applicant in the Investment services Account holding?
+   - Who may be the first applicant in the funding offerings Account preserving?
+
+- intent: hdfc488
+  examples: | 
+   - After the First purchase, can I invest in the same AMC again on the same day?
+   - After the primary buy, am i able to make investments in the same AMC once more at the same day?
+
+- intent: hdfc489
+  examples: | 
+   - What is a KYC Application Form?
+   - What's a KYC utility form?
+
+- intent: hdfc490
+  examples: | 
+   - What if I have already obtained a MIN?
+   - What if i've already acquired a MIN?
+
+- intent: hdfc491
+  examples: | 
+   - Who can open an Investment Services account?
+   - Who can open an funding services account?
+
+- intent: hdfc492
+  examples: | 
+   - What are the advantages of investing in SIP?
+   - What are the Benefits of investing in SIP?
+
+- intent: hdfc493
+  examples: | 
+   -  What happens if I have multiple folios/accounts with a Mutual Fund?
+   -  What takes place if i have multiple folios/debts with a Mutual Fund?
+
+- intent: hdfc494
+  examples: | 
+   - What if I forget my customer ID/ IPIN number?
+   - What if I overlook my patron id/ IPIN number?
+
+- intent: hdfc495
+  examples: | 
+   - What are the schemes available to the customers?
+   - What types of plans are accessible to customers?
+
+- intent: hdfc496
+  examples: | 
+   - Do I need to inform about my change of Income status?
+   - Do I want to tell about my trade of income repute?
+
+- intent: hdfc497
+  examples: | 
+   - What are the KYC requirements for a Mutual Fund Investor?
+   - What does a Mutual Fund Investor need to know about KYC?
+
+- intent: hdfc498
+  examples: | 
+   - How do I convert my existing portfolio of Mutual Fund units to an Online Mutual Fund portfolio?
+   - How do I convert my current portfolio of Mutual Fund gadgets to a web Mutual Fund portfolio?
+
+- intent: hdfc499
+  examples: | 
+   - Is there any special requirement for a PIO (Person of Indian Origin)?
+   - Is there any unique requirement for a PIO (person of Indian origin)?
+
+- intent: hdfc500
+  examples: | 
+   - To whom is KYC applicable?
+   - To whom is KYC relevant?
+
+- intent: hdfc501
+  examples: | 
+   - Should I visit a PoS personally to obtain KYC Compliance?
+   - Need to I go to a PoS in my opinion to attain KYC Compliance?
+
+- intent: hdfc502
+  examples: | 
+   - What are the consequences of KYC cancellation/rejection?
+   - What are the outcomes of KYC cancellation/rejection?
+
+- intent: hdfc503
+  examples: | 
+   - I do not have an account with HDFC Bank, but would like to invest in Mutual Funds. What do I do?
+   - I do not have an account with HDFC bank, however would like to spend money on Mutual finances. What do I do?
+
+- intent: hdfc504
+  examples: | 
+   - Who do I inform about change of name/address/status/signature, etc.?
+   - Who do I inform about alternate of call/cope with/fame/signature, etc.?
+
+- intent: hdfc505
+  examples: | 
+   - How is online investing more convenient?
+   - How is on-line investing more handy?
+
+- intent: hdfc506
+  examples: | 
+   - Is there a minimum transaction amount for each scheme?
+   - Is there a transaction minimum for each scheme?
+- intent: hdfc507
+  examples: | 
+   - Is there a charge I need to pay to get myself KYC Compliant?
+   - Is there a price I want to pay to get myself KYC Compliant?
+
+- intent: hdfc508
+  examples: | 
+   - Does the KYC Acknowledgement have an expiry date?
+   - Is there a time limit on the KYC Acknowledgement?
+
+- intent: hdfc509
+  examples: | 
+   - Why should I invest in SIP's right now?
+   - Why must I spend money on SIP's right now?
+
+- intent: hdfc510
+  examples: | 
+   - From what date is it mandatory for me to be KYC Compliant?
+   - Is it required for me to be KYC compliant as of what date?
+
+- intent: hdfc511
+  examples: | 
+   - Is there any transaction charge for placing the transaction offline or online?
+   - Is there any transaction rate for putting the transaction offline or on line?
+
+- intent: hdfc512
+  examples: | 
+   - Can I transact anytime during the day?
+   - Am i able to transact every time at some stage in the day?
+
+- intent: hdfc513
+  examples: | 
+   - Can I transact on a holiday?
+   - Can i transact on a vacation?
+
+- intent: hdfc514
+  examples: | 
+   - How will I receive the redemption amount?
+   - How will I get hold of the redemption quantity?
+
+- intent: hdfc515
+  examples: | 
+   - How will I receive the Dividend Pay amount?
+   - How will I get hold of the Dividend Pay amount?
+
+- intent: hdfc516
+  examples: | 
+   - How do I redeem Mutual Fund units over the Net?
+   - What is the procedure for redeeming Mutual Fund units through the internet?
+
+- intent: hdfc517
+  examples: | 
+   -  Whom do I inform about change of name/address/status/signature, etc.?
+   -  Whom do I tell about alternate of name/address/repute/signature, and so forth.?
+
+- intent: hdfc518
+  examples: | 
+   - Can an investor give a COA (Change of Address) along with a redemption request?
+   - Can an investor supply a COA (alternate of cope with) together with a redemption request?
+
+- intent: hdfc519
+  examples: | 
+   - How can I update my E-mail ID in my Online Mutual Fund Account?
+   - How am i able to replace my e mail identification in my on line Mutual Fund Account?
+
+- intent: hdfc520
+  examples: | 
+   - What is FATCA/CRS/KYC?
+   - What are FATCA, CRS, and KYC?
+
+- intent: hdfc521
+  examples: | 
+   -  What Is KYC?
+   -  KYC stands for Know Your Customer.
+
+- intent: hdfc522
+  examples: | 
+   -  What are the cut-off timings for the Investment Services Account?
+   -  What are the cut-off timings for the funding services Account?
+
+- intent: hdfc523
+  examples: | 
+   - How can I open an Online Mutual Fund Account with HDFC Bank?
+   - How am i able to open a web Mutual Fund Account with HDFC bank?
+
+- intent: hdfc524
+  examples: | 
+   - Can I cancel or withdraw my IPO application (or bid) submitted using ASBA?
+   - Am i able to cancel or withdraw my IPO application (or bid) submitted the usage of ASBA?
+
+- intent: hdfc525
+  examples: | 
+   - Can I revise the bid?
+   - Is it possible for me to change my mind about the bid?
+
+- intent: hdfc526
+  examples: | 
+   - How many ASBA applications can be made by blocking a single Bank Account?
+   - How many ASBA applications may be made by way of blocking off a single bank Account?
+
+- intent: hdfc527
+  examples: | 
+   - What is the difference between the Non-ASBA IPO process and the ASBA process?
+   - What is the distinction between the Non-ASBA IPO system and the ASBA procedure?
+
+- intent: hdfc528
+  examples: | 
+   - Who can apply for ASBA?
+   - Who is eligible to apply for ASBA?
+
+- intent: hdfc529
+  examples: | 
+   - If I made an application through ASBA and money in my Savings Account is blocked, will I get interest for that period?
+   - If I made an application thru ASBA and cash in my savings Account is blocked, will i am getting hobby for that length?
+
+- intent: hdfc530
+  examples: | 
+   - Is it possible to bid for an IPO under ASBA as well as under non-ASBA?
+   - Is it possible to bid for an IPO below ASBA in addition to below non-ASBA?
+
+- intent: hdfc531
+  examples: | 
+   - What is the time limit to submit the form at a designated HDFC Bank branch?
+   - What's the time restrict to publish the form at a designated HDFC Bank department?
+
+- intent: hdfc532
+  examples: | 
+   - Can I still approach my broker to apply for an IPO?
+   - Can i nonetheless approach my broking to apply for an IPO?
+
+- intent: hdfc533
+  examples: | 
+   - Can I bid at multiple rates under ASBA?
+   - Can i bid at a couple of rates below ASBA?
+
+- intent: hdfc534
+  examples: | 
+   - When will the Bank lock money in my Account for ASBA payments?
+   - While will the bank lock cash in my Account for ASBA bills?
+
+- intent: hdfc535
+  examples: | 
+   - What is ASBA?
+   - What exactly is ASBA?
+
+- intent: hdfc536
+  examples: | 
+   - What happens when the issue fails/is withdrawn?
+   - What takes place whilst the issue fails/is withdrawn?
+
+- intent: hdfc537
+  examples: | 
+   - What will be the benefit to me if I apply for an IPO under ASBA?
+   - What's going to be the advantage to me if I practice for an IPO below ASBA?
+
+- intent: hdfc538
+  examples: | 
+   - If I am a NRE/NRO customer, can I apply for ASBA?
+   - If i am a NRE/NRO consumer, am i able to observe for ASBA?
+
+- intent: hdfc539
+  examples: | 
+   - Is priority in allotment given to applications bid under ASBA facility?
+   - Is precedence in allotment given to programs bid under ASBA facility?
+
+- intent: hdfc540
+  examples: | 
+   - Is it possible to withdraw the amount blocked for IPO applications through ASBA?
+   - Is it possible to withdraw the amount blocked for IPO programs thru ASBA?
+
+- intent: hdfc541
+  examples: | 
+   - Will the bank charge any additional fees if I choose the ASBA Payment Option?
+   - Will the bank charge any additional prices if I choose the ASBA charge alternative?
+
+- intent: hdfc542
+  examples: | 
+   - Is any additional documentation required for availing the ASBA facility?
+   - Is any extra documentation required for availing the ASBA facility?
+
+- intent: hdfc543
+  examples: | 
+   - If I want to apply physically for an IPO through ASBA, what should I do?
+   - If I need to apply bodily for an IPO via ASBA, what must I do?
+
+- intent: hdfc544
+  examples: | 
+   - I do not have a Bank account with HDFC Bank. Can I still apply through your Bank for IPOs using HDFC Bank`s ASBA process?
+   - I do no longer have a bank account with HDFC bank. Can i still observe via your bank for IPOs the use of HDFC Bank`s ASBA procedure?
+
+- intent: hdfc545
+  examples: | 
+   - Can I cancel/ modify my bid placed under ASBA during the bidding period?
+   - Am i able to cancel/ regulate my bid positioned underneath ASBA throughout the bidding period?
+
+- intent: hdfc546
+  examples: | 
+   - What products can I trade in using my trading account?
+   - What products can i exchange in the use of my trading account?
+
+- intent: hdfc547
+  examples: | 
+   - I have sent in my application, what happens next?
+   - i've despatched in my utility, what occurs next?
+
+- intent: hdfc548
+  examples: | 
+   - What is ASBA option while applying for an IPO?
+   - What is ASBA choice at the same time as applying for an IPO?
+
+- intent: hdfc549
+  examples: | 
+   - Who can open a Securities Trading account with HDFC securities?
+   - Who can open a Securities buying and selling account with HDFC securities?
+
+- intent: hdfc550
+  examples: | 
+   -  If I already have an HDFC Bank account and an HDFC Demat account, can I use these accounts to invest/trade online?
+   -  If I already have an HDFC bank account and an HDFC Demat account, can i use these bills to make investments/alternate on line?
+
+- intent: hdfc551
+  examples: | 
+   - Which are the various channels through which I can trade or invest?
+   - Which might be the numerous channels through which i will alternate or invest?
+
+- intent: hdfc552
+  examples: | 
+   - Can I withdraw the amount blocked for ASBA bid application?
+   - Am i able to withdraw the quantity blocked for ASBA bid application?
+
+- intent: hdfc553
+  examples: | 
+   - What do I need to submit to place an IPO/NCD order through my HDFC Securities Trading Account?
+   - What do I need to put up to area an IPO/NCD order through my HDFC Securities buying and selling Account?
+
+- intent: hdfc554
+  examples: | 
+   - Who can trade in derivatives with an HDFC Securities Trading Account?
+   - Who can trade in derivatives with an HDFC Securities buying and selling Account?
+
+- intent: hdfc555
+  examples: | 
+   - What is the difference between the Non-ASBA IPO process and the ASBA IPO process?
+   - What's the difference among the Non-ASBA IPO system and the ASBA IPO system?
+
+- intent: hdfc556
+  examples: | 
+   - Who can trade in derivatives with an HDFC Securities Trading Account?
+   - Who can exchange in derivatives with an HDFC Securities buying and selling Account?
+
+- intent: hdfc557
+  examples: | 
+   - What are the call charges applicable if I use the Call ‘N Trade facility to trade in securities?
+   - What are the decision charges applicable if i take advantage of the call ‘N alternate facility to exchange in securities?
+
+- intent: hdfc558
+  examples: | 
+   - What are the call charges for offline customers of an HDFC Securities Trading Account?
+   - What are the call fees for offline clients of an HDFC Securities trading Account?
+
+- intent: hdfc559
+  examples: | 
+   - How many bank and depository accounts can I link to a trading account?
+   - How many Bank and depository accounts am i able to hyperlink to a buying and selling account?
+
+- intent: hdfc560
+  examples: | 
+   - What do I need to submit to place an IPO/NCD order with my HDFC Securities Trading Account?
+   - What do I want to post to place an IPO/NCD order with my HDFC Securities buying and selling Account?
+
+- intent: hdfc561
+  examples: | 
+   - How do I know my application has been accepted?
+   - How do I realize my application has been conventional?
+
+- intent: hdfc562
+  examples: | 
+   - What are the benefits of InvestTrack?
+   - What are the advantages of using InvestTrack?
+
+- intent: hdfc563
+  examples: | 
+   - What is the requirement to avail of the InvestTrack facility ?
+   - What are the requirements for using the InvestTrack service?
+
+- intent: hdfc564
+  examples: | 
+   - Who can avail of the InvestTrack facility?
+   - Who is eligible to use the InvestTrack service?
+
+- intent: hdfc565
+  examples: | 
+   - How will HDFC decide the home loan amount i am eligible for?
+   - How will HDFC determine how much of a house loan I'm eligible for?
+
+- intent: hdfc566
+  examples: | 
+   - What is Guarantor?
+   - What exactly is a guarantor?
+
+- intent: hdfc567
+  examples: | 
+   - What are the benefits of having a Current/Saving Account for my Business Growth Loan?
+   - What are the Benefits of getting a cutting-edge/Saving Account for my commercial enterprise boom loan?
+
+- intent: hdfc568
+  examples: | 
+   - What is Guarantor?
+   - What exactly is a guarantor?
+
+- intent: hdfc569
+  examples: | 
+   - How much time will it take to change the mode of repayment/ account for repayment of my loan?
+   - How a lot time will it take to trade the mode of compensation/ account for repayment of my loan?
+
+- intent: hdfc570
+  examples: | 
+   - What is Guarantor?
+   - What exactly is a guarantor?
+
+- intent: hdfc571
+  examples: | 
+   - What are the tenure options for Pre-owned Car Loans?
+   - What are the tenure alternatives for Pre-owned car Loans?
+
+- intent: hdfc572
+  examples: | 
+   - So how do I get the Loan against Car?
+   - So how do i am getting the loan against vehicle?
+
+- intent: hdfc573
+  examples: | 
+   - Whom do I contact in case of ay further queries regarding the loan?
+   - Whom do I contact in case of ay in addition queries regarding the mortgage?
+
+- intent: hdfc574
+  examples: | 
+   - What are the tenures for which I can avail this loan?
+   - What are the terms of the loan that I can take out?
+
+- intent: hdfc575
+  examples: | 
+   - Which all locations HDFC Bank Consumer Durable Loan is available currently?
+   - Which all places HDFC Bank consumer long lasting mortgage is to be had presently?
+
+- intent: hdfc576
+  examples: | 
+   - How can I change the mode of repayment/ account for my loan?
+   - How can I modify the repayment method/account for my loan?
+
+- intent: hdfc577
+  examples: | 
+   - What are the charges I have to pay to change the mode of repayment/ account for my loan?
+   - What are the charges I need to pay to change the mode of reimbursement/ account for my mortgage?
+
+- intent: hdfc578
+  examples: | 
+   - How can I get my address changed in my loan account?
+   - How can i get my deal with changed in my mortgage account?
+
+- intent: hdfc579
+  examples: | 
+   - What will be done with the post dated cheques if I request to change the mode of repayment/ account for my loan?
+   - What's going to be done with the post dated cheques if I request to alternate the mode of reimbursement/ account for my loan?
+
+- intent: hdfc580
+  examples: | 
+   - What is Pledge?
+   - What exactly is Pledge?
+
+- intent: hdfc581
+  examples: | 
+   - What is the maximum loan amount I can get for studies in India?
+   - What's the maximum loan amount i will get for studies in India?
+
+- intent: hdfc582
+  examples: | 
+   - Which courses can I take an education loan for (Education Loans For Foreign Education)?
+   - Which publications am i able to take an education loan for (training Loans For foreign schooling)?
+
+- intent: hdfc583
+  examples: | 
+   - What is Guarantor?
+   - What's Guarantor?
+
+- intent: hdfc584
+  examples: | 
+   - Do you want to repay the loan earlier than the due date?
+   - Do you want to pay off the mortgage earlier than the due date?
+
+- intent: hdfc585
+  examples: | 
+   - What is Guarantor?
+   - What is Guarantor?
+
+- intent: hdfc586
+  examples: | 
+   -  Do I get statements for my account?
+   -  Do I receive account statements?
+
+- intent: hdfc587
+  examples: | 
+   - How should I apply for a duplicate NOC/ closure letter?
+   - How have to I apply for a replica NOC/ closure letter?
+
+- intent: hdfc588
+  examples: | 
+   - What is the HDFC Life Cancer Care Policy?
+   - What is the HDFC life cancer Care coverage?
+
+- intent: hdfc589
+  examples: | 
+   - What is HDFC Life Easy Health Plan?
+   - What is HDFC lifestyles clean health Plan?
+
+- intent: hdfc590
+  examples: | 
+   - Why can't I have liquidity of complete amount on surrender?
+   - Why cannot i've liquidity of whole quantity on surrender?
+
+- intent: hdfc591
+  examples: | 
+   - What is a retirement plan?
+   - What exactly is a retirement strategy?
+
+- intent: hdfc592
+  examples: | 
+   - Can I buy more than one policy?
+   - Am i able to buy multiple policy?
+
+- intent: hdfc593
+  examples: | 
+   - What are the features that are available with HDFC Life Uday?
+   - What are the features which can be available with HDFC existence Uday?
+
+- intent: hdfc594
+  examples: | 
+   -  What if I need the money for an emergency?
+   -  What if I need the cash for an emergency?
+
+- intent: hdfc595
+  examples: | 
+   - What are the different types of Savings Plans?
+   - What are the specific forms of savings Plans?
+
+- intent: hdfc596
+  examples: | 
+   -  What is meant by a ‘With Profits’ plan?
+   -  What is meant through a ‘With income’ plan?
+
+- intent: hdfc597
+  examples: | 
+   -  Should I choose a Unit Linked or a non – Unit Linked plan?
+   -  Ought to I choose a Unit linked or a non – Unit connected plan?
+
+- intent: hdfc598
+  examples: | 
+   - Can I save tax by investing in this policy?
+   - Can i shop tax through making an investment in this policy?
+
+- intent: hdfc599
+  examples: | 
+   - Can I take any loan?
+   - Am i able to take any mortgage?
+
+- intent: hdfc600
+  examples: | 
+   - Can the plan be offered under limited underwriting?
+   - Can the plan be offered below constrained underwriting?
+
+- intent: hdfc601
+  examples: | 
+   - Do I have option to avail loan under the policy?
+   - Do i've option to avail loan below the policy?
+
+- intent: hdfc602
+  examples: | 
+   - What is the min-max age at entry/maturity ?
+   - What is the minimum and maximum age for entry/maturity?
+
+- intent: hdfc603
+  examples: | 
+   - What is the min-max age at entry/maturity?
+   - What's the min-max age at entry/adulthood?
+
+- intent: hdfc604
+  examples: | 
+   - What will I get on maturityFor a policy where all due premiums have been paid, the maturity benefit will be the aggregate of:On payment of the Maturity Benefit, the policy will terminate and no more benefits will be payable.Last Guaranteed Base Income payout,Accrued Reversionary Bonuses,Interim Bonus, if anyTerminal bonus, if any Is there any option available for monthly payout?
+   - what's going to i get on maturityFor a policy wherein all due charges were paid, the adulthood benefit could be the combination of:On price of the adulthood benefit, the coverage will terminate and no more Benefits will be payable.Final assured Base profits payout,amassed Reversionary Bonuses,period in-between Bonus, if anyTerminal bonus, if any Is there any choice to be had for month-to-month payout?
+
+- intent: hdfc605
+  examples: | 
+   - What are the benefits of a retirement plan?
+   - What are the advantages of a retirement plan?
+
+- intent: hdfc606
+  examples: | 
+   - What is the minimum/maximum age at entry/maturity?
+   - What is the minimum/maximum age for adulthood/access?
+
+- intent: hdfc607
+  examples: | 
+   - Can I take any loan?
+   - Can i take any mortgage?
+
+- intent: hdfc608
+  examples: | 
+   - Should I choose a Unit Linked or a non – Unit Linked plan?
+   - Ought to I pick a Unit related or a non – Unit linked plan?
+
+- intent: hdfc609
+  examples: | 
+   - What is the surrender benefit?
+   - What is the surrender advantage?
+
+- intent: hdfc610
+  examples: | 
+   - Why do I need a Children’s Plan?
+   - Why do I want a kids’s Plan?
+
+- intent: hdfc611
+  examples: | 
+   - Can the plan be offered under limited underwritingThe plan can be applied by filing in the Short Medical Questionnaire (SMQ), which may not require you to go for medicals. When does the plan acquire Guaranteed Surrender value?
+   - Can the plan be provided under limited underwritingThe plan may be applied by way of submitting in the short scientific Questionnaire (SMQ), which may not require you to go for medicals. When does the plan accumulate guaranteed surrender price?
+
+- intent: hdfc612
+  examples: | 
+   - What do you mean by exclusions under the Accidental Protection Plan - Hospital Cash?
+   - What do you imply by way of exclusions under the unintended safety Plan - clinic coins?
+
+- intent: hdfc613
+  examples: | 
+   - Why should I purchase Critical Illness Insurance?
+   - Why need to I purchase essential infection coverage?
+
+- intent: hdfc614
+  examples: | 
+   - What is meant by disease under the Critical Illness - Platinum Plan?
+   - What is meant by way of disease underneath the important illness - Platinum Plan?
+
+- intent: hdfc615
+  examples: | 
+   - What is cumulative bonus?
+   - What exactly is cumulative bonus?
+
+- intent: hdfc616
+  examples: | 
+   - What is the benefit of broken bones under this policy?
+   - What are the advantages of shattered bones under this policy?
+
+- intent: hdfc617
+  examples: | 
+   - What is an accident?
+   - What is an coincidence?
+
+- intent: hdfc618
+  examples: | 
+   - Do I need to have Auto Insurance?
+   - Do I want to have auto coverage?
+
+- intent: hdfc619
+  examples: | 
+   - When do I have to submit a medical exam?
+   - While do I should put up a medical examination?
+
+- intent: hdfc620
+  examples: | 
+   - What will be the start date of my insurance policy?
+   - What's going to be the begin date of my coverage coverage?
+
+- intent: hdfc621
+  examples: | 
+   - What is a Cardholder Dispute Form?
+   - What is a Cardholder Dispute shape?
+
+- intent: hdfc622
+  examples: | 
+   - How much does an HDFC Bank Regalia credit card holder save annually?
+   - How plenty does an HDFC Bank Regalia credit score card holder save yearly?
+
+- intent: hdfc623
+  examples: | 
+   - Can Chip Credit cards be used anywhere?
+   - Can Chip credit playing cards be used anywhere?
+
+- intent: hdfc624
+  examples: | 
+   - Can a chip card be used for online transactions?
+   - Is it possible to make online purchases using a chip card?
+
+- intent: hdfc625
+  examples: | 
+   - Can Chip Credit cards be used anywhere?
+   - Can Chip credit score playing cards be used anywhere?
+
+- intent: hdfc626
+  examples: | 
+   - Which outlets have a chip terminal?
+   - Which retailers have a chip terminal?
+
+- intent: hdfc627
+  examples: | 
+   - How to redeem Reward Points?
+   - The way to redeem reward factors?
+
+- intent: hdfc628
+  examples: | 
+   - How to redeem Reward Points?
+   - How to redeem praise points?
+
+- intent: hdfc629
+  examples: | 
+   - Will the 2X InterMiles be applicable only if the ticket is booked online through IM website or via app?
+   - Will the 2X InterMiles be applicable best if the price ticket is booked on line via IM website or thru app?
+
+- intent: hdfc630
+  examples: | 
+   - Will the 2X InterMiles be applicable only if the ticket is booked online through IM website or via app?
+   - Will the 2X InterMiles be applicable most effective if the ticket is booked on line via IM website or thru app?
+
+- intent: hdfc631
+  examples: | 
+   - When will I get my Bonus JPMiles?
+   - When will my Bonus JPMiles arrive?
+
+- intent: hdfc632
+  examples: | 
+   - ​​​​​​​How to redeem Reward Points?
+   - ​​​​​​​the way to redeem reward points?
+
+- intent: hdfc633
+  examples: | 
+   - How to avail 25% off on Movies Tickets on BookMyShow?
+   - The way to avail 25% off on movies Tickets on BookMyShow?
+
+- intent: hdfc634
+  examples: | 
+   - How to avail 25% off on Movies Tickets on BookMyShow?
+   - the way to avail 25% off on films Tickets on BookMyShow?
+
+- intent: hdfc635
+  examples: | 
+   - How do I use a Chip Card?
+   - How do i exploit a Chip Card?
+
+- intent: hdfc636
+  examples: | 
+   - Can Chip Credit cards be used anywhere?
+   - Can Chip credit score playing cards be used anywhere?
+
+- intent: hdfc637
+  examples: | 
+   - Is there any mark-up fee for foreign currency transactions for Business Platinum Credit Card?
+   - Is there any mark-up price for foreign foreign money transactions for business Platinum credit score Card?
+
+- intent: hdfc638
+  examples: | 
+   - How do I pay the membership fee for the HDFC Bank Business Gold Credit Card?
+   - How do I pay the club price for the HDFC bank business Gold credit Card?
+
+- intent: hdfc639
+  examples: | 
+   - FAQ - MoneyBack Credit Card Spend Milestone Offer What is the Spend Milestone Offer?
+   - FAQ - MoneyBack credit score Card Spend Milestone offer what's the Spend Milestone offer?
+
+- intent: hdfc640
+  examples: | 
+   - Can a chip card be used for online transactions?
+   - Can a chip card be used for on line transactions?
+
+- intent: hdfc641
+  examples: | 
+   - When will I get my Welcome/Renewal Bonus InterMiles?
+   - When will i receive my Welcome/Renewal Bonus InterMiles?
+
+- intent: hdfc642
+  examples: | 
+   - What are the features and benefits of a Business MoneyBack Credit Card?
+   - What are the capabilities and benefits of a enterprise MoneyBack credit score Card?
+
+- intent: hdfc643
+  examples: | 
+   - What are the merchant categories wherein the Chip card can be used?
+   - What are the merchant categories in which the Chip card may be used?
+
+- intent: hdfc644
+  examples: | 
+   - What are the features and benefits of a Central Travel Account?
+   - What are the functions and advantages of a crucial travel Account?
+
+- intent: hdfc645
+  examples: | 
+   - What are the features and benefits of a Business Regalia First Credit Card?
+   - What are the functions and advantages of a business Regalia First credit score Card?
+
+- intent: hdfc646
+  examples: | 
+   -  How does this facility help me in paying my Credit Card bills?
+   -  How does this facility assist me in paying my credit score Card bills?
+
+- intent: hdfc647
+  examples: | 
+   - What is a welcome membership benefit?
+   - What is a welcome club advantage?
+
+- intent: hdfc648
+  examples: | 
+   - How do I earn reward points on the card?
+   - How do I earn reward factors on the card?
+
+- intent: hdfc649
+  examples: | 
+   - How do I earn reward points on the card?
+   - How do I earn reward factors on the card?
+
+- intent: hdfc650
+  examples: | 
+   - How to redeem the reward points?
+   - The way to redeem the reward points?
+
+- intent: hdfc651
+  examples: | 
+   - How can I change / update address on my Corporate Credit Card ?
+   - How can i alternate / replace deal with on my company credit score Card ?
+
+- intent: hdfc652
+  examples: | 
+   - How to redeem the reward points?
+   - The way to redeem the praise factors?
+
+- intent: hdfc653
+  examples: | 
+   - How can I change / update address on my Corporate Credit Card ?
+   - How am i able to alternate / update cope with on my company credit Card ?
+
+- intent: hdfc654
+  examples: | 
+   - How can I change / update address on my Purchase Credit Card ?
+   - How can i trade / replace address on my buy credit Card ?
+
+- intent: hdfc655
+  examples: | 
+   - How to redeem the reward points?
+   - A way to redeem the praise points?
+
+- intent: hdfc656
+  examples: | 
+   - How to redeem the reward points?
+   - How to redeem the praise points?
+
+- intent: hdfc657
+  examples: | 
+   - FEATURES AND BENEFITS RELATED:What are Fuel Points?
+   - Capabilities AND advantages associated:What are gasoline points?
+
+- intent: hdfc658
+  examples: | 
+   - What is a 6E Prime addon voucher?
+   - What is a 6E high addon voucher?
+
+- intent: hdfc659
+  examples: | 
+   - What are the key features of the 6E Rewards XL-IndiGo HDFC Bank Credit Card?
+   - What are the important thing features of the 6E Rewards XL-IndiGo HDFC bank credit Card?
+
+- intent: hdfc660
+  examples: | 
+   - HDFC Bank Millennia Credit CardInspired Living, Ready for YouYou live in the moment; Passion is what drives you; adventure is what you seek.Yours is an inspired life, the Millennia Credit Card is Ready for You.A) What are the key features of the Millennia Credit Card?
+   - HDFC Bank Millennia credit CardInspired dwelling, equipped for YouYou live in the second; ardour is what drives you; adventure is what you are searching for.Yours is an stimulated existence, the Millennia credit score Card is prepared for You.A) What are the important thing functions of the Millennia credit Card?
+
+- intent: hdfc661
+  examples: | 
+   - Club Marriott Membership. What is Club Marriott Membership?
+   - Club Marriott membership.
+
+- intent: hdfc662
+  examples: | 
+   - What are the key features of the HDFC Bank EasyEMI Card?
+   - What are the important thing functions of the HDFC Bank EasyEMI Card?
+
+- intent: hdfc663
+  examples: | 
+   - What is a welcome membership benefit?
+   - welcome membership advantage
+
+- intent: hdfc664
+  examples: | 
+   - How do I earn reward points on the card?
+   - How do I earn praise factors on the card?
+
+- intent: hdfc665
+  examples: | 
+   - What is the procedure to follow if my Debit Card PIN is blocked?
+   - What's the technique to follow if my Debit Card PIN is blocked?
+
+- intent: hdfc666
+  examples: | 
+   - Can I use the RuPay Platinum Debit Card to pay online?
+   - Can i use the RuPay Platinum Debit Card to pay online?
+
+- intent: hdfc667
+  examples: | 
+   - What is Times Points?
+   - What's times points?
+   - times point
+   - times
+
+- intent: hdfc668
+  examples: | 
+   - Are there charges I should know about Imperia Platinum Chip Debit Card?
+   - Are there charges I need to realize approximately Imperia Platinum Chip Debit Card?
+
+- intent: hdfc669
+  examples: | 
+   - What should I do in the case of a void transaction for NRO Debit Card?
+   - What have to I do in the case of a void transaction for NRO Debit Card?
+
+- intent: hdfc670
+  examples: | 
+   - What should I do in the case of a void transaction for Rewards Debit Card?
+   - What should I do within the case of a void transaction for Rewards Debit Card?
+
+- intent: hdfc671
+  examples: | 
+   - What should I do in the case of a void transaction for Womans Advantage Debit Card?
+   - What must I do in the case of a void transaction for Womans advantage Debit Card?
+
+- intent: hdfc672
+  examples: | 
+   - How does this card work?
+   - What is the purpose of this card?
+
+- intent: hdfc673
+  examples: | 
+   - What should I do in the case of a void transaction for Titanium Royale Debit Card?
+   - What ought to I do within the case of a void transaction for Titanium Royale Debit Card?
+
+- intent: hdfc674
+  examples: | 
+   - Are there extra charges for International Business Debit Card?
+   - Are there extra fees for global business Debit Card?
+
+- intent: hdfc675
+  examples: | 
+   - Can the JetPrivilege HDFC Bank World Debit Card be taken by public / private / partnership firm?
+   - Can the JetPrivilege HDFC Bank global Debit Card be taken with the aid of public / non-public / partnership company?
+
+- intent: hdfc676
+  examples: | 
+   - Where can I use my EasyShop Titanium Debit Card?
+   - Wherein am i able to use my EasyShop Titanium Debit Card?
+
+- intent: hdfc677
+  examples: | 
+   - What should I do in the case of a void transaction for Platinum Debit Card?
+   - What must I do in the case of a void transaction for Platinum Debit Card?
+
+- intent: hdfc678
+  examples: | 
+   - What should I do in the case of a void transaction for Gold Debit Card?
+   - What need to I do within the case of a void transaction for Gold Debit Card?
+
+- intent: hdfc679
+  examples: | 
+   - Can I use the RuPay Platinum Debit Card to pay online?
+   - Am i able to use the RuPay Platinum Debit Card to pay on line?
+
+- intent: hdfc680
+  examples: | 
+   - Where can the NRO Rupay Debit Card be used?
+   - Wherein can the NRO Rupay Debit Card be used?
+
+- intent: hdfc681
+  examples: | 
+   - Why is E-commerce and Contactless service feature disabled on my Prepaid Card?
+   - Why is E-trade and Contactless service characteristic disabled on my prepaid Card?
+
+- intent: hdfc682
+  examples: | 
+   - What is the HDFC Bank Apollo Medical Benefits Card?
+   - Apollo medical benefits Card
+
+- intent: hdfc683
+  examples: | 
+   - How is the value topped up?
+   - How is the price topped up?
+
+- intent: hdfc684
+  examples: | 
+   - Why is E-commerce and Contactless service feature disabled on my Prepaid Card?
+   - Why is E-commerce and Contactless carrier function disabled on my pay as you go Card?
+
+- intent: hdfc685
+  examples: | 
+   - Why is E-commerce and Contactless service feature disabled on my Prepaid Card?
+   - Why is E-commerce and Contactless provider feature disabled on my prepaid Card?
+
+- intent: hdfc686
+  examples: | 
+   - Why is E-commerce and Contactless service feature disabled on my Prepaid Card?
+   - Why is E-commerce and Contactless provider function disabled on my pay as you go Card?
+
+- intent: hdfc687
+  examples: | 
+   - Why is E-commerce and Contactless service feature disabled on my Prepaid Card?
+   - Why is E-commerce and Contactless service function disabled on my pay as you go Card?
+
+- intent: hdfc688
+  examples: | 
+   - Why is E-commerce and Contactless service feature disabled on my Prepaid Card?
+   - Why is E-trade and Contactless provider characteristic disabled on my pay as you go Card?
+
+- intent: hdfc689
+  examples: | 
+   - What is the VBV Password?
+   - VBV Password
+
+- intent: hdfc690
+  examples: | 
+   - Why is E-commerce and Contactless service feature disabled on my Prepaid Card?
+   - Why is E-commerce and Contactless carrier characteristic disabled on my pay as you go Card?
+
+- intent: hdfc691
+  examples: | 
+   - Why is E-commerce and Contactless service feature disabled on my Prepaid Card?
+   - Why is E-commerce and Contactless provider feature disabled on my pay as you go Card?
+
+- intent: hdfc692
+  examples: | 
+   - How can I download the challan for online tax payment?
+   - How am i able to download the challan for on-line tax charge?
+
+- intent: hdfc693
+  examples: | 
+   - Is it mandatory to pay DVAT online?
+   - Is online DVAT payment required?
+
+- intent: hdfc694
+  examples: | 
+   - In which cities does HDFC Bank collect excise duty and service tax online?
+   - Wherein cities does HDFC bank acquire excise obligation and service tax on-line?
+
+- intent: hdfc695
+  examples: | 
+   - Is there any ready reckoner to check my readiness on GST?
+   - Is there a ready reckoner I can use to assess my GST readiness?
+
+- intent: hdfc696
+  examples: | 
+   - Where is the online payment of GVAT facility available?
+   - Wherein is the web payment of GVAT facility available?
+
+- intent: hdfc697
+  examples: | 
+   - Do I need to activate the Third Party Payment facility in NetBanking to avail of the online payment facility?
+   - Do I want to spark off the 1/3 celebration charge facility in NetBanking to avail of the net fee facility?
+
+- intent: hdfc698
+  examples: | 
+   - Can I start making payments after I have registered myself with the concerned Department of the Govt. of Punjab?
+   - Am i able to start making payments after i have registered myself with the involved branch of the government. Of Punjab?
+
+- intent: hdfc699
+  examples: | 
+   - How will I know if my TNVAT has been successfully filed or not?
+   - How will I recognize if my TNVAT has been effectively filed or no longer?
+
+- intent: hdfc700
+  examples: | 
+   - Can I start making payments after I have registered myself with the concerned Department of the Govt. of Telangana?
+   - Am i able to begin making bills after i have registered myself with the worried branch of the govt.. Of Telangana?
+
+- intent: hdfc701
+  examples: | 
+   - Can I start making payments after I have registered myself with the concerned Department of the Govt. of Uttrakhand?
+   - Can i start making payments after i have registered myself with the worried department of the government. Of Uttrakhand?
+
+- intent: hdfc702
+  examples: | 
+   - How will I know if my APVAT or CST has been successfully filed or not?
+   - How will I understand if my APVAT or CST has been efficiently filed or now not?
+
+- intent: hdfc703
+  examples: | 
+   - How do I know that my taxes are successfully paid?
+   - How do I know that my taxes are efficaciously paid?
+
+- intent: hdfc704
+  examples: | 
+   - How do I pay commercial taxes of Karnataka online?
+   - karnataka commercial taxes
+
+- intent: hdfc705
+  examples: | 
+   - Can I start making payments after I have registered myself with the concerned Department of Govt. of Odisha?
+   - Am i able to start making payments after i've registered myself with the concerned branch of executive. Of Odisha?
+
+- intent: hdfc706
+  examples: | 
+   - How do I pay Commercial Taxes of West Bengal online?
+   - How do I pay business Taxes of West Bengal online?
+
+- intent: hdfc707
+  examples: | 
+   - How do I know that my taxes are successfully paid?
+   - How do I recognize that my taxes are effectively paid?
+
+- intent: hdfc708
+  examples: | 
+   - Do I need to enter ‘#’ after keying in my Card number/ Card expiry date/ CVV number?
+   - Do I need to enter ‘#’ after keying in my Card quantity/ Card expiry date/ CVV variety?
+
+- intent: hdfc709
+  examples: | 
+   - Can the OTP be generated prior to the transaction?
+   - Can the OTP be generated previous to the transaction?
+
+- intent: hdfc710
+  examples: | 
+   - What happens if I shop at a Verified by Visa/ MasterCard SecureCode merchant website while I'm not registered for this feature?
+   - What takes place if I shop at a confirmed by Visa/ mastercard SecureCode service provider internet site while i'm no longer registered for this feature?
+
+- intent: hdfc711
+  examples: | 
+   - What is NetSafe?
+   - NetSafe
+
+- intent: hdfc712
+  examples: | 
+   - What is the time taken to realize outstation cheques?
+   - What is the time taken to comprehend outstation cheques?
+
+- intent: hdfc713
+  examples: | 
+   - Can I get a Debit Card linked to my Institutional Savings Account?
+   - Can i get a Debit Card connected to my Institutional savings Account?
+
+- intent: hdfc714
+  examples: | 
+   - Do I need to close my account when my kid attains majority?
+   - Do I need to shut my account when my kid attains majority?
+
+- intent: hdfc715
+  examples: | 
+   - What are the documents required to open a Women's Savings Account?
+   - What documentation is needed to start a women's savings account?
+
+- intent: hdfc716
+  examples: | 
+   - What are the documents required for opening a Current Account of a sole proprietorship firm?
+   - What are the documents required for establishing a cutting-edge Account of a sole proprietorship company?
+
+- intent: hdfc717
+  examples: | 
+   - What are the permissible Debits from an RFC Domestic Account?
+   - What kind of debits are permitted from an RFC domestic account?
+
+- intent: hdfc718
+  examples: | 
+   - Whether the EEFC balances can be covered against exchange risk?
+   - Whether or not the EEFC balances can be protected in opposition to exchange hazard?
+
+- intent: hdfc719
+  examples: | 
+   - What are benefits of Smartup Solutions?
+   - What are advantages of Smartup answers?
+
+- intent: hdfc720
+  examples: | 
+   - Can I access my Merchant Advantage Plus Current Account from any HDFC Bank branch?
+   - Am i able to get right of entry to my merchant benefit Plus modern-day Account from any HDFC bank department?
+
+- intent: hdfc721
+  examples: | 
+   - Must I open an account in each location where I have my company office?
+   - Ought to I open an account in each vicinity in which i've my organization workplace?
+
+- intent: hdfc722
+  examples: | 
+   - What is the initial deposit amount required to open the Flexi Account?
+   - What's the preliminary deposit amount required to open the Flexi Account?
+
+- intent: hdfc723
+  examples: | 
+   - Can I access my account by telephone to conduct routine daily transactions?
+   - Can i get admission to my account with the aid of smartphone to behavior routine each day transactions?
+
+- intent: hdfc724
+  examples: | 
+   - What should I do in case I am unable to access my Company's Current Account?
+   - What have to I do in case i'm not able to get entry to my agency's contemporary Account?
+
+- intent: hdfc725
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the documents required for beginning a modern Account of a partnership company?
+
+- intent: hdfc726
+  examples: | 
+   - What transactions are included as a part of the Free Anywhere Transactions limit for a month?
+   - What transactions are covered as a part of the loose everywhere Transactions restriction for a month?
+
+- intent: hdfc727
+  examples: | 
+   - What is the minimum balance required for an Apex Current account?
+   - Minimum balance for Apex contemporary account
+
+- intent: hdfc728
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - Documnetation for opening a modern-day Account of a partnership firm?
+
+- intent: hdfc729
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the files required for commencing a modern-day Account of a partnership firm?
+
+- intent: hdfc730
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the documents required for opening a modern-day Account of a partnership company?
+
+- intent: hdfc731
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the files required for starting a present day Account of a partnership company?
+
+- intent: hdfc732
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the files required for establishing a present day Account of a partnership company?
+
+- intent: hdfc733
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the files required for commencing a current Account of a partnership firm?
+
+- intent: hdfc734
+  examples: | 
+   - What are the documents required for opening a Current Account of a partnership firm?
+   - What are the files required for commencing a cutting-edge Account of a partnership company?
+
+- intent: hdfc735
+  examples: | 
+   - What are the minimum docs required to open a Institutional current account?
+   - What are the minimum docs required to open a Institutional cutting-edge account?
+
+- intent: hdfc736
+  examples: | 
+   - What are the charges for collection of outstation cheques?
+   - What are the expenses for series of outstation cheques?
+
+- intent: hdfc737
+  examples: | 
+   - How do I know my beneficiary's details for a cheque issued in my name (Basic Savings Bank Deposit Account - Farmers)?
+   - How do I understand my beneficiary's information for a cheque issued in my call (fundamental savings Bank Deposit Account - Farmers)?
+
+- intent: hdfc738
+  examples: | 
+   - How do I know my beneficiary's details for a cheque issued in my name (Kisan Club Savings account)?
+   - How do I realize my beneficiary's details for a cheque issued in my name (Kisan membership savings account)?
+
+- intent: hdfc739
+  examples: | 
+   - Can you covert your existing saving account into a pension account?
+   - saving account to pension account?
+
+- intent: hdfc740
+  examples: | 
+   - Why should I go for HDFC Imperia Programme?
+   - Why must i am going for HDFC Imperia Programme?
+   - Imperia Programme
+
+- intent: hdfc741
+  examples: | 
+   - Whom should I contact for my regular banking queries?
+   -banking queries helpdesk
+
+- intent: hdfc742
+  examples: | 
+   - How do I continue to be eligible for the HDFC Bank Classic Programme?
+   - How do I continue to be eligible for the HDFC bank conventional Programme?
+   - HDFC Classic program
+
+- intent: hdfc743
+  examples: | 
+   - What is the rate of interest I will earn on the balance in my Savings Account?
+   - What's the charge of hobby i can earn at the stability in my savings Account?
+
+- intent: hdfc744
+  examples: | 
+   - How will HDFC decide the home loan amount i am eligible for?
+   - How will HDFC determine the home loan quantity i am eligible for?
+   - How will i know if I m eligible for home loan
+
+- intent: hdfc745
+  examples: | 
+   - What is Guarantor?
+   - What is Guarantor?
+
+- intent: hdfc746
+  examples: | 
+   - What are the benefits of having a Current/Saving Account for my Business Growth Loan?
+   - What are the advantages of having a present day/Saving Account for my enterprise boom mortgage?
+
+- intent: hdfc747
+  examples: | 
+   - What is Guarantor?
+   - What is Guarantor?
+
+- intent: hdfc748
+  examples: | 
+   - How much time will it take to change the mode of repayment/ account for repayment of my loan?
+   - How plenty time will it take to trade the mode of repayment/ account for repayment of my loan?
+
+- intent: hdfc749
+  examples: | 
+   - What is Guarantor?
+   - What's Guarantor?
+
+- intent: hdfc750
+  examples: | 
+   - What are the tenure options available?
+   - What are the tenure alternatives available?
+   - tenure options
+
+- intent: hdfc751
+  examples: | 
+   - What are the tenure options for Pre-owned Car Loans?
+   - What are the tenure alternatives for Pre-owned vehicle Loans?
+
+- intent: hdfc752
+  examples: | 
+   - So how do I get the Loan against Car?
+   - loan against car
+   - So how do i am getting the mortgage against automobile?
+
+- intent: hdfc753
+  examples: | 
+   - Whom do I contact in case of ay further queries regarding the loan?
+   - Queries regarding loan
+   - Whom do I contact in case of ay in addition queries concerning the loan?
+
+- intent: hdfc754
+  examples: | 
+   - What is Pledge?
+   - What's Pledge?
+
+- intent: hdfc755
+  examples: | 
+   - What is the maximum loan amount I can get for studies in India?
+   - What's the maximum mortgage quantity i will get for research in India?
+
+- intent: hdfc756
+  examples: | 
+   - Which courses can I take an education loan for (Education Loans For Foreign Education)?
+   - Which publications am i able to take an education mortgage for (education Loans For overseas training)?
+
+- intent: hdfc757
+  examples: | 
+   - What is Guarantor?
+   - What's Guarantor?
+
+- intent: hdfc758
+  examples: | 
+   - Do you want to repay the loan earlier than the due date?
+   - Repaying loan earlier than the due date
+
+- intent: hdfc759
+  examples: | 
+   - How can I change the mode of repayment/ account for my loan?
+   - How can i exchange the mode of repayment/ account for my loan?
+
+- intent: hdfc760
+  examples: | 
+   - What is Guarantor?
+   - What's Guarantor?
+
+- intent: hdfc761
+  examples: | 
+   - What is the HDFC Life Cancer Care Policy?
+   - cancer Care policy
+
+- intent: hdfc762
+  examples: | 
+   - What is HDFC Life Easy Health Plan?
+   - Health plan
+   - What is HDFC lifestyles clean fitness Plan?
+
+- intent: hdfc763
+  examples: | 
+   - Why can't I have liquidity of complete amount on surrender?
+   - Why can not i have liquidity of complete amount on surrender?
+
+- intent: hdfc764
+  examples: | 
+   - What is a retirement plan?
+   - Retirement plan
+
+- intent: hdfc765
+  examples: | 
+   - Can I buy more than one policy?
+   - Am i able to buy a couple of policy?
+
+- intent: hdfc766
+  examples: | 
+   - What are the features that are available with HDFC Life Uday?
+   - What are the features which might be available with HDFC lifestyles Uday?
+
+- intent: hdfc767
+  examples: | 
+   -  What if I need the money for an emergency?
+   -  Money for emergency
+   - I need money
+
+- intent: hdfc768
+  examples: | 
+   - What are the different types of Savings Plans?
+   - What are the unique kinds of savings Plans?
+
+- intent: hdfc769
+  examples: | 
+   - Can I save tax by investing in this policy?
+   - Can i store tax through making an investment on this policy?
+
+- intent: hdfc770
+  examples: | 
+   - Can I take any loan?
+   - Am I eligible for loan
+
+- intent: hdfc771
+  examples: | 
+   - Can the plan be offered under limited underwriting?
+   - Can the plan be supplied below confined underwriting?
+
+- intent: hdfc772
+  examples: | 
+   - Do I have option to avail loan under the policy?
+   - Do i have option to avail loan beneath the policy?
+
+- intent: hdfc773
+  examples: | 
+   - What is the min-max age at entry/maturity ?
+   - What is the min-max age at access/maturity ?
+
+- intent: hdfc774
+  examples: | 
+   - What is the min-max age at entry/maturity?
+   - What's the min-max age at entry/adulthood?
+
+- intent: hdfc775
+  examples: | 
+   - What will I get on maturityFor a policy where all due premiums have been paid, the maturity benefit will be the aggregate of:On payment of the Maturity Benefit, the policy will terminate and no more benefits will be payable.Last Guaranteed Base Income payout,Accrued Reversionary Bonuses,Interim Bonus, if anyTerminal bonus, if any Is there any option available for monthly payout?
+   - What will I get when I reach maturity? For a policy with all due premiums paid, the maturity gain might be the sum of:If the maturity gain is paid, the policy will be terminated, and no further benefits will be provided. Guaranteed survival Profits from the base, accumulated Reversionary Bonuses, if any, Interval Bonuses, if anyTerminal Bonuses, if any Is there a monthly payment option available?
+
+- intent: hdfc776
+  examples: | 
+   - What are the benefits of a retirement plan?
+   - What are the advantages of a retirement plan?
+
+- intent: hdfc777
+  examples: | 
+   - What is the minimum/maximum age at entry/maturity?
+   - What is the minimum/maximum age at entry/maturity?
+
+- intent: hdfc778
+  examples: | 
+   - Can I take any loan?
+   - Can i take any mortgage?
+
+- intent: hdfc779
+  examples: | 
+   - Should I choose a Unit Linked or a non – Unit Linked plan?
+   - Need to I pick a Unit connected or a non – Unit connected plan?
+
+- intent: hdfc780
+  examples: | 
+   - What is the surrender benefit?
+   - What's the surrender advantage?
+
+- intent: hdfc781
+  examples: | 
+   - What is HDFC Life Capital Shield?
+   - What's HDFC existence Capital shield?
+
+- intent: hdfc782
+  examples: | 
+   - What is the difference between Life and Extra Life options?
+   - lifestyles vs extra lifestyles options
+
+- intent: hdfc783
+  examples: | 
+   - Why do I need a Children's Plan?
+   - Need for children's plan
+
+- intent: hdfc784
+  examples: | 
+   - Can the plan be offered under limited underwritingThe plan can be applied by filing in the Short Medical Questionnaire (SMQ), which may not require you to go for medicals. When does the plan acquire Guaranteed Surrender value?
+   - Can the plan be presented underneath constrained underwritingThe plan can be carried out by means of submitting in the quick scientific Questionnaire (SMQ), which may not require you to move for medicals. Whilst does the plan accumulate guaranteed give up fee?
+
+- intent: hdfc785
+  examples: | 
+   - If I have an HDFC Bank Credit Card and a Current or Savings account with HDFC and have only registered for the Online Credit Card facility through NetBanking will I be able to view my HDFC Bank account details as well?
+   - If i have an HDFC Bank credit score Card and a modern or savings account with HDFC and feature most effective registered for the web credit Card facility via NetBanking will I be capable of view my HDFC bank account information as nicely?
+
+- intent: hdfc786
+  examples: | 
+   -  Who can register for email statements?
+   -  register email statements
+   -  email statements
+
+- intent: hdfc787
+  examples: | 
+   -  How can I access Loan Accounts Online, if I do not have Net Banking ID?
+   -  access loan account online
+   -  online access to loan accounts
+   -  no netbanking ID , access loan account 
+
+- intent: hdfc788
+  examples: | 
+   -  How can you block your IPIN (password) or un-register?
+   - block password
+   - block IPIN
+   - unregister IPIN
+
+- intent: hdfc789
+  examples: | 
+   - How to Login to the application
+   - login application
+   - application login
+
+- intent: hdfc790
+  examples: | 
+   - Is there a PIN number to access SMSBanking?
+   - How can i access SMSBanking?
+   - SMSBanking
+   - Pin to access SMSBanking
+
+- intent: hdfc791
+  examples: | 
+   - How can I use the "Funds Transfer" option at the ATM?
+   - funds transfer
+   
+
+- intent: hdfc792
+  examples: | 
+   - Can the CashShop facility be used on a Debit Card if the Debit Card holder is not present?
+   - CashShop facility
+   - CashShop
+   - Using cashshop facility if card holder not present
+
+- intent: hdfc793
+  examples: | 
+   - How do I open a Dream Deposit?
+   - opening dream deposit
+   - dream deposit
+
+- intent: hdfc794
+  examples: | 
+   - Which Mutual Funds are ISA enabled?
+   - ISA enabled mutual funds
+   - what categories of mutual funds enabled under ISA
+
+- intent: hdfc795
+  examples: | 
+   - Can I cancel or withdraw my IPO application (or bid) submitted using ASBA?
+   - Cancel IPO application 
+   - withdraw IPO application
+   - I want to withdraw my IPO application submitted using ASBA
+   - I want to cancel my IPO application submitted using ASBA
+
+
+- intent: hdfc796
+  examples: | 
+   - Can I cancel/ modify my bid placed under ASBA during the bidding period?
+   - modification of bid under ASBA
+   - Bid under ASBA
+   - cancellation of bid
+   - modify bid
+   - I want to cancel my bid placed under ASBA
+
+- intent: hdfc797
+  examples: | 
+   - In what form are these bonds issued?
+   - form in which bonds are issued
+
+- intent: hdfc798
+  examples: | 
+   - Can I claim exemption under exemption under 54C with the exemption 54 and 54EC?
+   - claiming exemption under exemption under 54C with the exemption 54 and 54EC
+   - 54c exemption under 54 and 54EC
+
+- intent: hdfc799
+  examples: | 
+   - Do I need to have Auto Insurance?
+   - Auto Insurance
+   - Is it necessary to have auto insurance
+
+- intent: hdfc800
+  examples: | 
+   - When do I have to submit a medical exam?
+   - Is medical exam compulsory
+   - Medical exam
+   - Why medical exam is needed?
+
+- intent: hdfc801
+  examples: | 
+   - What will be the start date of my insurance policy?
+   - When will my insurance policy start?
+   - Insurance policy starting date
+
+- intent: hdfc802
+  examples: | 
+   - Can HDFC Ergo Student Travel insurance suraksha policy be extended?
+   - Extension of HDFC Ergo Student travel insurance
+   - HDFC Ergo student Travel insurance
+   - Student travel insurance
+
+- intent: hdfc803
+  examples: | 
+   - Who qualifies as a Non-Resident Indian (NRI)?
+   - Info on NRI
+   - Who is NRI?
+   - Qualification of NRI
+   - Can I be NRI?
+
+- intent: hdfc804
+  examples: | 
+   - What is a Digital Certificate?
+   - DC
+   - Digital Certificate
+
+- intent: hdfc805
+  examples: | 
+   - What is KYC Norms and Anti Money Laundering?
+   - KYC Norms
+   - Anti money
+   - Anti money laundering
+   - What is KYC Norm
+   - What is Antimoney laundering
+   - KYC Norm
+
+
+- intent: hdfc806
+  examples: | 
+   - What is Pradhan Mantri Jan-Dhan Yojana?
+   - Pradhan Mantri Jan-Dhan Yojana
+   - Tell me about Pradhan Mantri yojana
+   - Pradhan Mantri Yojana
+
+- intent: hdfc807
+  examples: | 
+   - Using NetBanking for the first time?
+   - What are the steps to login for netbanking?
+   - Netbanking
+   - Netbanking login steps
+   - How can I login to netbanking?
+
+

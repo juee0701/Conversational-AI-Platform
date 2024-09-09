@@ -1,0 +1,212 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_affirm
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_deny
+  - intent: hdfc0
+  - action: utter_0
+  - intent: hdfc1
+  - action: utter_1
+  - intent: hdfc2
+  - action: utter_2
+  - intent: hdfc3
+  - action: utter_3
+  - intent: hdfc4
+  - action: utter_4
+  - intent: hdfc5
+  - action: utter_5
+
+- story: good mood
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: thank you
+  steps:
+  - intent: thank_you
+  - action: utter_thankyou
+
+
+- story: deny
+  steps:
+  - intent: deny
+  - action: utter_deny
+
+
+- story: affirm
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+
+- story: path about out_of_scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  # - action: action_show_time
+
+# - story: path about personalloan_emi
+#   steps:
+#   - intent: personalloan_emi
+#   - action: utter_personalloan_emi
+#   - intent: answer
+#   - action: utter_answer
+#   - action: action_show_time
+- story: interactive_story_1
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: personalloan_emi
+  - action: utter_personalloan_emi
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - requested_slot: first_name
+  - slot_was_set:
+    - first_name: vincent
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_show_time
+
+- story: path about carloan_emi
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: carloan_emi
+  - action: utter_carloan_emi
+  - action: carloan_details
+  - active_loop: carloan_details
+  - slot_was_set:
+    - requested_slot: cardetails
+  - slot_was_set:
+    - cardetails: vincent
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_show_time
+
+- story: path about homeloan_emi
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: homeloan_emi
+  - action: utter_homeloan_emi
+  - action: homeloan_details
+  - active_loop: homeloan_details
+  - slot_was_set:
+    - requested_slot: homedetails
+  - slot_was_set:
+    - homedetails: vincent
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_show_time
+
+- story: interactive_story_2
+  steps:
+  - intent: loan
+  - action: utter_loan
+  - intent: personal_loan
+  - action: utter_personal_loan
+  - action: personal_eli
+  - active_loop: personal_eli
+  - slot_was_set:
+    - requested_slot: personalloan_eli
+  - slot_was_set:
+    - personalloan_eli: 18,3,4,1000000
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_loan
+
+- story: path about car_loan
+  steps:
+  - intent: loan
+  - action: utter_loan
+  - intent: car_loan
+  - action: utter_car_loan
+  - action: carloan_details_eli
+  - active_loop: carloan_details_eli
+  - slot_was_set:
+    - requested_slot: cardetails_eli
+  - slot_was_set:
+    - cardetails_eli: 18,3,4,1000000
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_loan
+
+- story: path about home_loan
+  steps:
+  - intent: loan
+  - action: utter_loan
+  - intent: home_loan
+  - action: utter_home_loan
+  - action: homeloan_details_eli
+  - active_loop: homeloan_details_eli
+  - slot_was_set:
+    - requested_slot: homedetails_eli
+  - slot_was_set:
+    - homedetails_eli: 18,3,4,1000000
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_loan
+- story: path about HDFC
+  steps:
+  - intent: hdfc0
+  - action: utter_0
+  - intent: hdfc1
+  - action: utter_1
+  - intent: hdfc2
+  - action: utter_2
+  - intent: hdfc3
+  - action: utter_3
+  - intent: hdfc4
+  - action: utter_4
+  - intent: hdfc5
+  - action: utter_5
+
+
+
+- story: default fallback
+  steps:
+  - intent: no_answer
+  - action: utter_default
+
+# - story: path about no_answer
+#   steps:
+#   - intent: no_answer
+#   - action: utter_no _answer 
+
+# ## fallback story
+# * out_of_scope
+#   - action_show_time

@@ -1,0 +1,3375 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say hi anytime the user says hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
+- rule: rule for mood great
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
+- rule: rule for deny
+  steps: 
+  - intent: deny
+  - action: utter_deny
+
+- rule: rule for affirm
+  steps: 
+  - intent: affirm
+  - action: utter_affirm
+
+- rule: rule for thank you
+  steps:
+  - intent: thank_you
+  - action: utter_thankyou
+
+- rule: out-of-scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  # - action: which_emi_calculator
+  # - action: action_show_time
+
+# - rule: personalloan_emi
+#   steps:
+#   - intent: personalloan_emi
+#   - action: utter_personalloan_emi
+  # - intent: answer
+  # - action: utter_answer
+  # - action: action_show_time
+- rule: personalloan_emi
+  steps:
+  - intent: personalloan_emi
+  - action: utter_personalloan_emi
+  - action: name_form
+  - active_loop: name_form
+  
+
+- rule: Submit form
+  condition:
+  - active_loop: name_form
+  steps:
+  - action: name_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_show_time
+
+- rule: carloan_emi
+  steps:
+  - intent: carloan_emi
+  - action: utter_carloan_emi
+  - action: carloan_details
+  - active_loop: carloan_details
+
+# rule: carloan_emi
+#   steps:
+#   - intent: carloan_emi
+#   - action: utter_carloan_emi
+
+- rule: homeloan_emi
+  steps:
+  - intent: homeloan_emi
+  - action: utter_homeloan_emi
+  - action: homeloan_details
+  - active_loop: homeloan_details
+  
+- rule: loan
+  steps:
+  - intent: loan
+  - action: utter_loan
+
+- rule: personal_loan
+  steps:
+  - intent: personal_loan
+  - action: utter_personal_loan
+  - action: personal_eli
+  - active_loop: personal_eli
+  
+
+- rule: Submitform1
+  condition:
+  - active_loop: personal_emi
+  steps:
+  - action: personal_emi
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_loan
+
+- rule: car_loan
+  steps:
+  - intent: car_loan
+  - action: utter_car_loan
+  - action: carloan_details_eli
+  - active_loop: carloan_details_eli
+
+# rule: carloan_emi
+#   steps:
+#   - intent: carloan_emi
+#   - action: utter_carloan_emi
+
+- rule: home_loan
+  steps:
+  - intent: home_loan
+  - action: utter_home_loan
+  - action: homeloan_details_eli
+  - active_loop: homeloan_details_eli
+
+- rule: hdfc00
+  steps: 
+  - intent: hdfc00
+  - action: utter_00
+- rule: hdfc0
+  steps: 
+  - intent: hdfc0
+  - action: utter_0
+- rule: hdfc1
+  steps: 
+  - intent: hdfc1
+  - action: utter_1
+- rule: hdfc2
+  steps: 
+  - intent: hdfc2
+  - action: utter_2
+- rule: hdfc3
+  steps: 
+  - intent: hdfc3
+  - action: utter_3
+- rule: hdfc4
+  steps: 
+  - intent: hdfc4
+  - action: utter_4
+- rule: hdfc5
+  steps: 
+  - intent: hdfc5
+  - action: utter_5
+- rule: hdfc6
+  steps: 
+  - intent: hdfc6
+  - action: utter_6
+- rule: hdfc7
+  steps: 
+  - intent: hdfc7
+  - action: utter_7
+- rule: hdfc8
+  steps: 
+  - intent: hdfc8
+  - action: utter_8
+- rule: hdfc9
+  steps: 
+  - intent: hdfc9
+  - action: utter_9
+- rule: hdfc10
+  steps: 
+  - intent: hdfc10
+  - action: utter_10
+- rule: hdfc11
+  steps: 
+  - intent: hdfc11
+  - action: utter_11
+- rule: hdfc12
+  steps: 
+  - intent: hdfc12
+  - action: utter_12
+- rule: hdfc13
+  steps: 
+  - intent: hdfc13
+  - action: utter_13
+- rule: hdfc14
+  steps: 
+  - intent: hdfc14
+  - action: utter_14
+- rule: hdfc15
+  steps: 
+  - intent: hdfc15
+  - action: utter_15
+- rule: hdfc16
+  steps: 
+  - intent: hdfc16
+  - action: utter_16
+- rule: hdfc17
+  steps: 
+  - intent: hdfc17
+  - action: utter_17
+- rule: hdfc18
+  steps: 
+  - intent: hdfc18
+  - action: utter_18
+- rule: hdfc19
+  steps: 
+  - intent: hdfc19
+  - action: utter_19
+- rule: hdfc20
+  steps: 
+  - intent: hdfc20
+  - action: utter_20
+- rule: hdfc21
+  steps: 
+  - intent: hdfc21
+  - action: utter_21
+- rule: hdfc22
+  steps: 
+  - intent: hdfc22
+  - action: utter_22
+- rule: hdfc23
+  steps: 
+  - intent: hdfc23
+  - action: utter_23
+- rule: hdfc24
+  steps: 
+  - intent: hdfc24
+  - action: utter_24
+- rule: hdfc25
+  steps: 
+  - intent: hdfc25
+  - action: utter_25
+- rule: hdfc26
+  steps: 
+  - intent: hdfc26
+  - action: utter_26
+- rule: hdfc27
+  steps: 
+  - intent: hdfc27
+  - action: utter_27
+- rule: hdfc28
+  steps: 
+  - intent: hdfc28
+  - action: utter_28
+- rule: hdfc29
+  steps: 
+  - intent: hdfc29
+  - action: utter_29
+- rule: hdfc30
+  steps: 
+  - intent: hdfc30
+  - action: utter_30
+- rule: hdfc31
+  steps: 
+  - intent: hdfc31
+  - action: utter_31
+- rule: hdfc32
+  steps: 
+  - intent: hdfc32
+  - action: utter_32
+- rule: hdfc33
+  steps: 
+  - intent: hdfc33
+  - action: utter_33
+- rule: hdfc34
+  steps: 
+  - intent: hdfc34
+  - action: utter_34
+- rule: hdfc35
+  steps: 
+  - intent: hdfc35
+  - action: utter_35
+- rule: hdfc36
+  steps: 
+  - intent: hdfc36
+  - action: utter_36
+- rule: hdfc37
+  steps: 
+  - intent: hdfc37
+  - action: utter_37
+- rule: hdfc38
+  steps: 
+  - intent: hdfc38
+  - action: utter_38
+- rule: hdfc39
+  steps: 
+  - intent: hdfc39
+  - action: utter_39
+- rule: hdfc40
+  steps: 
+  - intent: hdfc40
+  - action: utter_40
+- rule: hdfc41
+  steps: 
+  - intent: hdfc41
+  - action: utter_41
+- rule: hdfc42
+  steps: 
+  - intent: hdfc42
+  - action: utter_42
+- rule: hdfc43
+  steps: 
+  - intent: hdfc43
+  - action: utter_43
+- rule: hdfc44
+  steps: 
+  - intent: hdfc44
+  - action: utter_44
+- rule: hdfc45
+  steps: 
+  - intent: hdfc45
+  - action: utter_45
+- rule: hdfc46
+  steps: 
+  - intent: hdfc46
+  - action: utter_46
+- rule: hdfc47
+  steps: 
+  - intent: hdfc47
+  - action: utter_47
+- rule: hdfc48
+  steps: 
+  - intent: hdfc48
+  - action: utter_48
+- rule: hdfc49
+  steps: 
+  - intent: hdfc49
+  - action: utter_49
+- rule: hdfc50
+  steps: 
+  - intent: hdfc50
+  - action: utter_50
+- rule: hdfc51
+  steps: 
+  - intent: hdfc51
+  - action: utter_51
+- rule: hdfc52
+  steps: 
+  - intent: hdfc52
+  - action: utter_52
+- rule: hdfc53
+  steps: 
+  - intent: hdfc53
+  - action: utter_53
+- rule: hdfc54
+  steps: 
+  - intent: hdfc54
+  - action: utter_54
+- rule: hdfc55
+  steps: 
+  - intent: hdfc55
+  - action: utter_55
+- rule: hdfc56
+  steps: 
+  - intent: hdfc56
+  - action: utter_56
+- rule: hdfc57
+  steps: 
+  - intent: hdfc57
+  - action: utter_57
+- rule: hdfc58
+  steps: 
+  - intent: hdfc58
+  - action: utter_58
+- rule: hdfc59
+  steps: 
+  - intent: hdfc59
+  - action: utter_59
+- rule: hdfc60
+  steps: 
+  - intent: hdfc60
+  - action: utter_60
+- rule: hdfc61
+  steps: 
+  - intent: hdfc61
+  - action: utter_61
+- rule: hdfc62
+  steps: 
+  - intent: hdfc62
+  - action: utter_62
+- rule: hdfc63
+  steps: 
+  - intent: hdfc63
+  - action: utter_63
+- rule: hdfc64
+  steps: 
+  - intent: hdfc64
+  - action: utter_64
+- rule: hdfc65
+  steps: 
+  - intent: hdfc65
+  - action: utter_65
+- rule: hdfc66
+  steps: 
+  - intent: hdfc66
+  - action: utter_66
+- rule: hdfc67
+  steps: 
+  - intent: hdfc67
+  - action: utter_67
+- rule: hdfc68
+  steps: 
+  - intent: hdfc68
+  - action: utter_68
+- rule: hdfc69
+  steps: 
+  - intent: hdfc69
+  - action: utter_69
+- rule: hdfc70
+  steps: 
+  - intent: hdfc70
+  - action: utter_70
+- rule: hdfc71
+  steps: 
+  - intent: hdfc71
+  - action: utter_71
+- rule: hdfc72
+  steps: 
+  - intent: hdfc72
+  - action: utter_72
+- rule: hdfc73
+  steps: 
+  - intent: hdfc73
+  - action: utter_73
+- rule: hdfc74
+  steps: 
+  - intent: hdfc74
+  - action: utter_74
+- rule: hdfc75
+  steps: 
+  - intent: hdfc75
+  - action: utter_75
+- rule: hdfc76
+  steps: 
+  - intent: hdfc76
+  - action: utter_76
+- rule: hdfc77
+  steps: 
+  - intent: hdfc77
+  - action: utter_77
+- rule: hdfc78
+  steps: 
+  - intent: hdfc78
+  - action: utter_78
+- rule: hdfc79
+  steps: 
+  - intent: hdfc79
+  - action: utter_79
+- rule: hdfc80
+  steps: 
+  - intent: hdfc80
+  - action: utter_80
+- rule: hdfc81
+  steps: 
+  - intent: hdfc81
+  - action: utter_81
+- rule: hdfc82
+  steps: 
+  - intent: hdfc82
+  - action: utter_82
+- rule: hdfc83
+  steps: 
+  - intent: hdfc83
+  - action: utter_83
+- rule: hdfc84
+  steps: 
+  - intent: hdfc84
+  - action: utter_84
+- rule: hdfc85
+  steps: 
+  - intent: hdfc85
+  - action: utter_85
+- rule: hdfc86
+  steps: 
+  - intent: hdfc86
+  - action: utter_86
+- rule: hdfc87
+  steps: 
+  - intent: hdfc87
+  - action: utter_87
+- rule: hdfc88
+  steps: 
+  - intent: hdfc88
+  - action: utter_88
+- rule: hdfc89
+  steps: 
+  - intent: hdfc89
+  - action: utter_89
+- rule: hdfc90
+  steps: 
+  - intent: hdfc90
+  - action: utter_90
+- rule: hdfc91
+  steps: 
+  - intent: hdfc91
+  - action: utter_91
+- rule: hdfc92
+  steps: 
+  - intent: hdfc92
+  - action: utter_92
+- rule: hdfc93
+  steps: 
+  - intent: hdfc93
+  - action: utter_93
+- rule: hdfc94
+  steps: 
+  - intent: hdfc94
+  - action: utter_94
+- rule: hdfc95
+  steps: 
+  - intent: hdfc95
+  - action: utter_95
+- rule: hdfc96
+  steps: 
+  - intent: hdfc96
+  - action: utter_96
+- rule: hdfc97
+  steps: 
+  - intent: hdfc97
+  - action: utter_97
+- rule: hdfc98
+  steps: 
+  - intent: hdfc98
+  - action: utter_98
+- rule: hdfc99
+  steps: 
+  - intent: hdfc99
+  - action: utter_99
+- rule: hdfc100
+  steps: 
+  - intent: hdfc100
+  - action: utter_100
+- rule: hdfc101
+  steps: 
+  - intent: hdfc101
+  - action: utter_101
+- rule: hdfc102
+  steps: 
+  - intent: hdfc102
+  - action: utter_102
+- rule: hdfc103
+  steps: 
+  - intent: hdfc103
+  - action: utter_103
+- rule: hdfc104
+  steps: 
+  - intent: hdfc104
+  - action: utter_104
+- rule: hdfc105
+  steps: 
+  - intent: hdfc105
+  - action: utter_105
+- rule: hdfc106
+  steps: 
+  - intent: hdfc106
+  - action: utter_106
+- rule: hdfc107
+  steps: 
+  - intent: hdfc107
+  - action: utter_107
+- rule: hdfc108
+  steps: 
+  - intent: hdfc108
+  - action: utter_108
+- rule: hdfc109
+  steps: 
+  - intent: hdfc109
+  - action: utter_109
+- rule: hdfc110
+  steps: 
+  - intent: hdfc110
+  - action: utter_110
+- rule: hdfc111
+  steps: 
+  - intent: hdfc111
+  - action: utter_111
+- rule: hdfc112
+  steps: 
+  - intent: hdfc112
+  - action: utter_112
+- rule: hdfc113
+  steps: 
+  - intent: hdfc113
+  - action: utter_113
+- rule: hdfc114
+  steps: 
+  - intent: hdfc114
+  - action: utter_114
+- rule: hdfc115
+  steps: 
+  - intent: hdfc115
+  - action: utter_115
+- rule: hdfc116
+  steps: 
+  - intent: hdfc116
+  - action: utter_116
+- rule: hdfc117
+  steps: 
+  - intent: hdfc117
+  - action: utter_117
+- rule: hdfc118
+  steps: 
+  - intent: hdfc118
+  - action: utter_118
+- rule: hdfc119
+  steps: 
+  - intent: hdfc119
+  - action: utter_119
+- rule: hdfc120
+  steps: 
+  - intent: hdfc120
+  - action: utter_120
+- rule: hdfc121
+  steps: 
+  - intent: hdfc121
+  - action: utter_121
+- rule: hdfc122
+  steps: 
+  - intent: hdfc122
+  - action: utter_122
+- rule: hdfc123
+  steps: 
+  - intent: hdfc123
+  - action: utter_123
+- rule: hdfc124
+  steps: 
+  - intent: hdfc124
+  - action: utter_124
+- rule: hdfc125
+  steps: 
+  - intent: hdfc125
+  - action: utter_125
+- rule: hdfc126
+  steps: 
+  - intent: hdfc126
+  - action: utter_126
+- rule: hdfc127
+  steps: 
+  - intent: hdfc127
+  - action: utter_127
+- rule: hdfc128
+  steps: 
+  - intent: hdfc128
+  - action: utter_128
+- rule: hdfc129
+  steps: 
+  - intent: hdfc129
+  - action: utter_129
+- rule: hdfc130
+  steps: 
+  - intent: hdfc130
+  - action: utter_130
+- rule: hdfc131
+  steps: 
+  - intent: hdfc131
+  - action: utter_131
+- rule: hdfc132
+  steps: 
+  - intent: hdfc132
+  - action: utter_132
+- rule: hdfc133
+  steps: 
+  - intent: hdfc133
+  - action: utter_133
+- rule: hdfc134
+  steps: 
+  - intent: hdfc134
+  - action: utter_134
+- rule: hdfc135
+  steps: 
+  - intent: hdfc135
+  - action: utter_135
+- rule: hdfc136
+  steps: 
+  - intent: hdfc136
+  - action: utter_136
+- rule: hdfc137
+  steps: 
+  - intent: hdfc137
+  - action: utter_137
+- rule: hdfc138
+  steps: 
+  - intent: hdfc138
+  - action: utter_138
+- rule: hdfc139
+  steps: 
+  - intent: hdfc139
+  - action: utter_139
+- rule: hdfc140
+  steps: 
+  - intent: hdfc140
+  - action: utter_140
+- rule: hdfc141
+  steps: 
+  - intent: hdfc141
+  - action: utter_141
+- rule: hdfc142
+  steps: 
+  - intent: hdfc142
+  - action: utter_142
+# - rule: hdfc143
+#   steps: 
+#   - intent: hdfc143
+#   - action: utter_143
+- rule: hdfc144
+  steps: 
+  - intent: hdfc144
+  - action: utter_144
+- rule: hdfc145
+  steps: 
+  - intent: hdfc145
+  - action: utter_145
+- rule: hdfc146
+  steps: 
+  - intent: hdfc146
+  - action: utter_146
+- rule: hdfc147
+  steps: 
+  - intent: hdfc147
+  - action: utter_147
+- rule: hdfc148
+  steps: 
+  - intent: hdfc148
+  - action: utter_148
+- rule: hdfc149
+  steps: 
+  - intent: hdfc149
+  - action: utter_149
+- rule: hdfc150
+  steps: 
+  - intent: hdfc150
+  - action: utter_150
+- rule: hdfc151
+  steps: 
+  - intent: hdfc151
+  - action: utter_151
+- rule: hdfc152
+  steps: 
+  - intent: hdfc152
+  - action: utter_152
+- rule: hdfc153
+  steps: 
+  - intent: hdfc153
+  - action: utter_153
+- rule: hdfc154
+  steps: 
+  - intent: hdfc154
+  - action: utter_154
+- rule: hdfc155
+  steps: 
+  - intent: hdfc155
+  - action: utter_155
+- rule: hdfc156
+  steps: 
+  - intent: hdfc156
+  - action: utter_156
+- rule: hdfc157
+  steps: 
+  - intent: hdfc157
+  - action: utter_157
+- rule: hdfc158
+  steps: 
+  - intent: hdfc158
+  - action: utter_158
+- rule: hdfc159
+  steps: 
+  - intent: hdfc159
+  - action: utter_159
+- rule: hdfc160
+  steps: 
+  - intent: hdfc160
+  - action: utter_160
+- rule: hdfc161
+  steps: 
+  - intent: hdfc161
+  - action: utter_161
+- rule: hdfc162
+  steps: 
+  - intent: hdfc162
+  - action: utter_162
+- rule: hdfc163
+  steps: 
+  - intent: hdfc163
+  - action: utter_163
+- rule: hdfc164
+  steps: 
+  - intent: hdfc164
+  - action: utter_164
+- rule: hdfc165
+  steps: 
+  - intent: hdfc165
+  - action: utter_165
+- rule: hdfc166
+  steps: 
+  - intent: hdfc166
+  - action: utter_166
+- rule: hdfc167
+  steps: 
+  - intent: hdfc167
+  - action: utter_167
+- rule: hdfc168
+  steps: 
+  - intent: hdfc168
+  - action: utter_168
+- rule: hdfc169
+  steps: 
+  - intent: hdfc169
+  - action: utter_169
+- rule: hdfc170
+  steps: 
+  - intent: hdfc170
+  - action: utter_170
+- rule: hdfc171
+  steps: 
+  - intent: hdfc171
+  - action: utter_171
+- rule: hdfc172
+  steps: 
+  - intent: hdfc172
+  - action: utter_172
+- rule: hdfc173
+  steps: 
+  - intent: hdfc173
+  - action: utter_173
+- rule: hdfc174
+  steps: 
+  - intent: hdfc174
+  - action: utter_174
+- rule: hdfc175
+  steps: 
+  - intent: hdfc175
+  - action: utter_175
+- rule: hdfc176
+  steps: 
+  - intent: hdfc176
+  - action: utter_176
+- rule: hdfc177
+  steps: 
+  - intent: hdfc177
+  - action: utter_177
+- rule: hdfc178
+  steps: 
+  - intent: hdfc178
+  - action: utter_178
+- rule: hdfc179
+  steps: 
+  - intent: hdfc179
+  - action: utter_179
+- rule: hdfc180
+  steps: 
+  - intent: hdfc180
+  - action: utter_180
+- rule: hdfc181
+  steps: 
+  - intent: hdfc181
+  - action: utter_181
+- rule: hdfc182
+  steps: 
+  - intent: hdfc182
+  - action: utter_182
+- rule: hdfc183
+  steps: 
+  - intent: hdfc183
+  - action: utter_183
+- rule: hdfc184
+  steps: 
+  - intent: hdfc184
+  - action: utter_184
+- rule: hdfc185
+  steps: 
+  - intent: hdfc185
+  - action: utter_185
+- rule: hdfc186
+  steps: 
+  - intent: hdfc186
+  - action: utter_186
+- rule: hdfc187
+  steps: 
+  - intent: hdfc187
+  - action: utter_187
+- rule: hdfc188
+  steps: 
+  - intent: hdfc188
+  - action: utter_188
+- rule: hdfc189
+  steps: 
+  - intent: hdfc189
+  - action: utter_189
+- rule: hdfc190
+  steps: 
+  - intent: hdfc190
+  - action: utter_190
+- rule: hdfc191
+  steps: 
+  - intent: hdfc191
+  - action: utter_191
+- rule: hdfc192
+  steps: 
+  - intent: hdfc192
+  - action: utter_192
+- rule: hdfc193
+  steps: 
+  - intent: hdfc193
+  - action: utter_193
+- rule: hdfc194
+  steps: 
+  - intent: hdfc194
+  - action: utter_194
+- rule: hdfc195
+  steps: 
+  - intent: hdfc195
+  - action: utter_195
+- rule: hdfc196
+  steps: 
+  - intent: hdfc196
+  - action: utter_196
+- rule: hdfc197
+  steps: 
+  - intent: hdfc197
+  - action: utter_197
+- rule: hdfc198
+  steps: 
+  - intent: hdfc198
+  - action: utter_198
+- rule: hdfc199
+  steps: 
+  - intent: hdfc199
+  - action: utter_199
+- rule: hdfc200
+  steps: 
+  - intent: hdfc200
+  - action: utter_200
+- rule: hdfc201
+  steps: 
+  - intent: hdfc201
+  - action: utter_201
+- rule: hdfc202
+  steps: 
+  - intent: hdfc202
+  - action: utter_202
+- rule: hdfc203
+  steps: 
+  - intent: hdfc203
+  - action: utter_203
+- rule: hdfc204
+  steps: 
+  - intent: hdfc204
+  - action: utter_204
+- rule: hdfc205
+  steps: 
+  - intent: hdfc205
+  - action: utter_205
+- rule: hdfc206
+  steps: 
+  - intent: hdfc206
+  - action: utter_206
+- rule: hdfc207
+  steps: 
+  - intent: hdfc207
+  - action: utter_207
+- rule: hdfc208
+  steps: 
+  - intent: hdfc208
+  - action: utter_208
+- rule: hdfc209
+  steps: 
+  - intent: hdfc209
+  - action: utter_209
+- rule: hdfc210
+  steps: 
+  - intent: hdfc210
+  - action: utter_210
+- rule: hdfc211
+  steps: 
+  - intent: hdfc211
+  - action: utter_211
+- rule: hdfc212
+  steps: 
+  - intent: hdfc212
+  - action: utter_212
+- rule: hdfc213
+  steps: 
+  - intent: hdfc213
+  - action: utter_213
+- rule: hdfc214
+  steps: 
+  - intent: hdfc214
+  - action: utter_214
+- rule: hdfc215
+  steps: 
+  - intent: hdfc215
+  - action: utter_215
+- rule: hdfc216
+  steps: 
+  - intent: hdfc216
+  - action: utter_216
+- rule: hdfc217
+  steps: 
+  - intent: hdfc217
+  - action: utter_217
+- rule: hdfc218
+  steps: 
+  - intent: hdfc218
+  - action: utter_218
+- rule: hdfc219
+  steps: 
+  - intent: hdfc219
+  - action: utter_219
+- rule: hdfc220
+  steps: 
+  - intent: hdfc220
+  - action: utter_220
+- rule: hdfc221
+  steps: 
+  - intent: hdfc221
+  - action: utter_221
+- rule: hdfc222
+  steps: 
+  - intent: hdfc222
+  - action: utter_222
+- rule: hdfc223
+  steps: 
+  - intent: hdfc223
+  - action: utter_223
+- rule: hdfc224
+  steps: 
+  - intent: hdfc224
+  - action: utter_224
+- rule: hdfc225
+  steps: 
+  - intent: hdfc225
+  - action: utter_225
+- rule: hdfc226
+  steps: 
+  - intent: hdfc226
+  - action: utter_226
+- rule: hdfc227
+  steps: 
+  - intent: hdfc227
+  - action: utter_227
+- rule: hdfc228
+  steps: 
+  - intent: hdfc228
+  - action: utter_228
+- rule: hdfc229
+  steps: 
+  - intent: hdfc229
+  - action: utter_229
+- rule: hdfc230
+  steps: 
+  - intent: hdfc230
+  - action: utter_230
+- rule: hdfc231
+  steps: 
+  - intent: hdfc231
+  - action: utter_231
+- rule: hdfc232
+  steps: 
+  - intent: hdfc232
+  - action: utter_232
+- rule: hdfc233
+  steps: 
+  - intent: hdfc233
+  - action: utter_233
+- rule: hdfc234
+  steps: 
+  - intent: hdfc234
+  - action: utter_234
+- rule: hdfc235
+  steps: 
+  - intent: hdfc235
+  - action: utter_235
+- rule: hdfc236
+  steps: 
+  - intent: hdfc236
+  - action: utter_236
+- rule: hdfc237
+  steps: 
+  - intent: hdfc237
+  - action: utter_237
+- rule: hdfc238
+  steps: 
+  - intent: hdfc238
+  - action: utter_238
+- rule: hdfc239
+  steps: 
+  - intent: hdfc239
+  - action: utter_239
+- rule: hdfc240
+  steps: 
+  - intent: hdfc240
+  - action: utter_240
+- rule: hdfc241
+  steps: 
+  - intent: hdfc241
+  - action: utter_241
+- rule: hdfc242
+  steps: 
+  - intent: hdfc242
+  - action: utter_242
+- rule: hdfc243
+  steps: 
+  - intent: hdfc243
+  - action: utter_243
+- rule: hdfc244
+  steps: 
+  - intent: hdfc244
+  - action: utter_244
+- rule: hdfc245
+  steps: 
+  - intent: hdfc245
+  - action: utter_245
+- rule: hdfc246
+  steps: 
+  - intent: hdfc246
+  - action: utter_246
+- rule: hdfc247
+  steps: 
+  - intent: hdfc247
+  - action: utter_247
+- rule: hdfc248
+  steps: 
+  - intent: hdfc248
+  - action: utter_248
+- rule: hdfc249
+  steps: 
+  - intent: hdfc249
+  - action: utter_249
+- rule: hdfc250
+  steps: 
+  - intent: hdfc250
+  - action: utter_250
+- rule: hdfc251
+  steps: 
+  - intent: hdfc251
+  - action: utter_251
+- rule: hdfc252
+  steps: 
+  - intent: hdfc252
+  - action: utter_252
+- rule: hdfc253
+  steps: 
+  - intent: hdfc253
+  - action: utter_253
+- rule: hdfc254
+  steps: 
+  - intent: hdfc254
+  - action: utter_254
+- rule: hdfc255
+  steps: 
+  - intent: hdfc255
+  - action: utter_255
+- rule: hdfc256
+  steps: 
+  - intent: hdfc256
+  - action: utter_256
+- rule: hdfc257
+  steps: 
+  - intent: hdfc257
+  - action: utter_257
+# - rule: hdfc258
+#   steps: 
+#   - intent: hdfc258
+#   - action: utter_258
+- rule: hdfc259
+  steps: 
+  - intent: hdfc259
+  - action: utter_259
+- rule: hdfc260
+  steps: 
+  - intent: hdfc260
+  - action: utter_260
+- rule: hdfc261
+  steps: 
+  - intent: hdfc261
+  - action: utter_261
+- rule: hdfc262
+  steps: 
+  - intent: hdfc262
+  - action: utter_262
+# - rule: hdfc263
+#   steps: 
+#   - intent: hdfc263
+#   - action: utter_263
+# - rule: hdfc264
+#   steps: 
+#   - intent: hdfc264
+#   - action: utter_264
+- rule: hdfc265
+  steps: 
+  - intent: hdfc265
+  - action: utter_265
+- rule: hdfc266
+  steps: 
+  - intent: hdfc266
+  - action: utter_266
+- rule: hdfc267
+  steps: 
+  - intent: hdfc267
+  - action: utter_267
+- rule: hdfc268
+  steps: 
+  - intent: hdfc268
+  - action: utter_268
+- rule: hdfc269
+  steps: 
+  - intent: hdfc269
+  - action: utter_269
+- rule: hdfc270
+  steps: 
+  - intent: hdfc270
+  - action: utter_270
+- rule: hdfc271
+  steps: 
+  - intent: hdfc271
+  - action: utter_271
+- rule: hdfc272
+  steps: 
+  - intent: hdfc272
+  - action: utter_272
+- rule: hdfc273
+  steps: 
+  - intent: hdfc273
+  - action: utter_273
+- rule: hdfc274
+  steps: 
+  - intent: hdfc274
+  - action: utter_274
+- rule: hdfc275
+  steps: 
+  - intent: hdfc275
+  - action: utter_275
+# - rule: hdfc276
+#   steps: 
+#   - intent: hdfc276
+#   - action: utter_276
+- rule: hdfc277
+  steps: 
+  - intent: hdfc277
+  - action: utter_277
+- rule: hdfc278
+  steps: 
+  - intent: hdfc278
+  - action: utter_278
+- rule: hdfc279
+  steps: 
+  - intent: hdfc279
+  - action: utter_279
+- rule: hdfc280
+  steps: 
+  - intent: hdfc280
+  - action: utter_280
+- rule: hdfc281
+  steps: 
+  - intent: hdfc281
+  - action: utter_281
+- rule: hdfc282
+  steps: 
+  - intent: hdfc282
+  - action: utter_282
+- rule: hdfc283
+  steps: 
+  - intent: hdfc283
+  - action: utter_283
+- rule: hdfc284
+  steps: 
+  - intent: hdfc284
+  - action: utter_284
+- rule: hdfc285
+  steps: 
+  - intent: hdfc285
+  - action: utter_285
+- rule: hdfc286
+  steps: 
+  - intent: hdfc286
+  - action: utter_286
+- rule: hdfc287
+  steps: 
+  - intent: hdfc287
+  - action: utter_287
+- rule: hdfc288
+  steps: 
+  - intent: hdfc288
+  - action: utter_288
+- rule: hdfc289
+  steps: 
+  - intent: hdfc289
+  - action: utter_289
+- rule: hdfc290
+  steps: 
+  - intent: hdfc290
+  - action: utter_290
+# - rule: hdfc291
+#   steps: 
+#   - intent: hdfc291
+#   - action: utter_291
+- rule: hdfc292
+  steps: 
+  - intent: hdfc292
+  - action: utter_292
+- rule: hdfc293
+  steps: 
+  - intent: hdfc293
+  - action: utter_293
+- rule: hdfc294
+  steps: 
+  - intent: hdfc294
+  - action: utter_294
+- rule: hdfc295
+  steps: 
+  - intent: hdfc295
+  - action: utter_295
+- rule: hdfc296
+  steps: 
+  - intent: hdfc296
+  - action: utter_296
+# - rule: hdfc297
+#   steps: 
+#   - intent: hdfc297
+#   - action: utter_297
+- rule: hdfc298
+  steps: 
+  - intent: hdfc298
+  - action: utter_298
+- rule: hdfc299
+  steps: 
+  - intent: hdfc299
+  - action: utter_299
+- rule: hdfc300
+  steps: 
+  - intent: hdfc300
+  - action: utter_300
+- rule: hdfc301
+  steps: 
+  - intent: hdfc301
+  - action: utter_301
+- rule: hdfc302
+  steps: 
+  - intent: hdfc302
+  - action: utter_302
+- rule: hdfc303
+  steps: 
+  - intent: hdfc303
+  - action: utter_303
+- rule: hdfc304
+  steps: 
+  - intent: hdfc304
+  - action: utter_304
+- rule: hdfc305
+  steps: 
+  - intent: hdfc305
+  - action: utter_305
+- rule: hdfc306
+  steps: 
+  - intent: hdfc306
+  - action: utter_306
+- rule: hdfc307
+  steps: 
+  - intent: hdfc307
+  - action: utter_307
+- rule: hdfc308
+  steps: 
+  - intent: hdfc308
+  - action: utter_308
+- rule: hdfc309
+  steps: 
+  - intent: hdfc309
+  - action: utter_309
+- rule: hdfc310
+  steps: 
+  - intent: hdfc310
+  - action: utter_310
+- rule: hdfc311
+  steps: 
+  - intent: hdfc311
+  - action: utter_311
+- rule: hdfc312
+  steps: 
+  - intent: hdfc312
+  - action: utter_312
+- rule: hdfc313
+  steps: 
+  - intent: hdfc313
+  - action: utter_313
+- rule: hdfc314
+  steps: 
+  - intent: hdfc314
+  - action: utter_314
+- rule: hdfc315
+  steps: 
+  - intent: hdfc315
+  - action: utter_315
+- rule: hdfc316
+  steps: 
+  - intent: hdfc316
+  - action: utter_316
+- rule: hdfc317
+  steps: 
+  - intent: hdfc317
+  - action: utter_317
+- rule: hdfc318
+  steps: 
+  - intent: hdfc318
+  - action: utter_318
+- rule: hdfc319
+  steps: 
+  - intent: hdfc319
+  - action: utter_319
+- rule: hdfc320
+  steps: 
+  - intent: hdfc320
+  - action: utter_320
+- rule: hdfc321
+  steps: 
+  - intent: hdfc321
+  - action: utter_321
+- rule: hdfc322
+  steps: 
+  - intent: hdfc322
+  - action: utter_322
+- rule: hdfc323
+  steps: 
+  - intent: hdfc323
+  - action: utter_323
+- rule: hdfc324
+  steps: 
+  - intent: hdfc324
+  - action: utter_324
+- rule: hdfc325
+  steps: 
+  - intent: hdfc325
+  - action: utter_325
+- rule: hdfc326
+  steps: 
+  - intent: hdfc326
+  - action: utter_326
+- rule: hdfc327
+  steps: 
+  - intent: hdfc327
+  - action: utter_327
+- rule: hdfc328
+  steps: 
+  - intent: hdfc328
+  - action: utter_328
+- rule: hdfc329
+  steps: 
+  - intent: hdfc329
+  - action: utter_329
+- rule: hdfc330
+  steps: 
+  - intent: hdfc330
+  - action: utter_330
+- rule: hdfc331
+  steps: 
+  - intent: hdfc331
+  - action: utter_331
+- rule: hdfc332
+  steps: 
+  - intent: hdfc332
+  - action: utter_332
+- rule: hdfc333
+  steps: 
+  - intent: hdfc333
+  - action: utter_333
+- rule: hdfc334
+  steps: 
+  - intent: hdfc334
+  - action: utter_334
+- rule: hdfc335
+  steps: 
+  - intent: hdfc335
+  - action: utter_335
+- rule: hdfc336
+  steps: 
+  - intent: hdfc336
+  - action: utter_336
+- rule: hdfc337
+  steps: 
+  - intent: hdfc337
+  - action: utter_337
+- rule: hdfc338
+  steps: 
+  - intent: hdfc338
+  - action: utter_338
+- rule: hdfc339
+  steps: 
+  - intent: hdfc339
+  - action: utter_339
+- rule: hdfc340
+  steps: 
+  - intent: hdfc340
+  - action: utter_340
+- rule: hdfc341
+  steps: 
+  - intent: hdfc341
+  - action: utter_341
+- rule: hdfc342
+  steps: 
+  - intent: hdfc342
+  - action: utter_342
+- rule: hdfc343
+  steps: 
+  - intent: hdfc343
+  - action: utter_343
+- rule: hdfc344
+  steps: 
+  - intent: hdfc344
+  - action: utter_344
+- rule: hdfc345
+  steps: 
+  - intent: hdfc345
+  - action: utter_345
+- rule: hdfc346
+  steps: 
+  - intent: hdfc346
+  - action: utter_346
+- rule: hdfc347
+  steps: 
+  - intent: hdfc347
+  - action: utter_347
+- rule: hdfc348
+  steps: 
+  - intent: hdfc348
+  - action: utter_348
+- rule: hdfc349
+  steps: 
+  - intent: hdfc349
+  - action: utter_349
+- rule: hdfc350
+  steps: 
+  - intent: hdfc350
+  - action: utter_350
+- rule: hdfc351
+  steps: 
+  - intent: hdfc351
+  - action: utter_351
+- rule: hdfc352
+  steps: 
+  - intent: hdfc352
+  - action: utter_352
+- rule: hdfc353
+  steps: 
+  - intent: hdfc353
+  - action: utter_353
+- rule: hdfc354
+  steps: 
+  - intent: hdfc354
+  - action: utter_354
+- rule: hdfc355
+  steps: 
+  - intent: hdfc355
+  - action: utter_355
+- rule: hdfc356
+  steps: 
+  - intent: hdfc356
+  - action: utter_356
+- rule: hdfc357
+  steps: 
+  - intent: hdfc357
+  - action: utter_357
+- rule: hdfc358
+  steps: 
+  - intent: hdfc358
+  - action: utter_358
+- rule: hdfc359
+  steps: 
+  - intent: hdfc359
+  - action: utter_359
+- rule: hdfc360
+  steps: 
+  - intent: hdfc360
+  - action: utter_360
+- rule: hdfc361
+  steps: 
+  - intent: hdfc361
+  - action: utter_361
+- rule: hdfc362
+  steps: 
+  - intent: hdfc362
+  - action: utter_362
+- rule: hdfc363
+  steps: 
+  - intent: hdfc363
+  - action: utter_363
+- rule: hdfc364
+  steps: 
+  - intent: hdfc364
+  - action: utter_364
+- rule: hdfc365
+  steps: 
+  - intent: hdfc365
+  - action: utter_365
+- rule: hdfc366
+  steps: 
+  - intent: hdfc366
+  - action: utter_366
+- rule: hdfc367
+  steps: 
+  - intent: hdfc367
+  - action: utter_367
+- rule: hdfc368
+  steps: 
+  - intent: hdfc368
+  - action: utter_368
+- rule: hdfc369
+  steps: 
+  - intent: hdfc369
+  - action: utter_369
+- rule: hdfc370
+  steps: 
+  - intent: hdfc370
+  - action: utter_370
+- rule: hdfc371
+  steps: 
+  - intent: hdfc371
+  - action: utter_371
+- rule: hdfc372
+  steps: 
+  - intent: hdfc372
+  - action: utter_372
+- rule: hdfc373
+  steps: 
+  - intent: hdfc373
+  - action: utter_373
+- rule: hdfc374
+  steps: 
+  - intent: hdfc374
+  - action: utter_374
+- rule: hdfc375
+  steps: 
+  - intent: hdfc375
+  - action: utter_375
+- rule: hdfc376
+  steps: 
+  - intent: hdfc376
+  - action: utter_376
+- rule: hdfc377
+  steps: 
+  - intent: hdfc377
+  - action: utter_377
+- rule: hdfc378
+  steps: 
+  - intent: hdfc378
+  - action: utter_378
+- rule: hdfc379
+  steps: 
+  - intent: hdfc379
+  - action: utter_379
+- rule: hdfc380
+  steps: 
+  - intent: hdfc380
+  - action: utter_380
+- rule: hdfc381
+  steps: 
+  - intent: hdfc381
+  - action: utter_381
+- rule: hdfc382
+  steps: 
+  - intent: hdfc382
+  - action: utter_382
+- rule: hdfc383
+  steps: 
+  - intent: hdfc383
+  - action: utter_383
+- rule: hdfc384
+  steps: 
+  - intent: hdfc384
+  - action: utter_384
+- rule: hdfc385
+  steps: 
+  - intent: hdfc385
+  - action: utter_385
+- rule: hdfc386
+  steps: 
+  - intent: hdfc386
+  - action: utter_386
+- rule: hdfc387
+  steps: 
+  - intent: hdfc387
+  - action: utter_387
+- rule: hdfc388
+  steps: 
+  - intent: hdfc388
+  - action: utter_388
+- rule: hdfc389
+  steps: 
+  - intent: hdfc389
+  - action: utter_389
+- rule: hdfc390
+  steps: 
+  - intent: hdfc390
+  - action: utter_390
+- rule: hdfc391
+  steps: 
+  - intent: hdfc391
+  - action: utter_391
+- rule: hdfc392
+  steps: 
+  - intent: hdfc392
+  - action: utter_392
+- rule: hdfc393
+  steps: 
+  - intent: hdfc393
+  - action: utter_393
+- rule: hdfc394
+  steps: 
+  - intent: hdfc394
+  - action: utter_394
+- rule: hdfc395
+  steps: 
+  - intent: hdfc395
+  - action: utter_395
+- rule: hdfc396
+  steps: 
+  - intent: hdfc396
+  - action: utter_396
+- rule: hdfc397
+  steps: 
+  - intent: hdfc397
+  - action: utter_397
+- rule: hdfc398
+  steps: 
+  - intent: hdfc398
+  - action: utter_398
+- rule: hdfc399
+  steps: 
+  - intent: hdfc399
+  - action: utter_399
+- rule: hdfc400
+  steps: 
+  - intent: hdfc400
+  - action: utter_400
+- rule: hdfc401
+  steps: 
+  - intent: hdfc401
+  - action: utter_401
+- rule: hdfc402
+  steps: 
+  - intent: hdfc402
+  - action: utter_402
+- rule: hdfc403
+  steps: 
+  - intent: hdfc403
+  - action: utter_403
+- rule: hdfc404
+  steps: 
+  - intent: hdfc404
+  - action: utter_404
+- rule: hdfc405
+  steps: 
+  - intent: hdfc405
+  - action: utter_405
+- rule: hdfc406
+  steps: 
+  - intent: hdfc406
+  - action: utter_406
+- rule: hdfc407
+  steps: 
+  - intent: hdfc407
+  - action: utter_407
+- rule: hdfc408
+  steps: 
+  - intent: hdfc408
+  - action: utter_408
+- rule: hdfc409
+  steps: 
+  - intent: hdfc409
+  - action: utter_409
+- rule: hdfc410
+  steps: 
+  - intent: hdfc410
+  - action: utter_410
+- rule: hdfc411
+  steps: 
+  - intent: hdfc411
+  - action: utter_411
+- rule: hdfc412
+  steps: 
+  - intent: hdfc412
+  - action: utter_412
+- rule: hdfc413
+  steps: 
+  - intent: hdfc413
+  - action: utter_413
+- rule: hdfc414
+  steps: 
+  - intent: hdfc414
+  - action: utter_414
+- rule: hdfc415
+  steps: 
+  - intent: hdfc415
+  - action: utter_415
+- rule: hdfc416
+  steps: 
+  - intent: hdfc416
+  - action: utter_416
+- rule: hdfc417
+  steps: 
+  - intent: hdfc417
+  - action: utter_417
+- rule: hdfc418
+  steps: 
+  - intent: hdfc418
+  - action: utter_418
+- rule: hdfc419
+  steps: 
+  - intent: hdfc419
+  - action: utter_419
+- rule: hdfc420
+  steps: 
+  - intent: hdfc420
+  - action: utter_420
+- rule: hdfc421
+  steps: 
+  - intent: hdfc421
+  - action: utter_421
+- rule: hdfc422
+  steps: 
+  - intent: hdfc422
+  - action: utter_422
+- rule: hdfc423
+  steps: 
+  - intent: hdfc423
+  - action: utter_423
+- rule: hdfc424
+  steps: 
+  - intent: hdfc424
+  - action: utter_424
+- rule: hdfc425
+  steps: 
+  - intent: hdfc425
+  - action: utter_425
+- rule: hdfc426
+  steps: 
+  - intent: hdfc426
+  - action: utter_426
+- rule: hdfc427
+  steps: 
+  - intent: hdfc427
+  - action: utter_427
+- rule: hdfc428
+  steps: 
+  - intent: hdfc428
+  - action: utter_428
+- rule: hdfc429
+  steps: 
+  - intent: hdfc429
+  - action: utter_429
+- rule: hdfc430
+  steps: 
+  - intent: hdfc430
+  - action: utter_430
+- rule: hdfc431
+  steps: 
+  - intent: hdfc431
+  - action: utter_431
+- rule: hdfc432
+  steps: 
+  - intent: hdfc432
+  - action: utter_432
+- rule: hdfc433
+  steps: 
+  - intent: hdfc433
+  - action: utter_433
+- rule: hdfc434
+  steps: 
+  - intent: hdfc434
+  - action: utter_434
+- rule: hdfc435
+  steps: 
+  - intent: hdfc435
+  - action: utter_435
+- rule: hdfc436
+  steps: 
+  - intent: hdfc436
+  - action: utter_436
+- rule: hdfc437
+  steps: 
+  - intent: hdfc437
+  - action: utter_437
+- rule: hdfc438
+  steps: 
+  - intent: hdfc438
+  - action: utter_438
+- rule: hdfc439
+  steps: 
+  - intent: hdfc439
+  - action: utter_439
+- rule: hdfc440
+  steps: 
+  - intent: hdfc440
+  - action: utter_440
+- rule: hdfc441
+  steps: 
+  - intent: hdfc441
+  - action: utter_441
+- rule: hdfc442
+  steps: 
+  - intent: hdfc442
+  - action: utter_442
+- rule: hdfc443
+  steps: 
+  - intent: hdfc443
+  - action: utter_443
+- rule: hdfc444
+  steps: 
+  - intent: hdfc444
+  - action: utter_444
+- rule: hdfc445
+  steps: 
+  - intent: hdfc445
+  - action: utter_445
+- rule: hdfc446
+  steps: 
+  - intent: hdfc446
+  - action: utter_446
+- rule: hdfc447
+  steps: 
+  - intent: hdfc447
+  - action: utter_447
+- rule: hdfc448
+  steps: 
+  - intent: hdfc448
+  - action: utter_448
+- rule: hdfc449
+  steps: 
+  - intent: hdfc449
+  - action: utter_449
+- rule: hdfc450
+  steps: 
+  - intent: hdfc450
+  - action: utter_450
+- rule: hdfc451
+  steps: 
+  - intent: hdfc451
+  - action: utter_451
+- rule: hdfc452
+  steps: 
+  - intent: hdfc452
+  - action: utter_452
+- rule: hdfc453
+  steps: 
+  - intent: hdfc453
+  - action: utter_453
+- rule: hdfc454
+  steps: 
+  - intent: hdfc454
+  - action: utter_454
+- rule: hdfc455
+  steps: 
+  - intent: hdfc455
+  - action: utter_455
+- rule: hdfc456
+  steps: 
+  - intent: hdfc456
+  - action: utter_456
+- rule: hdfc457
+  steps: 
+  - intent: hdfc457
+  - action: utter_457
+- rule: hdfc458
+  steps: 
+  - intent: hdfc458
+  - action: utter_458
+- rule: hdfc459
+  steps: 
+  - intent: hdfc459
+  - action: utter_459
+- rule: hdfc460
+  steps: 
+  - intent: hdfc460
+  - action: utter_460
+- rule: hdfc461
+  steps: 
+  - intent: hdfc461
+  - action: utter_461
+- rule: hdfc462
+  steps: 
+  - intent: hdfc462
+  - action: utter_462
+- rule: hdfc463
+  steps: 
+  - intent: hdfc463
+  - action: utter_463
+- rule: hdfc464
+  steps: 
+  - intent: hdfc464
+  - action: utter_464
+- rule: hdfc465
+  steps: 
+  - intent: hdfc465
+  - action: utter_465
+- rule: hdfc466
+  steps: 
+  - intent: hdfc466
+  - action: utter_466
+- rule: hdfc467
+  steps: 
+  - intent: hdfc467
+  - action: utter_467
+- rule: hdfc468
+  steps: 
+  - intent: hdfc468
+  - action: utter_468
+- rule: hdfc469
+  steps: 
+  - intent: hdfc469
+  - action: utter_469
+- rule: hdfc470
+  steps: 
+  - intent: hdfc470
+  - action: utter_470
+- rule: hdfc471
+  steps: 
+  - intent: hdfc471
+  - action: utter_471
+- rule: hdfc472
+  steps: 
+  - intent: hdfc472
+  - action: utter_472
+- rule: hdfc473
+  steps: 
+  - intent: hdfc473
+  - action: utter_473
+- rule: hdfc474
+  steps: 
+  - intent: hdfc474
+  - action: utter_474
+- rule: hdfc475
+  steps: 
+  - intent: hdfc475
+  - action: utter_475
+- rule: hdfc476
+  steps: 
+  - intent: hdfc476
+  - action: utter_476
+- rule: hdfc477
+  steps: 
+  - intent: hdfc477
+  - action: utter_477
+- rule: hdfc478
+  steps: 
+  - intent: hdfc478
+  - action: utter_478
+- rule: hdfc479
+  steps: 
+  - intent: hdfc479
+  - action: utter_479
+- rule: hdfc480
+  steps: 
+  - intent: hdfc480
+  - action: utter_480
+- rule: hdfc481
+  steps: 
+  - intent: hdfc481
+  - action: utter_481
+- rule: hdfc482
+  steps: 
+  - intent: hdfc482
+  - action: utter_482
+- rule: hdfc483
+  steps: 
+  - intent: hdfc483
+  - action: utter_483
+- rule: hdfc484
+  steps: 
+  - intent: hdfc484
+  - action: utter_484
+- rule: hdfc485
+  steps: 
+  - intent: hdfc485
+  - action: utter_485
+- rule: hdfc486
+  steps: 
+  - intent: hdfc486
+  - action: utter_486
+- rule: hdfc487
+  steps: 
+  - intent: hdfc487
+  - action: utter_487
+- rule: hdfc488
+  steps: 
+  - intent: hdfc488
+  - action: utter_488
+- rule: hdfc489
+  steps: 
+  - intent: hdfc489
+  - action: utter_489
+- rule: hdfc490
+  steps: 
+  - intent: hdfc490
+  - action: utter_490
+- rule: hdfc491
+  steps: 
+  - intent: hdfc491
+  - action: utter_491
+- rule: hdfc492
+  steps: 
+  - intent: hdfc492
+  - action: utter_492
+- rule: hdfc493
+  steps: 
+  - intent: hdfc493
+  - action: utter_493
+- rule: hdfc494
+  steps: 
+  - intent: hdfc494
+  - action: utter_494
+- rule: hdfc495
+  steps: 
+  - intent: hdfc495
+  - action: utter_495
+- rule: hdfc496
+  steps: 
+  - intent: hdfc496
+  - action: utter_496
+- rule: hdfc497
+  steps: 
+  - intent: hdfc497
+  - action: utter_497
+- rule: hdfc498
+  steps: 
+  - intent: hdfc498
+  - action: utter_498
+- rule: hdfc499
+  steps: 
+  - intent: hdfc499
+  - action: utter_499
+- rule: hdfc500
+  steps: 
+  - intent: hdfc500
+  - action: utter_500
+- rule: hdfc501
+  steps: 
+  - intent: hdfc501
+  - action: utter_501
+- rule: hdfc502
+  steps: 
+  - intent: hdfc502
+  - action: utter_502
+- rule: hdfc503
+  steps: 
+  - intent: hdfc503
+  - action: utter_503
+- rule: hdfc504
+  steps: 
+  - intent: hdfc504
+  - action: utter_504
+- rule: hdfc505
+  steps: 
+  - intent: hdfc505
+  - action: utter_505
+- rule: hdfc506
+  steps: 
+  - intent: hdfc506
+  - action: utter_506
+- rule: hdfc507
+  steps: 
+  - intent: hdfc507
+  - action: utter_507
+- rule: hdfc508
+  steps: 
+  - intent: hdfc508
+  - action: utter_508
+- rule: hdfc509
+  steps: 
+  - intent: hdfc509
+  - action: utter_509
+- rule: hdfc510
+  steps: 
+  - intent: hdfc510
+  - action: utter_510
+- rule: hdfc511
+  steps: 
+  - intent: hdfc511
+  - action: utter_511
+- rule: hdfc512
+  steps: 
+  - intent: hdfc512
+  - action: utter_512
+- rule: hdfc513
+  steps: 
+  - intent: hdfc513
+  - action: utter_513
+- rule: hdfc514
+  steps: 
+  - intent: hdfc514
+  - action: utter_514
+- rule: hdfc515
+  steps: 
+  - intent: hdfc515
+  - action: utter_515
+- rule: hdfc516
+  steps: 
+  - intent: hdfc516
+  - action: utter_516
+- rule: hdfc517
+  steps: 
+  - intent: hdfc517
+  - action: utter_517
+- rule: hdfc518
+  steps: 
+  - intent: hdfc518
+  - action: utter_518
+- rule: hdfc519
+  steps: 
+  - intent: hdfc519
+  - action: utter_519
+- rule: hdfc520
+  steps: 
+  - intent: hdfc520
+  - action: utter_520
+- rule: hdfc521
+  steps: 
+  - intent: hdfc521
+  - action: utter_521
+- rule: hdfc522
+  steps: 
+  - intent: hdfc522
+  - action: utter_522
+- rule: hdfc523
+  steps: 
+  - intent: hdfc523
+  - action: utter_523
+- rule: hdfc524
+  steps: 
+  - intent: hdfc524
+  - action: utter_524
+- rule: hdfc525
+  steps: 
+  - intent: hdfc525
+  - action: utter_525
+- rule: hdfc526
+  steps: 
+  - intent: hdfc526
+  - action: utter_526
+- rule: hdfc527
+  steps: 
+  - intent: hdfc527
+  - action: utter_527
+- rule: hdfc528
+  steps: 
+  - intent: hdfc528
+  - action: utter_528
+- rule: hdfc529
+  steps: 
+  - intent: hdfc529
+  - action: utter_529
+- rule: hdfc530
+  steps: 
+  - intent: hdfc530
+  - action: utter_530
+- rule: hdfc531
+  steps: 
+  - intent: hdfc531
+  - action: utter_531
+- rule: hdfc532
+  steps: 
+  - intent: hdfc532
+  - action: utter_532
+- rule: hdfc533
+  steps: 
+  - intent: hdfc533
+  - action: utter_533
+- rule: hdfc534
+  steps: 
+  - intent: hdfc534
+  - action: utter_534
+- rule: hdfc535
+  steps: 
+  - intent: hdfc535
+  - action: utter_535
+- rule: hdfc536
+  steps: 
+  - intent: hdfc536
+  - action: utter_536
+- rule: hdfc537
+  steps: 
+  - intent: hdfc537
+  - action: utter_537
+- rule: hdfc538
+  steps: 
+  - intent: hdfc538
+  - action: utter_538
+- rule: hdfc539
+  steps: 
+  - intent: hdfc539
+  - action: utter_539
+- rule: hdfc540
+  steps: 
+  - intent: hdfc540
+  - action: utter_540
+- rule: hdfc541
+  steps: 
+  - intent: hdfc541
+  - action: utter_541
+- rule: hdfc542
+  steps: 
+  - intent: hdfc542
+  - action: utter_542
+- rule: hdfc543
+  steps: 
+  - intent: hdfc543
+  - action: utter_543
+- rule: hdfc544
+  steps: 
+  - intent: hdfc544
+  - action: utter_544
+- rule: hdfc545
+  steps: 
+  - intent: hdfc545
+  - action: utter_545
+- rule: hdfc546
+  steps: 
+  - intent: hdfc546
+  - action: utter_546
+- rule: hdfc547
+  steps: 
+  - intent: hdfc547
+  - action: utter_547
+- rule: hdfc548
+  steps: 
+  - intent: hdfc548
+  - action: utter_548
+- rule: hdfc549
+  steps: 
+  - intent: hdfc549
+  - action: utter_549
+- rule: hdfc550
+  steps: 
+  - intent: hdfc550
+  - action: utter_550
+- rule: hdfc551
+  steps: 
+  - intent: hdfc551
+  - action: utter_551
+- rule: hdfc552
+  steps: 
+  - intent: hdfc552
+  - action: utter_552
+- rule: hdfc553
+  steps: 
+  - intent: hdfc553
+  - action: utter_553
+- rule: hdfc554
+  steps: 
+  - intent: hdfc554
+  - action: utter_554
+- rule: hdfc555
+  steps: 
+  - intent: hdfc555
+  - action: utter_555
+- rule: hdfc556
+  steps: 
+  - intent: hdfc556
+  - action: utter_556
+- rule: hdfc557
+  steps: 
+  - intent: hdfc557
+  - action: utter_557
+- rule: hdfc558
+  steps: 
+  - intent: hdfc558
+  - action: utter_558
+- rule: hdfc559
+  steps: 
+  - intent: hdfc559
+  - action: utter_559
+- rule: hdfc560
+  steps: 
+  - intent: hdfc560
+  - action: utter_560
+- rule: hdfc561
+  steps: 
+  - intent: hdfc561
+  - action: utter_561
+- rule: hdfc562
+  steps: 
+  - intent: hdfc562
+  - action: utter_562
+- rule: hdfc563
+  steps: 
+  - intent: hdfc563
+  - action: utter_563
+- rule: hdfc564
+  steps: 
+  - intent: hdfc564
+  - action: utter_564
+- rule: hdfc565
+  steps: 
+  - intent: hdfc565
+  - action: utter_565
+- rule: hdfc566
+  steps: 
+  - intent: hdfc566
+  - action: utter_566
+- rule: hdfc567
+  steps: 
+  - intent: hdfc567
+  - action: utter_567
+- rule: hdfc568
+  steps: 
+  - intent: hdfc568
+  - action: utter_568
+- rule: hdfc569
+  steps: 
+  - intent: hdfc569
+  - action: utter_569
+- rule: hdfc570
+  steps: 
+  - intent: hdfc570
+  - action: utter_570
+- rule: hdfc571
+  steps: 
+  - intent: hdfc571
+  - action: utter_571
+- rule: hdfc572
+  steps: 
+  - intent: hdfc572
+  - action: utter_572
+- rule: hdfc573
+  steps: 
+  - intent: hdfc573
+  - action: utter_573
+- rule: hdfc574
+  steps: 
+  - intent: hdfc574
+  - action: utter_574
+- rule: hdfc575
+  steps: 
+  - intent: hdfc575
+  - action: utter_575
+- rule: hdfc576
+  steps: 
+  - intent: hdfc576
+  - action: utter_576
+- rule: hdfc577
+  steps: 
+  - intent: hdfc577
+  - action: utter_577
+- rule: hdfc578
+  steps: 
+  - intent: hdfc578
+  - action: utter_578
+- rule: hdfc579
+  steps: 
+  - intent: hdfc579
+  - action: utter_579
+- rule: hdfc580
+  steps: 
+  - intent: hdfc580
+  - action: utter_580
+- rule: hdfc581
+  steps: 
+  - intent: hdfc581
+  - action: utter_581
+- rule: hdfc582
+  steps: 
+  - intent: hdfc582
+  - action: utter_582
+- rule: hdfc583
+  steps: 
+  - intent: hdfc583
+  - action: utter_583
+- rule: hdfc584
+  steps: 
+  - intent: hdfc584
+  - action: utter_584
+- rule: hdfc585
+  steps: 
+  - intent: hdfc585
+  - action: utter_585
+- rule: hdfc586
+  steps: 
+  - intent: hdfc586
+  - action: utter_586
+- rule: hdfc587
+  steps: 
+  - intent: hdfc587
+  - action: utter_587
+- rule: hdfc588
+  steps: 
+  - intent: hdfc588
+  - action: utter_588
+- rule: hdfc589
+  steps: 
+  - intent: hdfc589
+  - action: utter_589
+- rule: hdfc590
+  steps: 
+  - intent: hdfc590
+  - action: utter_590
+- rule: hdfc591
+  steps: 
+  - intent: hdfc591
+  - action: utter_591
+- rule: hdfc592
+  steps: 
+  - intent: hdfc592
+  - action: utter_592
+- rule: hdfc593
+  steps: 
+  - intent: hdfc593
+  - action: utter_593
+- rule: hdfc594
+  steps: 
+  - intent: hdfc594
+  - action: utter_594
+- rule: hdfc595
+  steps: 
+  - intent: hdfc595
+  - action: utter_595
+- rule: hdfc596
+  steps: 
+  - intent: hdfc596
+  - action: utter_596
+- rule: hdfc597
+  steps: 
+  - intent: hdfc597
+  - action: utter_597
+- rule: hdfc598
+  steps: 
+  - intent: hdfc598
+  - action: utter_598
+- rule: hdfc599
+  steps: 
+  - intent: hdfc599
+  - action: utter_599
+- rule: hdfc600
+  steps: 
+  - intent: hdfc600
+  - action: utter_600
+- rule: hdfc601
+  steps: 
+  - intent: hdfc601
+  - action: utter_601
+- rule: hdfc602
+  steps: 
+  - intent: hdfc602
+  - action: utter_602
+- rule: hdfc603
+  steps: 
+  - intent: hdfc603
+  - action: utter_603
+- rule: hdfc604
+  steps: 
+  - intent: hdfc604
+  - action: utter_604
+- rule: hdfc605
+  steps: 
+  - intent: hdfc605
+  - action: utter_605
+- rule: hdfc606
+  steps: 
+  - intent: hdfc606
+  - action: utter_606
+- rule: hdfc607
+  steps: 
+  - intent: hdfc607
+  - action: utter_607
+- rule: hdfc608
+  steps: 
+  - intent: hdfc608
+  - action: utter_608
+- rule: hdfc609
+  steps: 
+  - intent: hdfc609
+  - action: utter_609
+- rule: hdfc610
+  steps: 
+  - intent: hdfc610
+  - action: utter_610
+- rule: hdfc611
+  steps: 
+  - intent: hdfc611
+  - action: utter_611
+- rule: hdfc612
+  steps: 
+  - intent: hdfc612
+  - action: utter_612
+- rule: hdfc613
+  steps: 
+  - intent: hdfc613
+  - action: utter_613
+- rule: hdfc614
+  steps: 
+  - intent: hdfc614
+  - action: utter_614
+- rule: hdfc615
+  steps: 
+  - intent: hdfc615
+  - action: utter_615
+- rule: hdfc616
+  steps: 
+  - intent: hdfc616
+  - action: utter_616
+- rule: hdfc617
+  steps: 
+  - intent: hdfc617
+  - action: utter_617
+- rule: hdfc618
+  steps: 
+  - intent: hdfc618
+  - action: utter_618
+- rule: hdfc619
+  steps: 
+  - intent: hdfc619
+  - action: utter_619
+- rule: hdfc620
+  steps: 
+  - intent: hdfc620
+  - action: utter_620
+- rule: hdfc621
+  steps: 
+  - intent: hdfc621
+  - action: utter_621
+- rule: hdfc622
+  steps: 
+  - intent: hdfc622
+  - action: utter_622
+- rule: hdfc623
+  steps: 
+  - intent: hdfc623
+  - action: utter_623
+- rule: hdfc624
+  steps: 
+  - intent: hdfc624
+  - action: utter_624
+- rule: hdfc625
+  steps: 
+  - intent: hdfc625
+  - action: utter_625
+- rule: hdfc626
+  steps: 
+  - intent: hdfc626
+  - action: utter_626
+- rule: hdfc627
+  steps: 
+  - intent: hdfc627
+  - action: utter_627
+- rule: hdfc628
+  steps: 
+  - intent: hdfc628
+  - action: utter_628
+- rule: hdfc629
+  steps: 
+  - intent: hdfc629
+  - action: utter_629
+- rule: hdfc630
+  steps: 
+  - intent: hdfc630
+  - action: utter_630
+- rule: hdfc631
+  steps: 
+  - intent: hdfc631
+  - action: utter_631
+- rule: hdfc632
+  steps: 
+  - intent: hdfc632
+  - action: utter_632
+- rule: hdfc633
+  steps: 
+  - intent: hdfc633
+  - action: utter_633
+- rule: hdfc634
+  steps: 
+  - intent: hdfc634
+  - action: utter_634
+- rule: hdfc635
+  steps: 
+  - intent: hdfc635
+  - action: utter_635
+- rule: hdfc636
+  steps: 
+  - intent: hdfc636
+  - action: utter_636
+- rule: hdfc637
+  steps: 
+  - intent: hdfc637
+  - action: utter_637
+- rule: hdfc638
+  steps: 
+  - intent: hdfc638
+  - action: utter_638
+- rule: hdfc639
+  steps: 
+  - intent: hdfc639
+  - action: utter_639
+- rule: hdfc640
+  steps: 
+  - intent: hdfc640
+  - action: utter_640
+- rule: hdfc641
+  steps: 
+  - intent: hdfc641
+  - action: utter_641
+- rule: hdfc642
+  steps: 
+  - intent: hdfc642
+  - action: utter_642
+- rule: hdfc643
+  steps: 
+  - intent: hdfc643
+  - action: utter_643
+- rule: hdfc644
+  steps: 
+  - intent: hdfc644
+  - action: utter_644
+- rule: hdfc645
+  steps: 
+  - intent: hdfc645
+  - action: utter_645
+- rule: hdfc646
+  steps: 
+  - intent: hdfc646
+  - action: utter_646
+- rule: hdfc647
+  steps: 
+  - intent: hdfc647
+  - action: utter_647
+- rule: hdfc648
+  steps: 
+  - intent: hdfc648
+  - action: utter_648
+- rule: hdfc649
+  steps: 
+  - intent: hdfc649
+  - action: utter_649
+- rule: hdfc650
+  steps: 
+  - intent: hdfc650
+  - action: utter_650
+- rule: hdfc651
+  steps: 
+  - intent: hdfc651
+  - action: utter_651
+- rule: hdfc652
+  steps: 
+  - intent: hdfc652
+  - action: utter_652
+- rule: hdfc653
+  steps: 
+  - intent: hdfc653
+  - action: utter_653
+- rule: hdfc654
+  steps: 
+  - intent: hdfc654
+  - action: utter_654
+- rule: hdfc655
+  steps: 
+  - intent: hdfc655
+  - action: utter_655
+- rule: hdfc656
+  steps: 
+  - intent: hdfc656
+  - action: utter_656
+- rule: hdfc657
+  steps: 
+  - intent: hdfc657
+  - action: utter_657
+- rule: hdfc658
+  steps: 
+  - intent: hdfc658
+  - action: utter_658
+- rule: hdfc659
+  steps: 
+  - intent: hdfc659
+  - action: utter_659
+- rule: hdfc660
+  steps: 
+  - intent: hdfc660
+  - action: utter_660
+- rule: hdfc661
+  steps: 
+  - intent: hdfc661
+  - action: utter_661
+- rule: hdfc662
+  steps: 
+  - intent: hdfc662
+  - action: utter_662
+- rule: hdfc663
+  steps: 
+  - intent: hdfc663
+  - action: utter_663
+- rule: hdfc664
+  steps: 
+  - intent: hdfc664
+  - action: utter_664
+- rule: hdfc665
+  steps: 
+  - intent: hdfc665
+  - action: utter_665
+- rule: hdfc666
+  steps: 
+  - intent: hdfc666
+  - action: utter_666
+- rule: hdfc667
+  steps: 
+  - intent: hdfc667
+  - action: utter_667
+- rule: hdfc668
+  steps: 
+  - intent: hdfc668
+  - action: utter_668
+- rule: hdfc669
+  steps: 
+  - intent: hdfc669
+  - action: utter_669
+- rule: hdfc670
+  steps: 
+  - intent: hdfc670
+  - action: utter_670
+- rule: hdfc671
+  steps: 
+  - intent: hdfc671
+  - action: utter_671
+- rule: hdfc672
+  steps: 
+  - intent: hdfc672
+  - action: utter_672
+- rule: hdfc673
+  steps: 
+  - intent: hdfc673
+  - action: utter_673
+- rule: hdfc674
+  steps: 
+  - intent: hdfc674
+  - action: utter_674
+- rule: hdfc675
+  steps: 
+  - intent: hdfc675
+  - action: utter_675
+- rule: hdfc676
+  steps: 
+  - intent: hdfc676
+  - action: utter_676
+- rule: hdfc677
+  steps: 
+  - intent: hdfc677
+  - action: utter_677
+- rule: hdfc678
+  steps: 
+  - intent: hdfc678
+  - action: utter_678
+- rule: hdfc679
+  steps: 
+  - intent: hdfc679
+  - action: utter_679
+- rule: hdfc680
+  steps: 
+  - intent: hdfc680
+  - action: utter_680
+- rule: hdfc681
+  steps: 
+  - intent: hdfc681
+  - action: utter_681
+- rule: hdfc682
+  steps: 
+  - intent: hdfc682
+  - action: utter_682
+- rule: hdfc683
+  steps: 
+  - intent: hdfc683
+  - action: utter_683
+- rule: hdfc684
+  steps: 
+  - intent: hdfc684
+  - action: utter_684
+- rule: hdfc685
+  steps: 
+  - intent: hdfc685
+  - action: utter_685
+- rule: hdfc686
+  steps: 
+  - intent: hdfc686
+  - action: utter_686
+- rule: hdfc687
+  steps: 
+  - intent: hdfc687
+  - action: utter_687
+- rule: hdfc688
+  steps: 
+  - intent: hdfc688
+  - action: utter_688
+- rule: hdfc689
+  steps: 
+  - intent: hdfc689
+  - action: utter_689
+- rule: hdfc690
+  steps: 
+  - intent: hdfc690
+  - action: utter_690
+- rule: hdfc691
+  steps: 
+  - intent: hdfc691
+  - action: utter_691
+- rule: hdfc692
+  steps: 
+  - intent: hdfc692
+  - action: utter_692
+- rule: hdfc693
+  steps: 
+  - intent: hdfc693
+  - action: utter_693
+- rule: hdfc694
+  steps: 
+  - intent: hdfc694
+  - action: utter_694
+- rule: hdfc695
+  steps: 
+  - intent: hdfc695
+  - action: utter_695
+- rule: hdfc696
+  steps: 
+  - intent: hdfc696
+  - action: utter_696
+- rule: hdfc697
+  steps: 
+  - intent: hdfc697
+  - action: utter_697
+- rule: hdfc698
+  steps: 
+  - intent: hdfc698
+  - action: utter_698
+- rule: hdfc699
+  steps: 
+  - intent: hdfc699
+  - action: utter_699
+- rule: hdfc700
+  steps: 
+  - intent: hdfc700
+  - action: utter_700
+- rule: hdfc701
+  steps: 
+  - intent: hdfc701
+  - action: utter_701
+- rule: hdfc702
+  steps: 
+  - intent: hdfc702
+  - action: utter_702
+- rule: hdfc703
+  steps: 
+  - intent: hdfc703
+  - action: utter_703
+- rule: hdfc704
+  steps: 
+  - intent: hdfc704
+  - action: utter_704
+- rule: hdfc705
+  steps: 
+  - intent: hdfc705
+  - action: utter_705
+- rule: hdfc706
+  steps: 
+  - intent: hdfc706
+  - action: utter_706
+- rule: hdfc707
+  steps: 
+  - intent: hdfc707
+  - action: utter_707
+- rule: hdfc708
+  steps: 
+  - intent: hdfc708
+  - action: utter_708
+- rule: hdfc709
+  steps: 
+  - intent: hdfc709
+  - action: utter_709
+- rule: hdfc710
+  steps: 
+  - intent: hdfc710
+  - action: utter_710
+- rule: hdfc711
+  steps: 
+  - intent: hdfc711
+  - action: utter_711
+- rule: hdfc712
+  steps: 
+  - intent: hdfc712
+  - action: utter_712
+- rule: hdfc713
+  steps: 
+  - intent: hdfc713
+  - action: utter_713
+- rule: hdfc714
+  steps: 
+  - intent: hdfc714
+  - action: utter_714
+- rule: hdfc715
+  steps: 
+  - intent: hdfc715
+  - action: utter_715
+- rule: hdfc716
+  steps: 
+  - intent: hdfc716
+  - action: utter_716
+- rule: hdfc717
+  steps: 
+  - intent: hdfc717
+  - action: utter_717
+- rule: hdfc718
+  steps: 
+  - intent: hdfc718
+  - action: utter_718
+- rule: hdfc719
+  steps: 
+  - intent: hdfc719
+  - action: utter_719
+- rule: hdfc720
+  steps: 
+  - intent: hdfc720
+  - action: utter_720
+- rule: hdfc721
+  steps: 
+  - intent: hdfc721
+  - action: utter_721
+- rule: hdfc722
+  steps: 
+  - intent: hdfc722
+  - action: utter_722
+- rule: hdfc723
+  steps: 
+  - intent: hdfc723
+  - action: utter_723
+- rule: hdfc724
+  steps: 
+  - intent: hdfc724
+  - action: utter_724
+- rule: hdfc725
+  steps: 
+  - intent: hdfc725
+  - action: utter_725
+- rule: hdfc726
+  steps: 
+  - intent: hdfc726
+  - action: utter_726
+- rule: hdfc727
+  steps: 
+  - intent: hdfc727
+  - action: utter_727
+- rule: hdfc728
+  steps: 
+  - intent: hdfc728
+  - action: utter_728
+- rule: hdfc729
+  steps: 
+  - intent: hdfc729
+  - action: utter_729
+- rule: hdfc730
+  steps: 
+  - intent: hdfc730
+  - action: utter_730
+- rule: hdfc731
+  steps: 
+  - intent: hdfc731
+  - action: utter_731
+- rule: hdfc732
+  steps: 
+  - intent: hdfc732
+  - action: utter_732
+- rule: hdfc733
+  steps: 
+  - intent: hdfc733
+  - action: utter_733
+- rule: hdfc734
+  steps: 
+  - intent: hdfc734
+  - action: utter_734
+- rule: hdfc735
+  steps: 
+  - intent: hdfc735
+  - action: utter_735
+- rule: hdfc736
+  steps: 
+  - intent: hdfc736
+  - action: utter_736
+- rule: hdfc737
+  steps: 
+  - intent: hdfc737
+  - action: utter_737
+- rule: hdfc738
+  steps: 
+  - intent: hdfc738
+  - action: utter_738
+- rule: hdfc739
+  steps: 
+  - intent: hdfc739
+  - action: utter_739
+- rule: hdfc740
+  steps: 
+  - intent: hdfc740
+  - action: utter_740
+- rule: hdfc741
+  steps: 
+  - intent: hdfc741
+  - action: utter_741
+- rule: hdfc742
+  steps: 
+  - intent: hdfc742
+  - action: utter_742
+- rule: hdfc743
+  steps: 
+  - intent: hdfc743
+  - action: utter_743
+- rule: hdfc744
+  steps: 
+  - intent: hdfc744
+  - action: utter_744
+- rule: hdfc745
+  steps: 
+  - intent: hdfc745
+  - action: utter_745
+- rule: hdfc746
+  steps: 
+  - intent: hdfc746
+  - action: utter_746
+- rule: hdfc747
+  steps: 
+  - intent: hdfc747
+  - action: utter_747
+- rule: hdfc748
+  steps: 
+  - intent: hdfc748
+  - action: utter_748
+- rule: hdfc749
+  steps: 
+  - intent: hdfc749
+  - action: utter_749
+- rule: hdfc750
+  steps: 
+  - intent: hdfc750
+  - action: utter_750
+- rule: hdfc751
+  steps: 
+  - intent: hdfc751
+  - action: utter_751
+- rule: hdfc752
+  steps: 
+  - intent: hdfc752
+  - action: utter_752
+- rule: hdfc753
+  steps: 
+  - intent: hdfc753
+  - action: utter_753
+- rule: hdfc754
+  steps: 
+  - intent: hdfc754
+  - action: utter_754
+- rule: hdfc755
+  steps: 
+  - intent: hdfc755
+  - action: utter_755
+- rule: hdfc756
+  steps: 
+  - intent: hdfc756
+  - action: utter_756
+- rule: hdfc757
+  steps: 
+  - intent: hdfc757
+  - action: utter_757
+- rule: hdfc758
+  steps: 
+  - intent: hdfc758
+  - action: utter_758
+- rule: hdfc759
+  steps: 
+  - intent: hdfc759
+  - action: utter_759
+- rule: hdfc760
+  steps: 
+  - intent: hdfc760
+  - action: utter_760
+- rule: hdfc761
+  steps: 
+  - intent: hdfc761
+  - action: utter_761
+- rule: hdfc762
+  steps: 
+  - intent: hdfc762
+  - action: utter_762
+- rule: hdfc763
+  steps: 
+  - intent: hdfc763
+  - action: utter_763
+- rule: hdfc764
+  steps: 
+  - intent: hdfc764
+  - action: utter_764
+- rule: hdfc765
+  steps: 
+  - intent: hdfc765
+  - action: utter_765
+- rule: hdfc766
+  steps: 
+  - intent: hdfc766
+  - action: utter_766
+- rule: hdfc767
+  steps: 
+  - intent: hdfc767
+  - action: utter_767
+- rule: hdfc768
+  steps: 
+  - intent: hdfc768
+  - action: utter_768
+- rule: hdfc769
+  steps: 
+  - intent: hdfc769
+  - action: utter_769
+- rule: hdfc770
+  steps: 
+  - intent: hdfc770
+  - action: utter_770
+- rule: hdfc771
+  steps: 
+  - intent: hdfc771
+  - action: utter_771
+- rule: hdfc772
+  steps: 
+  - intent: hdfc772
+  - action: utter_772
+- rule: hdfc773
+  steps: 
+  - intent: hdfc773
+  - action: utter_773
+- rule: hdfc774
+  steps: 
+  - intent: hdfc774
+  - action: utter_774
+- rule: hdfc775
+  steps: 
+  - intent: hdfc775
+  - action: utter_775
+- rule: hdfc776
+  steps: 
+  - intent: hdfc776
+  - action: utter_776
+- rule: hdfc777
+  steps: 
+  - intent: hdfc777
+  - action: utter_777
+- rule: hdfc778
+  steps: 
+  - intent: hdfc778
+  - action: utter_778
+- rule: hdfc779
+  steps: 
+  - intent: hdfc779
+  - action: utter_779
+- rule: hdfc780
+  steps: 
+  - intent: hdfc780
+  - action: utter_780
+- rule: hdfc781
+  steps: 
+  - intent: hdfc781
+  - action: utter_781
+- rule: hdfc782
+  steps: 
+  - intent: hdfc782
+  - action: utter_782
+- rule: hdfc783
+  steps: 
+  - intent: hdfc783
+  - action: utter_783
+- rule: hdfc784
+  steps: 
+  - intent: hdfc784
+  - action: utter_784
+- rule: hdfc785
+  steps: 
+  - intent: hdfc785
+  - action: utter_785
+- rule: hdfc786
+  steps: 
+  - intent: hdfc786
+  - action: utter_786
+- rule: hdfc787
+  steps: 
+  - intent: hdfc787
+  - action: utter_787
+- rule: hdfc788
+  steps: 
+  - intent: hdfc788
+  - action: utter_788
+- rule: hdfc789
+  steps: 
+  - intent: hdfc789
+  - action: utter_789
+- rule: hdfc790
+  steps: 
+  - intent: hdfc790
+  - action: utter_790
+- rule: hdfc791
+  steps: 
+  - intent: hdfc791
+  - action: utter_791
+- rule: hdfc792
+  steps: 
+  - intent: hdfc792
+  - action: utter_792
+- rule: hdfc793
+  steps: 
+  - intent: hdfc793
+  - action: utter_793
+- rule: hdfc794
+  steps: 
+  - intent: hdfc794
+  - action: utter_794
+- rule: hdfc795
+  steps: 
+  - intent: hdfc795
+  - action: utter_795
+- rule: hdfc796
+  steps: 
+  - intent: hdfc796
+  - action: utter_796
+- rule: hdfc797
+  steps: 
+  - intent: hdfc797
+  - action: utter_797
+- rule: hdfc798
+  steps: 
+  - intent: hdfc798
+  - action: utter_798
+- rule: hdfc799
+  steps: 
+  - intent: hdfc799
+  - action: utter_799
+- rule: hdfc800
+  steps: 
+  - intent: hdfc800
+  - action: utter_800
+- rule: hdfc801
+  steps: 
+  - intent: hdfc801
+  - action: utter_801
+- rule: hdfc802
+  steps: 
+  - intent: hdfc802
+  - action: utter_802
+- rule: hdfc803
+  steps: 
+  - intent: hdfc803
+  - action: utter_803
+- rule: hdfc804
+  steps: 
+  - intent: hdfc804
+  - action: utter_804
+- rule: hdfc805
+  steps: 
+  - intent: hdfc805
+  - action: utter_805
+- rule: hdfc806
+  steps: 
+  - intent: hdfc806
+  - action: utter_806
+- rule: hdfc807
+  steps: 
+  - intent: hdfc807
+  - action: utter_807
+
+
+# # - rule: no-answer
+# #   steps:
+# #   - intent: no_answer
+# #   - action: utter_no_answer

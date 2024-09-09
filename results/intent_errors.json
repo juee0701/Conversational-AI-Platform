@@ -1,0 +1,2034 @@
+[
+  {
+    "text": "good afternoon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.8291945457458496
+    }
+  },
+  {
+    "text": "home",
+    "intent": "homeloan_emi",
+    "intent_prediction": {
+      "name": "home_loan",
+      "confidence": 0.6505041122436523
+    }
+  },
+  {
+    "text": "Am I eligible for loan?",
+    "intent": "loan",
+    "intent_prediction": {
+      "name": "hdfc770",
+      "confidence": 0.6063652038574219
+    }
+  },
+  {
+    "text": "loan eligibility",
+    "intent": "loan",
+    "intent_prediction": {
+      "name": "car_loan",
+      "confidence": 0.7788541913032532
+    }
+  },
+  {
+    "text": "eligibility for loan",
+    "intent": "loan",
+    "intent_prediction": {
+      "name": "car_loan",
+      "confidence": 0.6563576459884644
+    }
+  },
+  {
+    "text": "What is the eligibility for loan?",
+    "intent": "loan",
+    "intent_prediction": {
+      "name": "car_loan",
+      "confidence": 0.4232949912548065
+    }
+  },
+  {
+    "text": "loan eligibility for car",
+    "intent": "loan",
+    "intent_prediction": {
+      "name": "car_loan",
+      "confidence": 0.9324830174446106
+    }
+  },
+  {
+    "text": "personal loan eligibility",
+    "intent": "loan",
+    "intent_prediction": {
+      "name": "personal_loan",
+      "confidence": 0.618628740310669
+    }
+  },
+  {
+    "text": "personal",
+    "intent": "personal_loan",
+    "intent_prediction": {
+      "name": "personalloan_emi",
+      "confidence": 0.579372763633728
+    }
+  },
+  {
+    "text": "car",
+    "intent": "car_loan",
+    "intent_prediction": {
+      "name": "carloan_emi",
+      "confidence": 0.6120861172676086
+    }
+  },
+  {
+    "text": "23,4,3,300000",
+    "intent": "answerloan",
+    "intent_prediction": {
+      "name": "answer",
+      "confidence": 0.6863351464271545
+    }
+  },
+  {
+    "text": "17,4,5,200000",
+    "intent": "answerloan",
+    "intent_prediction": {
+      "name": "answer",
+      "confidence": 0.6863351464271545
+    }
+  },
+  {
+    "text": "45,1,6,700000",
+    "intent": "answerloan",
+    "intent_prediction": {
+      "name": "answer",
+      "confidence": 0.6863351464271545
+    }
+  },
+  {
+    "text": "Can Chip Credit cards be used anywhere?",
+    "intent": "hdfc3",
+    "intent_prediction": {
+      "name": "hdfc636",
+      "confidence": 0.3340929448604584
+    }
+  },
+  {
+    "text": "Can I use the RuPay Platinum Debit Card to pay online?",
+    "intent": "hdfc11",
+    "intent_prediction": {
+      "name": "hdfc679",
+      "confidence": 0.5900102853775024
+    }
+  },
+  {
+    "text": "Am i able to use the RuPay Platinum Debit Card to pay on-line?",
+    "intent": "hdfc11",
+    "intent_prediction": {
+      "name": "hdfc679",
+      "confidence": 0.6444653272628784
+    }
+  },
+  {
+    "text": "What is Times Points?",
+    "intent": "hdfc16",
+    "intent_prediction": {
+      "name": "hdfc667",
+      "confidence": 0.4645645022392273
+    }
+  },
+  {
+    "text": "Are there charges I should know about Imperia Platinum Chip Debit Card?",
+    "intent": "hdfc51",
+    "intent_prediction": {
+      "name": "hdfc668",
+      "confidence": 0.655582845211029
+    }
+  },
+  {
+    "text": "Are there charges I must know approximately Imperia Platinum Chip Debit Card?",
+    "intent": "hdfc51",
+    "intent_prediction": {
+      "name": "hdfc668",
+      "confidence": 0.6253008842468262
+    }
+  },
+  {
+    "text": "Where can I use my EasyShop Platinum Debit Card?",
+    "intent": "hdfc53",
+    "intent_prediction": {
+      "name": "hdfc94",
+      "confidence": 0.5566251277923584
+    }
+  },
+  {
+    "text": "In which can i use my EasyShop Platinum Debit Card?",
+    "intent": "hdfc53",
+    "intent_prediction": {
+      "name": "hdfc94",
+      "confidence": 0.5476383566856384
+    }
+  },
+  {
+    "text": "Are there transaction limits for NRO Debit Card?",
+    "intent": "hdfc58",
+    "intent_prediction": {
+      "name": "hdfc74",
+      "confidence": 0.6872663497924805
+    }
+  },
+  {
+    "text": "Transaction limitations for NRO Debit Card?",
+    "intent": "hdfc58",
+    "intent_prediction": {
+      "name": "hdfc74",
+      "confidence": 0.6065570116043091
+    }
+  },
+  {
+    "text": "What should I do in the case of a void transaction for Titanium Royale Debit Card?",
+    "intent": "hdfc75",
+    "intent_prediction": {
+      "name": "hdfc673",
+      "confidence": 0.7335070371627808
+    }
+  },
+  {
+    "text": "What must I do in the case of a void transaction for Titanium Royale Debit Card?",
+    "intent": "hdfc75",
+    "intent_prediction": {
+      "name": "hdfc673",
+      "confidence": 0.7136496305465698
+    }
+  },
+  {
+    "text": "Can the JetPrivilege HDFC Bank World Debit Card be taken by public / private / partnership firm?",
+    "intent": "hdfc83",
+    "intent_prediction": {
+      "name": "hdfc675",
+      "confidence": 0.7593273520469666
+    }
+  },
+  {
+    "text": "Can the JetPrivilege HDFC Bank world Debit Card be taken through public / private / partnership company?",
+    "intent": "hdfc83",
+    "intent_prediction": {
+      "name": "hdfc675",
+      "confidence": 0.6870171427726746
+    }
+  },
+  {
+    "text": "Can a chip card be used for online transactions?",
+    "intent": "hdfc87",
+    "intent_prediction": {
+      "name": "hdfc62",
+      "confidence": 0.37036362290382385
+    }
+  },
+  {
+    "text": "Can a chip card be used for on-line transactions?",
+    "intent": "hdfc87",
+    "intent_prediction": {
+      "name": "hdfc62",
+      "confidence": 0.3665392994880676
+    }
+  },
+  {
+    "text": "Where can I use my EasyShop Titanium Debit Card?",
+    "intent": "hdfc89",
+    "intent_prediction": {
+      "name": "hdfc676",
+      "confidence": 0.4990784227848053
+    }
+  },
+  {
+    "text": "Where am i able to use my EasyShop Titanium Debit Card?",
+    "intent": "hdfc89",
+    "intent_prediction": {
+      "name": "hdfc676",
+      "confidence": 0.498214453458786
+    }
+  },
+  {
+    "text": "What should I do in the case of a void transaction for Platinum Debit Card?",
+    "intent": "hdfc93",
+    "intent_prediction": {
+      "name": "hdfc677",
+      "confidence": 0.4930204153060913
+    }
+  },
+  {
+    "text": "What should I do in the case of a void transaction for Gold Debit Card?",
+    "intent": "hdfc97",
+    "intent_prediction": {
+      "name": "hdfc678",
+      "confidence": 0.5381452441215515
+    }
+  },
+  {
+    "text": "What I have to do in the case of a void transaction for Gold Debit Card?",
+    "intent": "hdfc97",
+    "intent_prediction": {
+      "name": "hdfc678",
+      "confidence": 0.489987850189209
+    }
+  },
+  {
+    "text": "Why is E-commerce and Contactless service feature disabled on my Prepaid Card?",
+    "intent": "hdfc102",
+    "intent_prediction": {
+      "name": "hdfc138",
+      "confidence": 0.13677625358104706
+    }
+  },
+  {
+    "text": "Is there a load amount limit?",
+    "intent": "hdfc109",
+    "intent_prediction": {
+      "name": "hdfc140",
+      "confidence": 0.471066951751709
+    }
+  },
+  {
+    "text": "what is the load amount limit?",
+    "intent": "hdfc109",
+    "intent_prediction": {
+      "name": "hdfc140",
+      "confidence": 0.40162941813468933
+    }
+  },
+  {
+    "text": "Is there a load amount limit?",
+    "intent": "hdfc115",
+    "intent_prediction": {
+      "name": "hdfc140",
+      "confidence": 0.471066951751709
+    }
+  },
+  {
+    "text": "Is there a load amount restrict?",
+    "intent": "hdfc115",
+    "intent_prediction": {
+      "name": "hdfc140",
+      "confidence": 0.38434892892837524
+    }
+  },
+  {
+    "text": "Is there a load amount limit?",
+    "intent": "hdfc130",
+    "intent_prediction": {
+      "name": "hdfc140",
+      "confidence": 0.471066951751709
+    }
+  },
+  {
+    "text": "Can the ATM PIN be changed?",
+    "intent": "hdfc134",
+    "intent_prediction": {
+      "name": "hdfc0",
+      "confidence": 0.8005914688110352
+    }
+  },
+  {
+    "text": "How do I top up the value a card?",
+    "intent": "hdfc142",
+    "intent_prediction": {
+      "name": "hdfc116",
+      "confidence": 0.5495529770851135
+    }
+  },
+  {
+    "text": "top up the value a card?",
+    "intent": "hdfc142",
+    "intent_prediction": {
+      "name": "hdfc116",
+      "confidence": 0.5867516398429871
+    }
+  },
+  {
+    "text": "What is the time taken to realize outstation cheques?",
+    "intent": "hdfc143",
+    "intent_prediction": {
+      "name": "hdfc712",
+      "confidence": 0.30569565296173096
+    }
+  },
+  {
+    "text": "Can I get a Debit Card linked to my Institutional Savings Account?",
+    "intent": "hdfc144",
+    "intent_prediction": {
+      "name": "hdfc713",
+      "confidence": 0.814831554889679
+    }
+  },
+  {
+    "text": "Can i get a Debit Card connected to my Institutional savings Account?",
+    "intent": "hdfc144",
+    "intent_prediction": {
+      "name": "hdfc713",
+      "confidence": 0.8142841458320618
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a sole proprietorship firm?",
+    "intent": "hdfc156",
+    "intent_prediction": {
+      "name": "hdfc716",
+      "confidence": 0.466970294713974
+    }
+  },
+  {
+    "text": "What is the time taken to realize outstation cheques?",
+    "intent": "hdfc163",
+    "intent_prediction": {
+      "name": "hdfc712",
+      "confidence": 0.30569565296173096
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc169",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "Whether the EEFC balances can be covered against exchange risk?",
+    "intent": "hdfc172",
+    "intent_prediction": {
+      "name": "hdfc718",
+      "confidence": 0.7470533847808838
+    }
+  },
+  {
+    "text": "Whether the EEFC balances may be covered in opposition to change threat?",
+    "intent": "hdfc172",
+    "intent_prediction": {
+      "name": "hdfc718",
+      "confidence": 0.44535642862319946
+    }
+  },
+  {
+    "text": "What are benefits of Smartup Solutions?",
+    "intent": "hdfc178",
+    "intent_prediction": {
+      "name": "hdfc719",
+      "confidence": 0.6052978038787842
+    }
+  },
+  {
+    "text": "What are advantages of Smartup solutions?",
+    "intent": "hdfc178",
+    "intent_prediction": {
+      "name": "hdfc719",
+      "confidence": 0.5653525590896606
+    }
+  },
+  {
+    "text": "Can I access my Merchant Advantage Plus Current Account from any HDFC Bank branch?",
+    "intent": "hdfc192",
+    "intent_prediction": {
+      "name": "hdfc720",
+      "confidence": 0.6833987832069397
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc194",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "Can I access my account by telephone to conduct routine daily transactions?",
+    "intent": "hdfc195",
+    "intent_prediction": {
+      "name": "hdfc167",
+      "confidence": 0.20294661819934845
+    }
+  },
+  {
+    "text": "How is a Merchant Advantage Plus Current Account different from a Regular Current Account offered by most banks?",
+    "intent": "hdfc196",
+    "intent_prediction": {
+      "name": "hdfc197",
+      "confidence": 0.5183163285255432
+    }
+  },
+  {
+    "text": "Must I open an account in each location where I have my company office?",
+    "intent": "hdfc199",
+    "intent_prediction": {
+      "name": "hdfc721",
+      "confidence": 0.5422009229660034
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc201",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "What are the files required for opening a modern Account of a partnership firm?",
+    "intent": "hdfc201",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.28222453594207764
+    }
+  },
+  {
+    "text": "Can I access my account by telephone to conduct routine daily transactions?",
+    "intent": "hdfc203",
+    "intent_prediction": {
+      "name": "hdfc167",
+      "confidence": 0.20294661819934845
+    }
+  },
+  {
+    "text": "Can I access my account by telephone to conduct routine daily transactions?",
+    "intent": "hdfc206",
+    "intent_prediction": {
+      "name": "hdfc167",
+      "confidence": 0.20294661819934845
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc208",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "What transactions are blanketed as part of the free anywhere Transactions restrict for a month?",
+    "intent": "hdfc209",
+    "intent_prediction": {
+      "name": "hdfc233",
+      "confidence": 0.40767571330070496
+    }
+  },
+  {
+    "text": "Can I access my account from any HDFC Bank branch?",
+    "intent": "hdfc211",
+    "intent_prediction": {
+      "name": "hdfc243",
+      "confidence": 0.4319537281990051
+    }
+  },
+  {
+    "text": "Can I access my account by telephone to conduct routine daily transactions?",
+    "intent": "hdfc213",
+    "intent_prediction": {
+      "name": "hdfc167",
+      "confidence": 0.20294661819934845
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc215",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "What should I do in case I am unable to access my Company's Current Account?",
+    "intent": "hdfc217",
+    "intent_prediction": {
+      "name": "hdfc724",
+      "confidence": 0.5084922909736633
+    }
+  },
+  {
+    "text": "What should I do in case i am unable to access my organization's contemporary Account?",
+    "intent": "hdfc217",
+    "intent_prediction": {
+      "name": "hdfc724",
+      "confidence": 0.5391523241996765
+    }
+  },
+  {
+    "text": "Can I access my account by telephone to conduct routine daily transactions?",
+    "intent": "hdfc223",
+    "intent_prediction": {
+      "name": "hdfc167",
+      "confidence": 0.20294661819934845
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc225",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc226",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "Can I access my account from any HDFC Bank branch?",
+    "intent": "hdfc227",
+    "intent_prediction": {
+      "name": "hdfc243",
+      "confidence": 0.4319537281990051
+    }
+  },
+  {
+    "text": "Am i able to access my account from any HDFC bank department?",
+    "intent": "hdfc227",
+    "intent_prediction": {
+      "name": "hdfc243",
+      "confidence": 0.3681052625179291
+    }
+  },
+  {
+    "text": "Can I access my account by telephone to conduct routine daily transactions?",
+    "intent": "hdfc230",
+    "intent_prediction": {
+      "name": "hdfc167",
+      "confidence": 0.20294661819934845
+    }
+  },
+  {
+    "text": "What transactions are included as a part of the Free Anywhere Transactions limit for a month?",
+    "intent": "hdfc233",
+    "intent_prediction": {
+      "name": "hdfc209",
+      "confidence": 0.2829781770706177
+    }
+  },
+  {
+    "text": "What transactions are included as a part of the Free Anywhere Transactions limit for a month?",
+    "intent": "hdfc235",
+    "intent_prediction": {
+      "name": "hdfc209",
+      "confidence": 0.2829781770706177
+    }
+  },
+  {
+    "text": "What transactions are covered as part of the loose everywhere Transactions restriction for a month?",
+    "intent": "hdfc235",
+    "intent_prediction": {
+      "name": "hdfc726",
+      "confidence": 0.3369385004043579
+    }
+  },
+  {
+    "text": "Can I make payments to my suppliers at HDFC Bank branches through a single cheque book?",
+    "intent": "hdfc236",
+    "intent_prediction": {
+      "name": "hdfc228",
+      "confidence": 0.4935024380683899
+    }
+  },
+  {
+    "text": "What should I do in case I am unable to access my Company's Current Account through Net Banking?",
+    "intent": "hdfc237",
+    "intent_prediction": {
+      "name": "hdfc234",
+      "confidence": 0.5653724670410156
+    }
+  },
+  {
+    "text": "Is it necessary to open Max Current Account in each location where my company has an office?",
+    "intent": "hdfc238",
+    "intent_prediction": {
+      "name": "hdfc229",
+      "confidence": 0.5072545409202576
+    }
+  },
+  {
+    "text": "Can I access my account by telephone to conduct routine daily transactions?",
+    "intent": "hdfc239",
+    "intent_prediction": {
+      "name": "hdfc167",
+      "confidence": 0.20294661819934845
+    }
+  },
+  {
+    "text": "Am i able to get entry to my account by way of smartphone to behavior routine daily transactions?",
+    "intent": "hdfc239",
+    "intent_prediction": {
+      "name": "hdfc230",
+      "confidence": 0.3573511242866516
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc240",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "What are the charges for collection of outstation cheques?",
+    "intent": "hdfc245",
+    "intent_prediction": {
+      "name": "hdfc736",
+      "confidence": 0.6672869920730591
+    }
+  },
+  {
+    "text": "What are the expenses for series of outstation cheques?",
+    "intent": "hdfc245",
+    "intent_prediction": {
+      "name": "hdfc736",
+      "confidence": 0.6797366738319397
+    }
+  },
+  {
+    "text": "What is the time taken to realize outstation cheques?",
+    "intent": "hdfc246",
+    "intent_prediction": {
+      "name": "hdfc712",
+      "confidence": 0.30569565296173096
+    }
+  },
+  {
+    "text": "What's the time taken to understand outstation cheques?",
+    "intent": "hdfc246",
+    "intent_prediction": {
+      "name": "hdfc143",
+      "confidence": 0.29072535037994385
+    }
+  },
+  {
+    "text": "How do I know my beneficiary's details for a cheque issued in my name (Kisan Club Savings account)?",
+    "intent": "hdfc252",
+    "intent_prediction": {
+      "name": "hdfc738",
+      "confidence": 0.5053101181983948
+    }
+  },
+  {
+    "text": "What is the time taken to realize outstation cheques?",
+    "intent": "hdfc260",
+    "intent_prediction": {
+      "name": "hdfc712",
+      "confidence": 0.30569565296173096
+    }
+  },
+  {
+    "text": "What's the time taken to realize outstation cheques?",
+    "intent": "hdfc260",
+    "intent_prediction": {
+      "name": "hdfc712",
+      "confidence": 0.291668176651001
+    }
+  },
+  {
+    "text": "What is a KYC Application Form?",
+    "intent": "hdfc314",
+    "intent_prediction": {
+      "name": "hdfc489",
+      "confidence": 0.5030946731567383
+    }
+  },
+  {
+    "text": "How do I invest through RGESS?",
+    "intent": "hdfc321",
+    "intent_prediction": {
+      "name": "hdfc456",
+      "confidence": 0.5660987496376038
+    }
+  },
+  {
+    "text": "What is the procedure for changing my signature?",
+    "intent": "hdfc336",
+    "intent_prediction": {
+      "name": "personalloan_emi",
+      "confidence": 0.5399066805839539
+    }
+  },
+  {
+    "text": "How many bank and depository accounts can I link to a trading account?",
+    "intent": "hdfc457",
+    "intent_prediction": {
+      "name": "hdfc559",
+      "confidence": 0.719607949256897
+    }
+  },
+  {
+    "text": "What number of bank and depository money owed am i able to hyperlink to a trading account?",
+    "intent": "hdfc457",
+    "intent_prediction": {
+      "name": "hdfc559",
+      "confidence": 0.477948933839798
+    }
+  },
+  {
+    "text": "What products can I trade in using my trading account?",
+    "intent": "hdfc460",
+    "intent_prediction": {
+      "name": "hdfc546",
+      "confidence": 0.6033128499984741
+    }
+  },
+  {
+    "text": "Who can trade in derivatives with an HDFC Securities Trading Account?",
+    "intent": "hdfc461",
+    "intent_prediction": {
+      "name": "hdfc556",
+      "confidence": 0.41148465871810913
+    }
+  },
+  {
+    "text": "To whom is KYC applicable?",
+    "intent": "hdfc500",
+    "intent_prediction": {
+      "name": "hdfc417",
+      "confidence": 0.6240662932395935
+    }
+  },
+  {
+    "text": "To whom is KYC relevant?",
+    "intent": "hdfc500",
+    "intent_prediction": {
+      "name": "hdfc417",
+      "confidence": 0.6221732497215271
+    }
+  },
+  {
+    "text": "Whom do I inform about change of name/address/status/signature, etc.?",
+    "intent": "hdfc517",
+    "intent_prediction": {
+      "name": "hdfc504",
+      "confidence": 0.5857893824577332
+    }
+  },
+  {
+    "text": "What is the difference between the Non-ASBA IPO process and the ASBA process?",
+    "intent": "hdfc527",
+    "intent_prediction": {
+      "name": "hdfc555",
+      "confidence": 0.47301557660102844
+    }
+  },
+  {
+    "text": "What is the distinction between the Non-ASBA IPO system and the ASBA procedure?",
+    "intent": "hdfc527",
+    "intent_prediction": {
+      "name": "hdfc555",
+      "confidence": 0.48264041543006897
+    }
+  },
+  {
+    "text": "Can I cancel/ modify my bid placed under ASBA during the bidding period?",
+    "intent": "hdfc545",
+    "intent_prediction": {
+      "name": "hdfc796",
+      "confidence": 0.6754509210586548
+    }
+  },
+  {
+    "text": "Who can open a Securities Trading account with HDFC securities?",
+    "intent": "hdfc549",
+    "intent_prediction": {
+      "name": "hdfc459",
+      "confidence": 0.5942693948745728
+    }
+  },
+  {
+    "text": "Who can open a Securities buying and selling account with HDFC securities?",
+    "intent": "hdfc549",
+    "intent_prediction": {
+      "name": "hdfc459",
+      "confidence": 0.5862775444984436
+    }
+  },
+  {
+    "text": "Who can trade in derivatives with an HDFC Securities Trading Account?",
+    "intent": "hdfc554",
+    "intent_prediction": {
+      "name": "hdfc556",
+      "confidence": 0.41148465871810913
+    }
+  },
+  {
+    "text": "Who can trade in derivatives with an HDFC Securities buying and selling Account?",
+    "intent": "hdfc554",
+    "intent_prediction": {
+      "name": "hdfc556",
+      "confidence": 0.45879361033439636
+    }
+  },
+  {
+    "text": "How will HDFC decide the home loan amount i am eligible for?",
+    "intent": "hdfc565",
+    "intent_prediction": {
+      "name": "hdfc744",
+      "confidence": 0.5553382635116577
+    }
+  },
+  {
+    "text": "What is Guarantor?",
+    "intent": "hdfc566",
+    "intent_prediction": {
+      "name": "hdfc585",
+      "confidence": 0.23439747095108032
+    }
+  },
+  {
+    "text": "What is Guarantor?",
+    "intent": "hdfc568",
+    "intent_prediction": {
+      "name": "hdfc585",
+      "confidence": 0.23439747095108032
+    }
+  },
+  {
+    "text": "What exactly is a guarantor?",
+    "intent": "hdfc568",
+    "intent_prediction": {
+      "name": "hdfc566",
+      "confidence": 0.32237306237220764
+    }
+  },
+  {
+    "text": "What is Guarantor?",
+    "intent": "hdfc570",
+    "intent_prediction": {
+      "name": "hdfc585",
+      "confidence": 0.23439747095108032
+    }
+  },
+  {
+    "text": "What exactly is a guarantor?",
+    "intent": "hdfc570",
+    "intent_prediction": {
+      "name": "hdfc566",
+      "confidence": 0.32237306237220764
+    }
+  },
+  {
+    "text": "What are the tenure options for Pre-owned Car Loans?",
+    "intent": "hdfc571",
+    "intent_prediction": {
+      "name": "hdfc751",
+      "confidence": 0.7723475694656372
+    }
+  },
+  {
+    "text": "What are the tenure alternatives for Pre-owned car Loans?",
+    "intent": "hdfc571",
+    "intent_prediction": {
+      "name": "hdfc751",
+      "confidence": 0.799906849861145
+    }
+  },
+  {
+    "text": "So how do I get the Loan against Car?",
+    "intent": "hdfc572",
+    "intent_prediction": {
+      "name": "hdfc752",
+      "confidence": 0.7082730531692505
+    }
+  },
+  {
+    "text": "So how do i am getting the loan against vehicle?",
+    "intent": "hdfc572",
+    "intent_prediction": {
+      "name": "hdfc752",
+      "confidence": 0.78798508644104
+    }
+  },
+  {
+    "text": "How can I change the mode of repayment/ account for my loan?",
+    "intent": "hdfc576",
+    "intent_prediction": {
+      "name": "hdfc759",
+      "confidence": 0.44001680612564087
+    }
+  },
+  {
+    "text": "What is Pledge?",
+    "intent": "hdfc580",
+    "intent_prediction": {
+      "name": "hdfc754",
+      "confidence": 0.6501197814941406
+    }
+  },
+  {
+    "text": "What is the maximum loan amount I can get for studies in India?",
+    "intent": "hdfc581",
+    "intent_prediction": {
+      "name": "hdfc755",
+      "confidence": 0.46714863181114197
+    }
+  },
+  {
+    "text": "What is Guarantor?",
+    "intent": "hdfc583",
+    "intent_prediction": {
+      "name": "hdfc585",
+      "confidence": 0.23439747095108032
+    }
+  },
+  {
+    "text": "What's Guarantor?",
+    "intent": "hdfc583",
+    "intent_prediction": {
+      "name": "hdfc757",
+      "confidence": 0.24853567779064178
+    }
+  },
+  {
+    "text": "Do you want to repay the loan earlier than the due date?",
+    "intent": "hdfc584",
+    "intent_prediction": {
+      "name": "hdfc758",
+      "confidence": 0.64900141954422
+    }
+  },
+  {
+    "text": "Do you want to pay off the mortgage earlier than the due date?",
+    "intent": "hdfc584",
+    "intent_prediction": {
+      "name": "hdfc758",
+      "confidence": 0.4983602464199066
+    }
+  },
+  {
+    "text": "Why can't I have liquidity of complete amount on surrender?",
+    "intent": "hdfc590",
+    "intent_prediction": {
+      "name": "hdfc763",
+      "confidence": 0.6488369703292847
+    }
+  },
+  {
+    "text": "Why cannot i've liquidity of whole quantity on surrender?",
+    "intent": "hdfc590",
+    "intent_prediction": {
+      "name": "hdfc763",
+      "confidence": 0.6140483021736145
+    }
+  },
+  {
+    "text": "What is a retirement plan?",
+    "intent": "hdfc591",
+    "intent_prediction": {
+      "name": "hdfc764",
+      "confidence": 0.5291035771369934
+    }
+  },
+  {
+    "text": "What are the features that are available with HDFC Life Uday?",
+    "intent": "hdfc593",
+    "intent_prediction": {
+      "name": "hdfc766",
+      "confidence": 0.7787029147148132
+    }
+  },
+  {
+    "text": "What are the features which can be available with HDFC existence Uday?",
+    "intent": "hdfc593",
+    "intent_prediction": {
+      "name": "hdfc766",
+      "confidence": 0.6229173541069031
+    }
+  },
+  {
+    "text": "What are the different types of Savings Plans?",
+    "intent": "hdfc595",
+    "intent_prediction": {
+      "name": "hdfc768",
+      "confidence": 0.5297468900680542
+    }
+  },
+  {
+    "text": "Can I save tax by investing in this policy?",
+    "intent": "hdfc598",
+    "intent_prediction": {
+      "name": "hdfc769",
+      "confidence": 0.5727013349533081
+    }
+  },
+  {
+    "text": "Can i shop tax through making an investment in this policy?",
+    "intent": "hdfc598",
+    "intent_prediction": {
+      "name": "hdfc769",
+      "confidence": 0.4454799294471741
+    }
+  },
+  {
+    "text": "Can the plan be offered under limited underwriting?",
+    "intent": "hdfc600",
+    "intent_prediction": {
+      "name": "hdfc771",
+      "confidence": 0.7813615798950195
+    }
+  },
+  {
+    "text": "Can the plan be offered below constrained underwriting?",
+    "intent": "hdfc600",
+    "intent_prediction": {
+      "name": "hdfc771",
+      "confidence": 0.6766700148582458
+    }
+  },
+  {
+    "text": "Do I have option to avail loan under the policy?",
+    "intent": "hdfc601",
+    "intent_prediction": {
+      "name": "hdfc772",
+      "confidence": 0.5738219618797302
+    }
+  },
+  {
+    "text": "Do i've option to avail loan below the policy?",
+    "intent": "hdfc601",
+    "intent_prediction": {
+      "name": "hdfc772",
+      "confidence": 0.49868056178092957
+    }
+  },
+  {
+    "text": "What is the min-max age at entry/maturity ?",
+    "intent": "hdfc602",
+    "intent_prediction": {
+      "name": "hdfc774",
+      "confidence": 0.4556506872177124
+    }
+  },
+  {
+    "text": "What is the min-max age at entry/maturity?",
+    "intent": "hdfc603",
+    "intent_prediction": {
+      "name": "hdfc774",
+      "confidence": 0.4556506872177124
+    }
+  },
+  {
+    "text": "What's the min-max age at entry/adulthood?",
+    "intent": "hdfc603",
+    "intent_prediction": {
+      "name": "hdfc774",
+      "confidence": 0.5218103528022766
+    }
+  },
+  {
+    "text": "What will I get on maturityFor a policy where all due premiums have been paid, the maturity benefit will be the aggregate of:On payment of the Maturity Benefit, the policy will terminate and no more benefits will be payable.Last Guaranteed Base Income payout,Accrued Reversionary Bonuses,Interim Bonus, if anyTerminal bonus, if any Is there any option available for monthly payout?",
+    "intent": "hdfc604",
+    "intent_prediction": {
+      "name": "hdfc775",
+      "confidence": 0.7315210700035095
+    }
+  },
+  {
+    "text": "what's going to i get on maturityFor a policy wherein all due charges were paid, the adulthood benefit could be the combination of:On price of the adulthood benefit, the coverage will terminate and no more Benefits will be payable.Final assured Base profits payout,amassed Reversionary Bonuses,period in-between Bonus, if anyTerminal bonus, if any Is there any choice to be had for month-to-month payout?",
+    "intent": "hdfc604",
+    "intent_prediction": {
+      "name": "hdfc775",
+      "confidence": 0.6295485496520996
+    }
+  },
+  {
+    "text": "What are the benefits of a retirement plan?",
+    "intent": "hdfc605",
+    "intent_prediction": {
+      "name": "hdfc776",
+      "confidence": 0.556026816368103
+    }
+  },
+  {
+    "text": "What are the advantages of a retirement plan?",
+    "intent": "hdfc605",
+    "intent_prediction": {
+      "name": "hdfc776",
+      "confidence": 0.5137732625007629
+    }
+  },
+  {
+    "text": "Can I take any loan?",
+    "intent": "hdfc607",
+    "intent_prediction": {
+      "name": "hdfc599",
+      "confidence": 0.359598308801651
+    }
+  },
+  {
+    "text": "Can i take any mortgage?",
+    "intent": "hdfc607",
+    "intent_prediction": {
+      "name": "hdfc599",
+      "confidence": 0.38327810168266296
+    }
+  },
+  {
+    "text": "Should I choose a Unit Linked or a non – Unit Linked plan?",
+    "intent": "hdfc608",
+    "intent_prediction": {
+      "name": "hdfc597",
+      "confidence": 0.5875070095062256
+    }
+  },
+  {
+    "text": "Ought to I pick a Unit related or a non – Unit linked plan?",
+    "intent": "hdfc608",
+    "intent_prediction": {
+      "name": "hdfc597",
+      "confidence": 0.41684991121292114
+    }
+  },
+  {
+    "text": "Do I need to have Auto Insurance?",
+    "intent": "hdfc618",
+    "intent_prediction": {
+      "name": "hdfc799",
+      "confidence": 0.6447380185127258
+    }
+  },
+  {
+    "text": "When do I have to submit a medical exam?",
+    "intent": "hdfc619",
+    "intent_prediction": {
+      "name": "hdfc800",
+      "confidence": 0.6310739517211914
+    }
+  },
+  {
+    "text": "Can Chip Credit cards be used anywhere?",
+    "intent": "hdfc623",
+    "intent_prediction": {
+      "name": "hdfc636",
+      "confidence": 0.3340929448604584
+    }
+  },
+  {
+    "text": "Can Chip credit playing cards be used anywhere?",
+    "intent": "hdfc623",
+    "intent_prediction": {
+      "name": "hdfc636",
+      "confidence": 0.32773327827453613
+    }
+  },
+  {
+    "text": "Can a chip card be used for online transactions?",
+    "intent": "hdfc624",
+    "intent_prediction": {
+      "name": "hdfc62",
+      "confidence": 0.37036362290382385
+    }
+  },
+  {
+    "text": "Can Chip Credit cards be used anywhere?",
+    "intent": "hdfc625",
+    "intent_prediction": {
+      "name": "hdfc636",
+      "confidence": 0.3340929448604584
+    }
+  },
+  {
+    "text": "Can Chip credit score playing cards be used anywhere?",
+    "intent": "hdfc625",
+    "intent_prediction": {
+      "name": "hdfc636",
+      "confidence": 0.3576604723930359
+    }
+  },
+  {
+    "text": "How to redeem Reward Points?",
+    "intent": "hdfc627",
+    "intent_prediction": {
+      "name": "hdfc632",
+      "confidence": 0.31322816014289856
+    }
+  },
+  {
+    "text": "How to redeem Reward Points?",
+    "intent": "hdfc628",
+    "intent_prediction": {
+      "name": "hdfc632",
+      "confidence": 0.31322816014289856
+    }
+  },
+  {
+    "text": "How to redeem praise points?",
+    "intent": "hdfc628",
+    "intent_prediction": {
+      "name": "hdfc632",
+      "confidence": 0.22094035148620605
+    }
+  },
+  {
+    "text": "Will the 2X InterMiles be applicable only if the ticket is booked online through IM website or via app?",
+    "intent": "hdfc630",
+    "intent_prediction": {
+      "name": "hdfc629",
+      "confidence": 0.8861730694770813
+    }
+  },
+  {
+    "text": "Will the 2X InterMiles be applicable most effective if the ticket is booked on line via IM website or thru app?",
+    "intent": "hdfc630",
+    "intent_prediction": {
+      "name": "hdfc629",
+      "confidence": 0.9001269340515137
+    }
+  },
+  {
+    "text": "How to avail 25% off on Movies Tickets on BookMyShow?",
+    "intent": "hdfc634",
+    "intent_prediction": {
+      "name": "hdfc633",
+      "confidence": 0.6641032695770264
+    }
+  },
+  {
+    "text": "the way to avail 25% off on films Tickets on BookMyShow?",
+    "intent": "hdfc634",
+    "intent_prediction": {
+      "name": "hdfc633",
+      "confidence": 0.6551023125648499
+    }
+  },
+  {
+    "text": "Can a chip card be used for online transactions?",
+    "intent": "hdfc640",
+    "intent_prediction": {
+      "name": "hdfc62",
+      "confidence": 0.37036362290382385
+    }
+  },
+  {
+    "text": "Can a chip card be used for on line transactions?",
+    "intent": "hdfc640",
+    "intent_prediction": {
+      "name": "hdfc62",
+      "confidence": 0.3503323197364807
+    }
+  },
+  {
+    "text": "How do I earn reward points on the card?",
+    "intent": "hdfc649",
+    "intent_prediction": {
+      "name": "hdfc648",
+      "confidence": 0.6090162396430969
+    }
+  },
+  {
+    "text": "How do I earn reward factors on the card?",
+    "intent": "hdfc649",
+    "intent_prediction": {
+      "name": "hdfc648",
+      "confidence": 0.6423179507255554
+    }
+  },
+  {
+    "text": "How to redeem the reward points?",
+    "intent": "hdfc650",
+    "intent_prediction": {
+      "name": "hdfc652",
+      "confidence": 0.25490304827690125
+    }
+  },
+  {
+    "text": "The way to redeem the reward points?",
+    "intent": "hdfc650",
+    "intent_prediction": {
+      "name": "hdfc652",
+      "confidence": 0.29640334844589233
+    }
+  },
+  {
+    "text": "How can i alternate / replace deal with on my company credit score Card ?",
+    "intent": "hdfc651",
+    "intent_prediction": {
+      "name": "hdfc653",
+      "confidence": 0.42844635248184204
+    }
+  },
+  {
+    "text": "How can I change / update address on my Corporate Credit Card ?",
+    "intent": "hdfc653",
+    "intent_prediction": {
+      "name": "hdfc651",
+      "confidence": 0.37023451924324036
+    }
+  },
+  {
+    "text": "How to redeem the reward points?",
+    "intent": "hdfc655",
+    "intent_prediction": {
+      "name": "hdfc652",
+      "confidence": 0.25490304827690125
+    }
+  },
+  {
+    "text": "A way to redeem the praise points?",
+    "intent": "hdfc655",
+    "intent_prediction": {
+      "name": "hdfc632",
+      "confidence": 0.20114775002002716
+    }
+  },
+  {
+    "text": "How to redeem the reward points?",
+    "intent": "hdfc656",
+    "intent_prediction": {
+      "name": "hdfc652",
+      "confidence": 0.25490304827690125
+    }
+  },
+  {
+    "text": "How to redeem the praise points?",
+    "intent": "hdfc656",
+    "intent_prediction": {
+      "name": "hdfc652",
+      "confidence": 0.21851058304309845
+    }
+  },
+  {
+    "text": "What is a welcome membership benefit?",
+    "intent": "hdfc663",
+    "intent_prediction": {
+      "name": "hdfc647",
+      "confidence": 0.7319946885108948
+    }
+  },
+  {
+    "text": "welcome membership advantage",
+    "intent": "hdfc663",
+    "intent_prediction": {
+      "name": "hdfc647",
+      "confidence": 0.6890714168548584
+    }
+  },
+  {
+    "text": "How do I earn reward points on the card?",
+    "intent": "hdfc664",
+    "intent_prediction": {
+      "name": "hdfc648",
+      "confidence": 0.6090162396430969
+    }
+  },
+  {
+    "text": "How do I earn praise factors on the card?",
+    "intent": "hdfc664",
+    "intent_prediction": {
+      "name": "hdfc648",
+      "confidence": 0.5939611196517944
+    }
+  },
+  {
+    "text": "Can I use the RuPay Platinum Debit Card to pay online?",
+    "intent": "hdfc666",
+    "intent_prediction": {
+      "name": "hdfc679",
+      "confidence": 0.5900102853775024
+    }
+  },
+  {
+    "text": "Can i use the RuPay Platinum Debit Card to pay online?",
+    "intent": "hdfc666",
+    "intent_prediction": {
+      "name": "hdfc679",
+      "confidence": 0.5908732414245605
+    }
+  },
+  {
+    "text": "What should I do in the case of a void transaction for NRO Debit Card?",
+    "intent": "hdfc669",
+    "intent_prediction": {
+      "name": "hdfc55",
+      "confidence": 0.5496094822883606
+    }
+  },
+  {
+    "text": "What have to I do in the case of a void transaction for NRO Debit Card?",
+    "intent": "hdfc669",
+    "intent_prediction": {
+      "name": "hdfc55",
+      "confidence": 0.5609312057495117
+    }
+  },
+  {
+    "text": "What should I do in the case of a void transaction for Rewards Debit Card?",
+    "intent": "hdfc670",
+    "intent_prediction": {
+      "name": "hdfc59",
+      "confidence": 0.6476408839225769
+    }
+  },
+  {
+    "text": "What should I do within the case of a void transaction for Rewards Debit Card?",
+    "intent": "hdfc670",
+    "intent_prediction": {
+      "name": "hdfc59",
+      "confidence": 0.6086657643318176
+    }
+  },
+  {
+    "text": "What should I do in the case of a void transaction for Womans Advantage Debit Card?",
+    "intent": "hdfc671",
+    "intent_prediction": {
+      "name": "hdfc64",
+      "confidence": 0.563572347164154
+    }
+  },
+  {
+    "text": "What must I do in the case of a void transaction for Womans advantage Debit Card?",
+    "intent": "hdfc671",
+    "intent_prediction": {
+      "name": "hdfc64",
+      "confidence": 0.561410129070282
+    }
+  },
+  {
+    "text": "How does this card work?",
+    "intent": "hdfc672",
+    "intent_prediction": {
+      "name": "hdfc69",
+      "confidence": 0.5107175707817078
+    }
+  },
+  {
+    "text": "Are there extra charges for International Business Debit Card?",
+    "intent": "hdfc674",
+    "intent_prediction": {
+      "name": "hdfc79",
+      "confidence": 0.6477391719818115
+    }
+  },
+  {
+    "text": "Why is E-commerce and Contactless service feature disabled on my Prepaid Card?",
+    "intent": "hdfc681",
+    "intent_prediction": {
+      "name": "hdfc138",
+      "confidence": 0.13677625358104706
+    }
+  },
+  {
+    "text": "What is the HDFC Bank Apollo Medical Benefits Card?",
+    "intent": "hdfc682",
+    "intent_prediction": {
+      "name": "hdfc110",
+      "confidence": 0.5443264245986938
+    }
+  },
+  {
+    "text": "How is the value topped up?",
+    "intent": "hdfc683",
+    "intent_prediction": {
+      "name": "hdfc121",
+      "confidence": 0.5245954990386963
+    }
+  },
+  {
+    "text": "How is the price topped up?",
+    "intent": "hdfc683",
+    "intent_prediction": {
+      "name": "hdfc121",
+      "confidence": 0.4761652648448944
+    }
+  },
+  {
+    "text": "Why is E-commerce and Contactless service feature disabled on my Prepaid Card?",
+    "intent": "hdfc684",
+    "intent_prediction": {
+      "name": "hdfc138",
+      "confidence": 0.13677625358104706
+    }
+  },
+  {
+    "text": "Why is E-commerce and Contactless service feature disabled on my Prepaid Card?",
+    "intent": "hdfc685",
+    "intent_prediction": {
+      "name": "hdfc138",
+      "confidence": 0.13677625358104706
+    }
+  },
+  {
+    "text": "Why is E-commerce and Contactless service feature disabled on my Prepaid Card?",
+    "intent": "hdfc686",
+    "intent_prediction": {
+      "name": "hdfc138",
+      "confidence": 0.13677625358104706
+    }
+  },
+  {
+    "text": "Why is E-commerce and Contactless service feature disabled on my Prepaid Card?",
+    "intent": "hdfc687",
+    "intent_prediction": {
+      "name": "hdfc138",
+      "confidence": 0.13677625358104706
+    }
+  },
+  {
+    "text": "Why is E-commerce and Contactless service function disabled on my pay as you go Card?",
+    "intent": "hdfc687",
+    "intent_prediction": {
+      "name": "hdfc684",
+      "confidence": 0.3064321279525757
+    }
+  },
+  {
+    "text": "Why is E-commerce and Contactless service feature disabled on my Prepaid Card?",
+    "intent": "hdfc688",
+    "intent_prediction": {
+      "name": "hdfc138",
+      "confidence": 0.13677625358104706
+    }
+  },
+  {
+    "text": "Why is E-commerce and Contactless service feature disabled on my Prepaid Card?",
+    "intent": "hdfc690",
+    "intent_prediction": {
+      "name": "hdfc138",
+      "confidence": 0.13677625358104706
+    }
+  },
+  {
+    "text": "Why is E-commerce and Contactless service feature disabled on my Prepaid Card?",
+    "intent": "hdfc691",
+    "intent_prediction": {
+      "name": "hdfc138",
+      "confidence": 0.13677625358104706
+    }
+  },
+  {
+    "text": "Why is E-commerce and Contactless provider feature disabled on my pay as you go Card?",
+    "intent": "hdfc691",
+    "intent_prediction": {
+      "name": "hdfc686",
+      "confidence": 0.25775033235549927
+    }
+  },
+  {
+    "text": "How do I know that my taxes are successfully paid?",
+    "intent": "hdfc707",
+    "intent_prediction": {
+      "name": "hdfc703",
+      "confidence": 0.7080397009849548
+    }
+  },
+  {
+    "text": "How do I recognize that my taxes are effectively paid?",
+    "intent": "hdfc707",
+    "intent_prediction": {
+      "name": "hdfc703",
+      "confidence": 0.6625227332115173
+    }
+  },
+  {
+    "text": "Do I need to close my account when my kid attains majority?",
+    "intent": "hdfc714",
+    "intent_prediction": {
+      "name": "hdfc153",
+      "confidence": 0.5482721328735352
+    }
+  },
+  {
+    "text": "What are the permissible Debits from an RFC Domestic Account?",
+    "intent": "hdfc717",
+    "intent_prediction": {
+      "name": "hdfc166",
+      "confidence": 0.5438843369483948
+    }
+  },
+  {
+    "text": "What is the initial deposit amount required to open the Flexi Account?",
+    "intent": "hdfc722",
+    "intent_prediction": {
+      "name": "hdfc204",
+      "confidence": 0.5407209396362305
+    }
+  },
+  {
+    "text": "What's the preliminary deposit amount required to open the Flexi Account?",
+    "intent": "hdfc722",
+    "intent_prediction": {
+      "name": "hdfc204",
+      "confidence": 0.5338871479034424
+    }
+  },
+  {
+    "text": "Can I access my account by telephone to conduct routine daily transactions?",
+    "intent": "hdfc723",
+    "intent_prediction": {
+      "name": "hdfc167",
+      "confidence": 0.20294661819934845
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc725",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "What transactions are included as a part of the Free Anywhere Transactions limit for a month?",
+    "intent": "hdfc726",
+    "intent_prediction": {
+      "name": "hdfc209",
+      "confidence": 0.2829781770706177
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc728",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc730",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc731",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "What are the files required for starting a present day Account of a partnership company?",
+    "intent": "hdfc731",
+    "intent_prediction": {
+      "name": "hdfc240",
+      "confidence": 0.37331628799438477
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc732",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc733",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "What are the files required for commencing a current Account of a partnership firm?",
+    "intent": "hdfc733",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.3897826075553894
+    }
+  },
+  {
+    "text": "What are the documents required for opening a Current Account of a partnership firm?",
+    "intent": "hdfc734",
+    "intent_prediction": {
+      "name": "hdfc729",
+      "confidence": 0.19469860196113586
+    }
+  },
+  {
+    "text": "How do I know my beneficiary's details for a cheque issued in my name (Basic Savings Bank Deposit Account - Farmers)?",
+    "intent": "hdfc737",
+    "intent_prediction": {
+      "name": "hdfc247",
+      "confidence": 0.6239632368087769
+    }
+  },
+  {
+    "text": "What is Guarantor?",
+    "intent": "hdfc745",
+    "intent_prediction": {
+      "name": "hdfc585",
+      "confidence": 0.23439747095108032
+    }
+  },
+  {
+    "text": "What are the benefits of having a Current/Saving Account for my Business Growth Loan?",
+    "intent": "hdfc746",
+    "intent_prediction": {
+      "name": "hdfc567",
+      "confidence": 0.7386010885238647
+    }
+  },
+  {
+    "text": "What are the advantages of having a present day/Saving Account for my enterprise boom mortgage?",
+    "intent": "hdfc746",
+    "intent_prediction": {
+      "name": "hdfc567",
+      "confidence": 0.5806612372398376
+    }
+  },
+  {
+    "text": "What is Guarantor?",
+    "intent": "hdfc747",
+    "intent_prediction": {
+      "name": "hdfc585",
+      "confidence": 0.23439747095108032
+    }
+  },
+  {
+    "text": "How much time will it take to change the mode of repayment/ account for repayment of my loan?",
+    "intent": "hdfc748",
+    "intent_prediction": {
+      "name": "hdfc569",
+      "confidence": 0.5670338869094849
+    }
+  },
+  {
+    "text": "How plenty time will it take to trade the mode of repayment/ account for repayment of my loan?",
+    "intent": "hdfc748",
+    "intent_prediction": {
+      "name": "hdfc569",
+      "confidence": 0.4581533968448639
+    }
+  },
+  {
+    "text": "What is Guarantor?",
+    "intent": "hdfc749",
+    "intent_prediction": {
+      "name": "hdfc585",
+      "confidence": 0.23439747095108032
+    }
+  },
+  {
+    "text": "What's Guarantor?",
+    "intent": "hdfc749",
+    "intent_prediction": {
+      "name": "hdfc757",
+      "confidence": 0.24853567779064178
+    }
+  },
+  {
+    "text": "Whom do I contact in case of ay further queries regarding the loan?",
+    "intent": "hdfc753",
+    "intent_prediction": {
+      "name": "hdfc573",
+      "confidence": 0.5568124651908875
+    }
+  },
+  {
+    "text": "Whom do I contact in case of ay in addition queries concerning the loan?",
+    "intent": "hdfc753",
+    "intent_prediction": {
+      "name": "hdfc573",
+      "confidence": 0.5267372727394104
+    }
+  },
+  {
+    "text": "Which courses can I take an education loan for (Education Loans For Foreign Education)?",
+    "intent": "hdfc756",
+    "intent_prediction": {
+      "name": "hdfc582",
+      "confidence": 0.5282507538795471
+    }
+  },
+  {
+    "text": "What is Guarantor?",
+    "intent": "hdfc757",
+    "intent_prediction": {
+      "name": "hdfc585",
+      "confidence": 0.23439747095108032
+    }
+  },
+  {
+    "text": "What is Guarantor?",
+    "intent": "hdfc760",
+    "intent_prediction": {
+      "name": "hdfc585",
+      "confidence": 0.23439747095108032
+    }
+  },
+  {
+    "text": "What's Guarantor?",
+    "intent": "hdfc760",
+    "intent_prediction": {
+      "name": "hdfc757",
+      "confidence": 0.24853567779064178
+    }
+  },
+  {
+    "text": "What is the HDFC Life Cancer Care Policy?",
+    "intent": "hdfc761",
+    "intent_prediction": {
+      "name": "hdfc588",
+      "confidence": 0.9240361452102661
+    }
+  },
+  {
+    "text": "cancer Care policy",
+    "intent": "hdfc761",
+    "intent_prediction": {
+      "name": "hdfc588",
+      "confidence": 0.6102024912834167
+    }
+  },
+  {
+    "text": "What is HDFC Life Easy Health Plan?",
+    "intent": "hdfc762",
+    "intent_prediction": {
+      "name": "hdfc589",
+      "confidence": 0.5713492035865784
+    }
+  },
+  {
+    "text": "Can I buy more than one policy?",
+    "intent": "hdfc765",
+    "intent_prediction": {
+      "name": "hdfc592",
+      "confidence": 0.6384660601615906
+    }
+  },
+  {
+    "text": "Am i able to buy a couple of policy?",
+    "intent": "hdfc765",
+    "intent_prediction": {
+      "name": "hdfc592",
+      "confidence": 0.5808068513870239
+    }
+  },
+  {
+    "text": "What if I need the money for an emergency?",
+    "intent": "hdfc767",
+    "intent_prediction": {
+      "name": "hdfc594",
+      "confidence": 0.49482420086860657
+    }
+  },
+  {
+    "text": "Can I take any loan?",
+    "intent": "hdfc770",
+    "intent_prediction": {
+      "name": "hdfc599",
+      "confidence": 0.359598308801651
+    }
+  },
+  {
+    "text": "What is the min-max age at entry/maturity ?",
+    "intent": "hdfc773",
+    "intent_prediction": {
+      "name": "hdfc774",
+      "confidence": 0.4556506872177124
+    }
+  },
+  {
+    "text": "What is the minimum/maximum age at entry/maturity?",
+    "intent": "hdfc777",
+    "intent_prediction": {
+      "name": "hdfc606",
+      "confidence": 0.7005667686462402
+    }
+  },
+  {
+    "text": "Can I take any loan?",
+    "intent": "hdfc778",
+    "intent_prediction": {
+      "name": "hdfc599",
+      "confidence": 0.359598308801651
+    }
+  },
+  {
+    "text": "Can i take any mortgage?",
+    "intent": "hdfc778",
+    "intent_prediction": {
+      "name": "hdfc599",
+      "confidence": 0.38327810168266296
+    }
+  },
+  {
+    "text": "Should I choose a Unit Linked or a non – Unit Linked plan?",
+    "intent": "hdfc779",
+    "intent_prediction": {
+      "name": "hdfc597",
+      "confidence": 0.5875070095062256
+    }
+  },
+  {
+    "text": "Need to I pick a Unit connected or a non – Unit connected plan?",
+    "intent": "hdfc779",
+    "intent_prediction": {
+      "name": "hdfc597",
+      "confidence": 0.5917261838912964
+    }
+  },
+  {
+    "text": "What is the surrender benefit?",
+    "intent": "hdfc780",
+    "intent_prediction": {
+      "name": "hdfc609",
+      "confidence": 0.6106948256492615
+    }
+  },
+  {
+    "text": "What's the surrender advantage?",
+    "intent": "hdfc780",
+    "intent_prediction": {
+      "name": "hdfc609",
+      "confidence": 0.5803728103637695
+    }
+  },
+  {
+    "text": "Why do I need a Children's Plan?",
+    "intent": "hdfc783",
+    "intent_prediction": {
+      "name": "hdfc610",
+      "confidence": 0.5313076376914978
+    }
+  },
+  {
+    "text": "Can the plan be offered under limited underwritingThe plan can be applied by filing in the Short Medical Questionnaire (SMQ), which may not require you to go for medicals. When does the plan acquire Guaranteed Surrender value?",
+    "intent": "hdfc784",
+    "intent_prediction": {
+      "name": "hdfc611",
+      "confidence": 0.7277653813362122
+    }
+  },
+  {
+    "text": "Can the plan be presented underneath constrained underwritingThe plan can be carried out by means of submitting in the quick scientific Questionnaire (SMQ), which may not require you to move for medicals. Whilst does the plan accumulate guaranteed give up fee?",
+    "intent": "hdfc784",
+    "intent_prediction": {
+      "name": "hdfc611",
+      "confidence": 0.7228763699531555
+    }
+  },
+  {
+    "text": "Which Mutual Funds are ISA enabled?",
+    "intent": "hdfc794",
+    "intent_prediction": {
+      "name": "hdfc462",
+      "confidence": 0.5229358077049255
+    }
+  },
+  {
+    "text": "Can I cancel or withdraw my IPO application (or bid) submitted using ASBA?",
+    "intent": "hdfc795",
+    "intent_prediction": {
+      "name": "hdfc524",
+      "confidence": 0.4730026423931122
+    }
+  },
+  {
+    "text": "What will be the start date of my insurance policy?",
+    "intent": "hdfc801",
+    "intent_prediction": {
+      "name": "hdfc620",
+      "confidence": 0.6778653264045715
+    }
+  }
+]
